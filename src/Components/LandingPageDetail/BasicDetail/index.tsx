@@ -1,0 +1,83 @@
+import React from 'react';
+import Owner from "../../../Assets/Images/Owner.png";
+import DividerIcon from "../../../Assets/Images/DividerIcon.svg";
+
+const BasicDetail: React.FC = () => (
+  <>
+    <div className='lg:flex flex-row justify-between container mx-auto xl:pl-[0px] xl:pr-[0px] pl-[20px] pr-[20px]' >
+      <div className='md:pt-[50px] pt-[20px]'>
+        <div className='font-Leitura text-[24px]'>
+          Why Hawaii Property Management?
+        </div>
+        <div className='md:w-[740px] xl:w-[550px] lg:w-[400px] font-Arial text-[16px] text-Black400 pt-[20px]'>
+          <div>
+            We guarantee your revenue. We find qualified tenants for long-term rentals in 30 days or less, or cover the rent until we do. Vacation rentals earn at least $5,000 in the first year with us or we'll make up the difference.
+          </div>
+          <div className='pt-[20px]'>
+            Hawaii Property Management specializes in managing rentals for property owners, both long and short-term, handling all aspects of property management for you in the beautiful state of Hawaii.
+          </div>
+          <div className='pt-[20px]'>
+            We are especially attentive to continually optimizing your listing on multiple listing platforms to ensure maximum visibility and revenue.
+          </div>
+          <div className='pt-[20px]'>
+            Our promise is to protect your property, increase your rental income, and save you time.
+          </div>
+        </div>
+      </div>
+      <div className='text-center font-Leitura pt-[30px] lg:pt-[50px]'>
+        <div className='md:pl-[90px] lg:pl-[0px]'>
+          <img src={Owner} alt='Owner' />
+        </div>
+        <div className='pt-[20px]'>
+          <div>Colby Gilbert</div>
+          <div className='text-Black400'>Owner RS-XXXXXX</div>
+        </div>
+      </div>
+    </div>
+    <div className='pt-[30px] flex justify-center'>
+      <img src={DividerIcon} alt='Divider' />
+    </div>
+    <div className='pt-[50px] container mx-auto xl:pl-[0px] xl:pr-[0px] pl-[20px] pr-[20px]'>
+      <div className='lg:flex flex-row justify-evenly h-auto bg-Neutral200 rounded-lg'>
+        <div className='pt-[50px]'>
+          <div className='flex justify-center'>
+            <div className='font-Leitura max-w-[304px] text-center text-[24px]'>
+              Results from two of my earliest
+              short-term clients:
+            </div>
+          </div>
+          <div className='pt-[20px] flex justify-center'>
+            <img src={DividerIcon} alt='Divider' />
+          </div>
+          <div className='font-Arial lg:w-[464px] text-Black100 pl-[10px] pr-[10px]'>
+            <div className='pt-[20px]'>
+              Client A: had a record year, earning $11,928 more than the previous year. Their property was invited to Airbnb Plus, which on average, results in an additional 22% increase in income.
+            </div>
+            <div className='pt-[20px]'>
+              Client B: before working with me was making, on average, $2,148 per month. Now they are averaging $9,572 per month. They will see an $89,093 increase in yearly revenue.
+            </div>
+          </div>
+        </div>
+        <div className='lg:border-r-2 mt-[50px] lg:mb-[50px] border-b-2'></div>
+        <div className='lg:pt-[50px] pt-[30px] pb-[30px]'>
+          <div className='text-center font-Arial text-Black100 pl-[10px] pr-[10px]'>
+            <div className='font-Leitura lg:max-w-[405px] pb-[20px] border-b-2'>
+              “I highly recommend Colby as he takes care of property as if it were his own”
+            </div>
+            <div className='lg:w-[450px] md:w-[700px] pt-[20px] pb-[20px] border-b-2'>
+              “He knows how to screen tenants well, and then maintain an on-going and respectful relationship with them after they sign a lease.”
+            </div>
+            <div className='lg:w-[450px] md:w-[700px] pt-[20px]'>
+              “Colby is very hands on, has great ideas for amenities that will delight guests and his judgment on which guests he allows on to my property has always been prudent.”
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className='pt-[50px] flex justify-center'>
+      <img src={DividerIcon} alt='Divider' />
+    </div>
+  </>
+);
+
+export default BasicDetail;
