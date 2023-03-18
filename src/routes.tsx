@@ -17,19 +17,20 @@ import OurServices from "./Pages/OurServices";
 import OwnerLogin from "./Pages/OwnerLogin";
 import Tenants from "./Pages/Tenants";
 import TenantsLogin from "./Pages/TenantsLogin";
+import Testimonials from "./Pages/Testimonials";
 import WhyUs from "./Pages/WhyUs";
 
 export default function Router() {
   const location = useLocation();
 
   const token = window.localStorage.getItem('user');
-  console.log("token", token)
+  // console.log("token", token)
   const PrivateWrapper = ({ redirectPath = "/login", children }: any) => {
-    if (!token) {
-      return (
-        <Navigate to={redirectPath} replace state={{ path: location.pathname }} />
-      );
-    }
+    // if (!token) {
+      // return (
+      //   <Navigate to={redirectPath} replace state={{ path: location.pathname }} />
+      // );
+    // }
 
     return children ? children : <Outlet />;
   }
@@ -56,17 +57,18 @@ export default function Router() {
         { path: "/generallease", element: <GeneralLease /> },
         { path: "/blog", element: <Blog /> },
         { path: "/blogexpanded", element: <BlogExpanded /> },
+        { path: "/testimonials", element: <Testimonials /> },
       ],
     },
 
-    {
-      path: "/login",
-      element: token ? (
-        <Navigate to="/" replace />
-      ) : (
-        <Login />
-      ),
-    },
+    // {
+    //   path: "/login",
+    //   element: token ? (
+    //     <Navigate to="/" replace />
+    //   ) : (
+    //     <Login />
+    //   ),
+    // },
 
   ]);
 }

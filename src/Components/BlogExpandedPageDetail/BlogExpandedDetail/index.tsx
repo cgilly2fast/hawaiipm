@@ -4,10 +4,10 @@ import InstagramIcon from "../../../Assets/Images/InstagramIcon.svg";
 import YoutubeIcon from "../../../Assets/Images/YoutubeIcon.svg";
 import FacebookIcon from "../../../Assets/Images/FacebookIcon.svg";
 import DividerIcon from "../../../Assets/Images/DividerIcon.svg";
-import Homes from '../../../Assets/Images/Homes.png';
-import Condos from '../../../Assets/Images/Condos.png';
-import Townhomes from '../../../Assets/Images/Townhomes.png';
-import Apartment from '../../../Assets/Images/Apartment.png';
+import Recent1 from '../../../Assets/Images/Recent1.png';
+import Recent2 from '../../../Assets/Images/Recent2.png';
+import Recent3 from '../../../Assets/Images/Recent3.png';
+import Recent4 from '../../../Assets/Images/Recent4.png';
 
 const Button = [
   { id: 1, text: 'Vacation' },
@@ -18,10 +18,10 @@ const Button = [
 ];
 
 const Plan = [
-  { id: 1, pictures: Homes, text: 'Single Family Homes' },
-  { id: 2, pictures: Condos, text: 'Condos' },
-  { id: 3, pictures: Townhomes, text: 'Townhomes' },
-  { id: 4, pictures: Apartment, text: 'Apartment Buildings' },
+  { id: 1, pictures: Recent1,},
+  { id: 2, pictures: Recent2,},
+  { id: 3, pictures: Recent3,},
+  { id: 4, pictures: Recent4,},
 ];
 
 const BlogExpandedDetail: React.FC = () => (

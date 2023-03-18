@@ -1,24 +1,39 @@
 import React from 'react';
 import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
 import Blog from '../../../Assets/Images/Blog.png';
-import Homes from '../../../Assets/Images/Homes.png';
-import Condos from '../../../Assets/Images/Condos.png';
-import Townhomes from '../../../Assets/Images/Townhomes.png';
-import Apartment from '../../../Assets/Images/Apartment.png';
+import Recent1 from '../../../Assets/Images/Recent1.png';
+import Recent2 from '../../../Assets/Images/Recent2.png';
+import Recent3 from '../../../Assets/Images/Recent3.png';
+import Recent4 from '../../../Assets/Images/Recent4.png';
+import Popular1 from '../../../Assets/Images/Popular1.png';
+import Popular2 from '../../../Assets/Images/Popular2.png';
+import Popular3 from '../../../Assets/Images/Popular3.png';
+import Popular4 from '../../../Assets/Images/Popular4.png';
 import SliderPrevIcon from '../../../Assets/Images/SliderPrevIcon.svg';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
-const Plan = [
-  { id: 1, pictures: Homes, },
-  { id: 2, pictures: Condos, },
-  { id: 3, pictures: Townhomes, },
-  { id: 4, pictures: Apartment, },
-  { id: 5, pictures: Homes, },
-  { id: 6, pictures: Condos, },
-  { id: 7, pictures: Townhomes, },
-  { id: 8, pictures: Apartment, }
+const Recent = [
+  { id: 1, pictures: Recent1, },
+  { id: 2, pictures: Recent2, },
+  { id: 3, pictures: Recent3, },
+  { id: 4, pictures: Recent4, },
+  { id: 5, pictures: Recent1, },
+  { id: 6, pictures: Recent2, },
+  { id: 7, pictures: Recent3, },
+  { id: 8, pictures: Recent4, },
+];
+
+const Popular = [
+  { id: 1, pictures: Popular1, },
+  { id: 2, pictures: Popular2, },
+  { id: 3, pictures: Popular3, },
+  { id: 4, pictures: Popular4, },
+  { id: 5, pictures: Popular1, },
+  { id: 6, pictures: Popular2, },
+  { id: 7, pictures: Popular3, },
+  { id: 8, pictures: Popular4, },
 ];
 
 const NextArrow = ({ className, onClick }: any) => (
@@ -98,7 +113,7 @@ const settings = {
     settings: {
       centerMode: true,
       centerPadding: '0px',
-      slidesToShow: 3,
+      slidesToShow: 2.5,
     },
   },
   {
@@ -122,11 +137,11 @@ const settings = {
 
 const BlogDetail: React.FC = () => (
   <div className="pb-[50px]">
-    <div className="lg:container 2xl:pl-80 xl:pr-0 xl:pl-40 pt-[50px] pl-[20px] pr-[20px]">
+    <div className="lg:container 2xl:pl-80 xl:pr-0 xl:pl-40 pl-[20px] pr-[20px]">
       <div className="pt-[50px] xl:flex flex-row">
         <img src={Blog} alt="Blog" className="w-[100%]" />
         <div className="text-Black400 font-Arial w-auto xl:pl-[70px] xl:pt-[0px] pt-[30px] xl:pt-[70px]">
-          <div className="font-bold text-Black100 text-[24px]">
+          <div className="font-bold font-Leitura text-Black100 text-[24px]">
             Screening tenants is an important step in property management.
           </div>
           <div className="pt-[30px]">
@@ -149,7 +164,7 @@ const BlogDetail: React.FC = () => (
         <div className="text-[24px] font-bold">Recent Posts</div>
         <div className='md:hidden'>
           <div className="xl:flex justify-between pt-[50px] font-Arial">
-            {Plan?.map(res => (
+            {Recent?.map(res => (
               <div key={res.id} className="pt-[20px]">
                 <img
                   src={res?.pictures}
@@ -179,7 +194,7 @@ const BlogDetail: React.FC = () => (
       <div className='pt-[20px] hidden md:block'>
         <div>
           <Slider {...settings}>
-            {Plan?.map(res => (
+            {Recent?.map(res => (
               <div key={res.id} className="max-w-[270px]">
                 <img
                   src={res?.pictures}
@@ -210,7 +225,7 @@ const BlogDetail: React.FC = () => (
         <div className='pt-[20px] hidden md:block'>
           <div>
             <Slider {...settings}>
-              {Plan?.map(res => (
+              {Popular?.map(res => (
                 <div key={res.id} className="max-w-[270px]">
                   <img
                     src={res?.pictures}
@@ -235,7 +250,7 @@ const BlogDetail: React.FC = () => (
         </div>
         <div className='md:hidden'>
           <div className="xl:flex justify-between pt-[50px] font-Arial">
-            {Plan?.map(res => (
+            {Popular?.map(res => (
               <div key={res.id} className="pt-[20px]">
                 <img
                   src={res?.pictures}

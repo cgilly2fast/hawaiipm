@@ -4,7 +4,6 @@ import Background from "../../../Assets/Images/Background.png";
 const PropertyDetail: React.FC = () => (
   <div>
     <div className='relative w-full h-[432px] xl:h-[486px] lg:h-[400px]' style={{ backgroundImage: `url(${Background})` }}>
-      {/* <img src={Background} alt='background' className='w-[360px] h-[432px] 2xl:w-[100%] 2xl:h-[100%] xl:w-[100%] xl:h-[100%] lg:w-[100%] lg:h-[400px]'/> */}
       <div className='w-full lg:flex lg:flex-col text-center absolute left-[0px] 2xl:flex 2xl:top-[82px] 2xl:left-[600px] items-center rounded-lg items-start xl:flex xl:left-[440px] xl:top-[80px] lg:w-[570px] lg:h-[322px] lg:flex lg:bg-Neutral000 lg:top-[35px] lg:left-[230px]'>
         <div className='w-full font-Leitura text-[36px] text-Neutral000 justify-center lg:text-[24px] lg:text-Black100 lg:pt-[30px] flex'>
           <span className='max-w-[320px]'> Property Management</span>

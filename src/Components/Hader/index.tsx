@@ -6,12 +6,13 @@ import UserIcon from "../../Assets/Images/UserIcon.svg";
 import LogoIcon from "../../Assets/Images/LogoIcon.svg";
 import Logo from "../../Assets/Images/Logo.svg";
 import MenuIcon from "../../Assets/Images/MenuIcon.svg";
+import { Link } from 'react-router-dom';
 
 const Hader: React.FC = () => (
   <div className='relative'>
     <div className='pl-[30px] hidden sm:block lg:block md:hidden absolute z-10'>
       <div className='flex w-[312px] h-[156px] bg-Green100 absolute flex flex-col justify-center items-center rounded-b-lg md:w-[150px] h-[120px] xl:w-[312px] h-[156px]'>
-        <img src={LogoIcon} alt='logo'/>
+        <img src={LogoIcon} alt='logo' />
       </div>
     </div>
     <div className='text-Black400 bg-Neutral200 p-[10px] h-[40px] block sm:hidden md:block lg:hidden'>
@@ -57,41 +58,41 @@ const Hader: React.FC = () => (
                 <div className="py-1">
                   <Menu.Item>
                     {({ active }) => (
-                      <a
-                        href="/"
+                      <Link
+                        to="/aboutus"
                         className={
                           `${active ? "bg-Green500 text-Green100" : "text-gray-700"}
                         block px-4 py-2 text-sm`
                         }
                       >
                         About Us
-                      </a>
+                      </Link>
                     )}
                   </Menu.Item>
                   <Menu.Item>
                     {({ active }) => (
-                      <a
-                        href="/"
+                      <Link
+                        to="/guarantee"
                         className={
                           `${active ? "bg-Green500 text-Green100" : "text-gray-700"}
                         block px-4 py-2 text-sm`
                         }
                       >
                         Out team
-                      </a>
+                      </Link>
                     )}
                   </Menu.Item>
                   <Menu.Item>
                     {({ active }) => (
-                      <a
-                        href="/"
+                      <Link
+                        to="/contact"
                         className={
                           `${active ? "bg-Green500 text-Green100" : "text-gray-700"}
                         block px-4 py-2 text-sm`
                         }
                       >
                         Contact Us
-                      </a>
+                      </Link>
                     )}
                   </Menu.Item>
                 </div>
@@ -103,7 +104,11 @@ const Hader: React.FC = () => (
     </div>
     <div className='sm:flex hidden justify-end p-[30px] md:hidden lg:flex hidden justify-end p-[30px]'>
       <div className='w-[760px] flex justify-between items-center font-Arial'>
-        <div>Home</div>
+        <div>
+          <Link to="/">
+            Home
+          </Link>
+        </div>
         <Menu as="div" className="relative inline-block text-left">
           <div>
             <Menu.Button className="inline-flex w-full justify-center hover:bg-gray-50">
@@ -125,48 +130,51 @@ const Hader: React.FC = () => (
               <div className="py-1">
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="/"
+                    <Link
+                      to="/aboutus"
                       className={
                         `${active ? "bg-Green500 text-Green100" : "text-gray-700"}
                         block px-4 py-2 text-sm`
                       }
                     >
                       About Us
-                    </a>
+                    </Link>
                   )}
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="/"
+                    <Link
+                      to="/guarantee"
                       className={
                         `${active ? "bg-Green500 text-Green100" : "text-gray-700"}
                         block px-4 py-2 text-sm`
                       }
                     >
                       Out team
-                    </a>
+                    </Link>
                   )}
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="/"
+                    <Link
+                      to="/contact"
                       className={
                         `${active ? "bg-Green500 text-Green100" : "text-gray-700"}
                         block px-4 py-2 text-sm`
                       }
                     >
                       Contact Us
-                    </a>
+                    </Link>
                   )}
                 </Menu.Item>
               </div>
             </Menu.Items>
           </Transition>
         </Menu>
-        <div>Available rentals</div>
+        <div>
+          <Link to="/available">
+            Available rentals
+          </Link></div>
         <Menu as="div" className="relative inline-block text-left">
           <div>
             <Menu.Button className="inline-flex w-full justify-center hover:bg-gray-50">
@@ -188,53 +196,53 @@ const Hader: React.FC = () => (
               <div className="py-1">
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="/"
+                    <Link
+                      to="/owner"
                       className={
                         `${active ? "bg-Green500 text-Green100" : "text-gray-700"}
                         block px-4 py-2 text-sm`
                       }
                     >
                       Owner Login
-                    </a>
+                    </Link>
                   )}
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="/"
+                    <Link
+                      to="/ourservices"
                       className={
                         `${active ? "bg-Green500 text-Green100" : "text-gray-700"}
                         block px-4 py-2 text-sm`
                       }
                     >
                       Services
-                    </a>
+                    </Link>
                   )}
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="/"
+                    <Link
+                      to="/whyus"
                       className={
                         `${active ? "bg-Green500 text-Green100" : "text-gray-700"}
                         block px-4 py-2 text-sm`
                       }
                     >
                       Why us
-                    </a>
+                    </Link>
                   )}
                 </Menu.Item><Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="/"
+                    <Link
+                      to="/testimonials"
                       className={
                         `${active ? "bg-Green500 text-Green100" : "text-gray-700"}
                         block px-4 py-2 text-sm`
                       }
                     >
                       Testimonials
-                    </a>
+                    </Link>
                   )}
                 </Menu.Item>
               </div>
@@ -262,49 +270,55 @@ const Hader: React.FC = () => (
               <div className="py-1">
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="/"
+                    <Link
+                      to="/available"
                       className={
                         `${active ? "bg-Green500 text-Green100" : "text-gray-700"}
                         block px-4 py-2 text-sm`
                       }
                     >
                       Applying for Rental
-                    </a>
+                    </Link>
                   )}
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="/"
+                    <Link
+                      to="/tenantslogin"
                       className={
                         `${active ? "bg-Green500 text-Green100" : "text-gray-700"}
                         block px-4 py-2 text-sm`
                       }
                     >
                       Tenant Login
-                    </a>
+                    </Link>
                   )}
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="/"
+                    <Link
+                      to="/maintenance"
                       className={
                         `${active ? "bg-Green500 text-Green100" : "text-gray-700"}
                         block px-4 py-2 text-sm`
                       }
                     >
                       maintenance
-                    </a>
+                    </Link>
                   )}
                 </Menu.Item>
               </div>
             </Menu.Items>
           </Transition>
         </Menu>
-        <div>Agent referral program</div>
-        <div>Help</div>
+        <div>
+          <Link to="/agentReferral">
+            Agent referral program
+          </Link></div>
+        <div>
+          <Link to="/help">
+            Help
+          </Link></div>
       </div>
     </div>
   </div >
