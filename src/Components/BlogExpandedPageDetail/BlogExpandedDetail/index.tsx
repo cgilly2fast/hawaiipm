@@ -18,10 +18,10 @@ const Button = [
 ];
 
 const Plan = [
-  { id: 1, pictures: Recent1,},
-  { id: 2, pictures: Recent2,},
-  { id: 3, pictures: Recent3,},
-  { id: 4, pictures: Recent4,},
+  { id: 1, pictures: Recent1, },
+  { id: 2, pictures: Recent2, },
+  { id: 3, pictures: Recent3, },
+  { id: 4, pictures: Recent4, },
 ];
 
 const BlogExpandedDetail: React.FC = () => (
@@ -101,7 +101,7 @@ const BlogExpandedDetail: React.FC = () => (
           ))}
         </div>
         <div className='pt-[50px] font-Arial text-center'>
-          <button className='w-[150px] md:w-[250px] h-[44px] bg-Green100 border-2 text-Neutral000 rounded-lg'>Contact Us</button>
+          <button className='w-[100%] md:w-[250px] h-[44px] bg-Green100 border-2 text-Neutral000 rounded-lg'>Contact Us</button>
         </div>
       </div>
       <div className='pt-[50px] flex justify-center'>

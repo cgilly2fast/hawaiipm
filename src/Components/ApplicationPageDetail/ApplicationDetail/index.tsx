@@ -55,7 +55,7 @@ const ApplicationDetail: React.FC = () => (
         </div>
         <div>
           <div className='pt-[50px] font-Arial text-center'>
-            <button className='w-[300px] md:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg'>Follow</button>
+            <button className='w-[100%] md:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg'>Follow</button>
           </div>
         </div>
       </div>

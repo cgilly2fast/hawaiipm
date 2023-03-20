@@ -1,6 +1,13 @@
 import React from 'react';
 import Maintenance from "../../../Assets/Images/Maintenance.png";
 
+const Recent = [
+  [{ id: 1, text: "Am I a good fit for Hawaii Property Management?", content: "The mug is round. The jar is round. They should call it Roundtine." },
+  { id: 2, text: "Do you ever have issues with guests damaging the property?", content: "The mug is round. The jar is round. They should call it Roundtine." },
+  { id: 3, text: "Can I cancel at any time?", content: "The best way to answer this is to give you a detailed 12-month revenue projection. Give us a call, and we collect the info we need to create an accurate forecast and get back to you in 24hrs." },
+  { id: 4, text: "Can I stay at my own place?", content: "The best way to answer this is to give you a detailed 12-month revenue projection. Give us a call, and we collect the info we need to create an accurate forecast and get back to you in 24hrs." }],
+];
+
 const MaintenanceDetail: React.FC = () => (
   <div className='pb-[50px]'>
     <div className='bg-Neutral100 h-[200px] font-Leitura flex'>
@@ -31,30 +38,27 @@ const MaintenanceDetail: React.FC = () => (
           <div className='font-Arial text-[18px] font-bold pt-[50px]'>
             Maintenance Request-tips and Trouble Shooting Guide
           </div>
-          <div className='pt-[50px]'>
-            <div className='w-auto xl:w-[550px] h-auto border-2 rounded-lg font-Arial'>
-              <details>
-                <summary className='flex flex-row justify-between cursor-pointer'>
-                  <div className='pt-[10px] pl-[10px]'>Information needed to help us expedite your request</div>
-                  <div className='w-[54px] h-auto bg-Neutral300 rounded-r-lg text-center flex justify-center items-center'>+</div>
-                </summary>
-                <div className="mt-3 text-sm leading-6 pl-[10px]">
-                  The mug is round. The jar is round. They should call it Roundtine.
-                </div>
-              </details>
-            </div>
-            <div className='pt-[20px]'>
-              <div className='w-auto xl:w-[550px] h-auto border-2 rounded-lg font-Arial'>
-                <details>
-                  <summary className='flex flex-row justify-between cursor-pointer'>
-                    <div className='pt-[10px] pl-[10px]'>Trouble Shooting Guide - Please read before sending us a request</div>
-                    <div className='w-[54px] h-auto bg-Neutral300 rounded-r-lg text-center flex justify-center items-center'>+</div>
-                  </summary>
-                  <div className="mt-3 text-sm leading-6 pl-[10px]">
-                    Lorem ipsum dolor sit amet consectetur. Purus elit urna laoreet aenean varius ullamcorper libero cras. Interdum cras sit augue massa. Vitae habitasse nisl pretium accumsan ipsum adipiscing sed. Nunc consequat dui at viverra pellentesque lorem amet proin.
-                  </div>
-                </details>
-              </div>
+          <div className='pt-[20px]'>
+            <div className='flex flex-wrap justify-around'>
+              {Recent?.map(item => (
+                <ul>
+                  {item.map(res => (
+                    <div className='pt-[20px]' key={res?.id}>
+                      <div className='w-[350px] xl:w-[550px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial'>
+                        <details>
+                          <summary className='flex flex-row justify-between cursor-pointer'>
+                            <div className='p-[10px]'>{res?.text}</div>
+                            <span className='rounded-r'></span>
+                          </summary>
+                          <div className="mt-3 text-sm leading-6 pl-[10px]">
+                            {res?.content}
+                          </div>
+                        </details>
+                      </div>
+                    </div>
+                  ))}
+                </ul>
+              ))}
             </div>
           </div>
         </div>

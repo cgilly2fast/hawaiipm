@@ -19,7 +19,7 @@ const BasicDetail: React.FC = () => (
           <div className='pt-[20px]'>
             We are especially attentive to continually optimizing your listing on multiple listing platforms to ensure maximum visibility and revenue.
           </div>
-          <div className='pt-[20px]'>
+          <div className='pt-[20px] font-bold'>
             Our promise is to protect your property, increase your rental income, and save you time.
           </div>
         </div>
@@ -51,10 +51,10 @@ const BasicDetail: React.FC = () => (
           </div>
           <div className='font-Arial lg:w-[464px] text-Black100 pl-[10px] pr-[10px]'>
             <div className='pt-[20px]'>
-              Client A: had a record year, earning $11,928 more than the previous year. Their property was invited to Airbnb Plus, which on average, results in an additional 22% increase in income.
+              Client A: had a record year, <span className='underline text-Black400'>earning $11,928 more than the previous year.</span> Their property was invited to Airbnb Plus, which on average, results in an additional 22% increase in income.
             </div>
             <div className='pt-[20px]'>
-              Client B: before working with me was making, on average, $2,148 per month. Now they are averaging $9,572 per month. They will see an $89,093 increase in yearly revenue.
+              Client B: before working with me was making, on average, $2,148 per month. Now they are averaging $9,572 per month. <span className='underline text-Black400'>They will see an $89,093 increase in yearly revenue.</span>
             </div>
           </div>
         </div>

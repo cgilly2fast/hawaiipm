@@ -1,5 +1,4 @@
 import React from 'react';
-import Room from "../../../Assets/Images/Room.png";
 
 const Recent = [
   [{ id: 1, text: "Am I a good fit for Hawaii Property Management?", content: "The mug is round. The jar is round. They should call it Roundtine." },
@@ -13,40 +12,32 @@ const Recent = [
 ];
 
 const QuestionDetail: React.FC = () => (
-  <div className='container mx-auto xl:pl-[0px] xl:pr-[0px] pl-[20px] pr-[20px]'>
-    <div className='font-Leitura text-[36px] text-center pt-[70px]'>
-      Your questions answered
-    </div>
-    <div className='flex flex-wrap justify-around pt-[30px]'>
-      {Recent?.map((item, index) => (
-        <ul key={index}>
-          {item.map(res => (
-            <div className='pt-[20px]' key={res?.id}>
-              <div className='w-[350px] xl:w-[550px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial'>
-                <details>
-                  <summary className='flex flex-row justify-between cursor-pointer'>
-                    <div className='p-[10px]'>{res?.text}</div>
-                    <span className='rounded-r'></span>
-                  </summary>
-                  <div className="mt-3 text-sm leading-6 pl-[10px]">
-                    {res?.content}
+  <div className='md:pt-[50px] pb-[50px]'>
+    <div className='lg:container 2xl:pl-80 2xl:pr-0 xl:pl-60 pl-[20px] pr-[20px]'>
+      <div className='container mx-auto xl:pl-[0px] xl:pr-[0px] pl-[20px] pr-[20px]'>
+        <div className='font-Leitura text-[36px] font-bold'>
+          Your questions answered
+        </div>
+        <div className='flex flex-wrap justify-around'>
+          {Recent?.map(item => (
+            <ul>
+              {item.map(res => (
+                <div className='pt-[20px]' key={res?.id}>
+                  <div className='w-[350px] xl:w-[550px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial'>
+                    <details>
+                      <summary className='flex flex-row justify-between cursor-pointer'>
+                        <div className='p-[10px]'>{res?.text}</div>
+                        <span className='rounded-r'></span>
+                      </summary>
+                      <div className="mt-3 text-sm leading-6 pl-[10px]">
+                        {res?.content}
+                      </div>
+                    </details>
                   </div>
-                </details>
-              </div>
-            </div>
+                </div>
+              ))}
+            </ul>
           ))}
-        </ul>
-      ))}
-    </div>
-    <div className='pt-[50px] pb-[50px]'>
-      <div className='relative w-full h-[432px] xl:h-[486px] lg:h-[400px]' style={{ backgroundImage: `url(${Room})` }}>
-        <div className='absolute top-[150px] left-[60px] 2xl:top-[190px] 2xl:left-[670px] xl:top-[190px] xl:left-[560px] lg:top-[150px] lg:left-[400px]  md:top-[150px] md:left-[260px] text-center'>
-          <div className='font-Leitura text-[36px] text-Neutral000'>
-            Ready to Earn?
-          </div>
-          <div className='pt-[20px]'>
-            <button className='w-[200px] h-[44px] bg-Green100 text-Neutral000 rounded-lg'>Get Started</button>
-          </div>
         </div>
       </div>
     </div>

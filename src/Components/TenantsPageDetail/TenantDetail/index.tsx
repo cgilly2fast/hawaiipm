@@ -40,10 +40,10 @@ const TenantDetail: React.FC = () => (
       </div>
       <div className='md:flex font-Arial pt-[10px]'>
         <div className='pt-[20px]'>
-          <button className='w-[340px]  md:w-[180px] lg:w-[250px] h-[44px] bg-Green100 text-Neutral000 rounded-lg'>Apply Online</button>
+          <button className='w-[100%]  md:w-[180px] lg:w-[250px] h-[44px] bg-Green100 text-Neutral000 rounded-lg'>Apply Online</button>
         </div>
         <div className='md:pl-[50px] pt-[20px]'>
-          <button className='w-[340px]  md:w-[230px] lg:w-[250px] h-[44px] bg-Green100 text-Neutral000 rounded-lg'>Download Printable Form</button>
+          <button className='w-[100%]  md:w-[230px] lg:w-[250px] h-[44px] bg-Green100 text-Neutral000 rounded-lg'>Download Printable Form</button>
         </div>
       </div>
     </div>

@@ -97,7 +97,7 @@ const BlogCommentsDetail: React.FC = () => (
         <div className='lg:flex'>
           <div className='pt-[20px]'>
             <div className='w-[100%] lg:w-[260px] h-[44px] border-2 bg-Neutral200 rounded-lg flex items-center justify-evenly'>
-              <div className='flex bg-Neutral000 rounded-lg'>
+              <div className='flex bg-Neutral000 rounded p-1'>
                 <img src={UplodIcon} alt="UplodIcon" />
                 <span className='pl-[10px]'>Upload Image</span>
               </div>

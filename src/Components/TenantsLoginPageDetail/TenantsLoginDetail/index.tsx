@@ -21,7 +21,7 @@ const TenantsLoginDetail: React.FC = () => (
         </div>
       </div>
       <div className='pt-[20px] font-Arial'>
-        <button className='w-[180px]  md:w-[180px] lg:w-[250px] h-[44px] bg-Green100 text-Neutral000 rounded-lg'>Tenant Login</button>
+        <button className='w-[100%]  md:w-[180px] lg:w-[250px] h-[44px] bg-Green100 text-Neutral000 rounded-lg'>Tenant Login</button>
       </div>
     </div>
   </div>

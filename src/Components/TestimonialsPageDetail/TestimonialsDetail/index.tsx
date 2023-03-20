@@ -31,34 +31,36 @@ const TestimonialsDetail: React.FC = () => {
           Hawaii PM is committed to maximizing each and every clients investments. Our clients can say more about us than we ever could. Here are some testimonials and thank you notes from satisfied clients.
         </div>
         <div className='pt-[30px] grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 items-start'>
-          {xyz?.map(item => (<ul className="space-y-8">
-            {item?.map(res => (<li className='xl:w-[370px] lg::w-[300px] h-auto border-2 rounded-lg text-sm leading-6'>
-              <div className='text-center font-Arial text-Black-400 pt-[20px] pb-[20px]'>
-                <div className='flex justify-center'>
-                  <img src={TestimonialsIcon} alt='TestimonialsIcon' />
-                </div>
-                <div className='pt-[20px]'>
-                  {res.content}
-                </div>
-                <div className='pt-[50px] flex justify-center'>
-                  <img src={DividerIcon} alt='Divider' />
-                </div>
-                <div>
-                  <ul className="divide-y divide-slate-200 pt-[30px]">
-                    <li className="first:pt-0 last:pb-0">
-                      <div className='flex justify-center'>
-                        <img src={res?.pictures} alt={`${res?.id}`} />
-                      </div>
-                      <div className="ml-3 overflow-hidden text-Black100 font-[16px]">
-                        <p className="font-bold">{res.name}</p>
-                        <p className="truncate">{res.text}</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>))}
-          </ul>))}
+          {xyz?.map(item => (
+            <ul className="space-y-8">
+              {item?.map(res => (
+                <li className='xl:w-[370px] lg::w-[300px] h-auto border-2 rounded-lg text-sm leading-6'>
+                  <div className='text-center font-Arial text-Black-400 pt-[20px] pb-[20px]'>
+                    <div className='flex justify-center'>
+                      <img src={TestimonialsIcon} alt='TestimonialsIcon' />
+                    </div>
+                    <div className='pt-[20px]'>
+                      {res.content}
+                    </div>
+                    <div className='pt-[50px] flex justify-center'>
+                      <img src={DividerIcon} alt='Divider' />
+                    </div>
+                    <div>
+                      <ul className="divide-y divide-slate-200 pt-[30px]">
+                        <li className="first:pt-0 last:pb-0">
+                          <div className='flex justify-center'>
+                            <img src={res?.pictures} alt={`${res?.id}`} />
+                          </div>
+                          <div className="ml-3 overflow-hidden text-Black100 font-[16px]">
+                            <p className="font-bold">{res.name}</p>
+                            <p className="truncate">{res.text}</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>))}
+            </ul>))}
         </div>
         <div className='pt-[30px] text-center'>
           <button className='w-[100%]  md:w-[230px] lg:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg'>Load More</button>

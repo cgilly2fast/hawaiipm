@@ -14,6 +14,29 @@ details>summary::-webkit-details-marker {
   display: none;
 }
 
+details>summary>span::before {
+  content: '+';
+  font-size: 30px;
+  width: 55px;
+  height: 100%;
+  background-color: #E9E9E9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+details[open]>summary>span::before {
+  content: '-';
+  font-size: 30px;
+  background-color: #fff;
+
+}
+
+details[open]>summary>div {
+  font-weight: bold;
+
+}
+
 .slick-slide {
   padding: 0px 0px !important;
 }

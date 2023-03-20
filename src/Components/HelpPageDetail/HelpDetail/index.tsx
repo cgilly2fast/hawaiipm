@@ -49,8 +49,8 @@ const HelpDetail: React.FC = () => (
                 <div className='flex justify-center'>
                   <img src={res?.pictures} alt={`${res?.id}`} />
                 </div>
-                <div className='font-Arial text-[18px]'>{res.text}</div>
-                <div className='font-Arial text-[16px]'>{res.mas}</div>
+                <div className='font-Arial text-[18px] pt-[20px]'>{res.text}</div>
+                <div className='font-Arial text-[16px] pt-[10px]'>{res.mas}</div>
               </div>
             </div>
           </div>
@@ -59,10 +59,10 @@ const HelpDetail: React.FC = () => (
       <div className='pt-[50px] flex justify-center'>
         <img src={DividerIcon} alt='Divider' />
       </div>
-      <div className='font-Leitura text-[36px] text-center pt-[30px]'>
+      <div className='font-Leitura text-[36px] text-center pt-[50px]'>
         Property Owners
       </div>
-      <div className='md:flex flex-wrap'>
+      <div className='md:flex flex-wrap pt-[30px]'>
         {Plans?.map(res => (
           <div className='2xl:p-4 xl:p-6 lg:p-9 md:p-10 pt-[20px]'>
             <div className='2xl:w-[370px] w-auto md:w-[250px] h-[200px] 2xl:h-[251px] xl:w-[300px] border-2 rounded-lg flex justify-center items-center' key={res.id}>
@@ -70,8 +70,8 @@ const HelpDetail: React.FC = () => (
                 <div className='flex justify-center'>
                   <img src={res?.pictures} alt={`${res?.id}`} />
                 </div>
-                <div className='font-Arial text-[18px]'>{res.text}</div>
-                <div className='font-Arial text-[16px]'>{res.mas}</div>
+                <div className='font-Arial text-[18px] pt-[20px]'>{res.text}</div>
+                <div className='font-Arial text-[16px] pt-[10px]'>{res.mas}</div>
               </div>
             </div>
           </div>

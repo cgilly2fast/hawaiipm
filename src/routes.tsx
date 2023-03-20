@@ -9,6 +9,7 @@ import BlogExpanded from "./Pages/BlogExpanded";
 import Contact from "./Pages/Contact";
 import GeneralLease from "./Pages/GeneralLease";
 import Guarantee from "./Pages/Guarantee";
+import GuaranteeMain from "./Pages/GuarnteeMain";
 import Help from "./Pages/Help";
 import Landing from "./Pages/Landing";
 import Login from "./Pages/Login";
@@ -42,6 +43,7 @@ export default function Router() {
       children: [
         { path: "/", element: <Landing /> },
         { path: "/guarantee", element: <Guarantee /> },
+        { path: "/guaranteemain", element: <GuaranteeMain /> },
         { path: "/aboutus", element: <AboutUs /> },
         { path: "/available", element: <AvailableRentals /> },
         { path: "/owner", element: <OwnerLogin /> },
