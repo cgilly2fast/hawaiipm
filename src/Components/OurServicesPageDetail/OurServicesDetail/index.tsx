@@ -1,11 +1,11 @@
 import React from 'react';
-import Location from "../../../Assets/Images/Location.png";
-import Homes2 from "../../../Assets/Images/Homes2.png";
-import DividerIcon from "../../../Assets/Images/DividerIcon.svg";
-import Homes from "../../../Assets/Images/Homes.png";
-import Condos from "../../../Assets/Images/Condos.png";
-import Townhomes from "../../../Assets/Images/Townhomes.png";
-import Apartment from "../../../Assets/Images/Apartment.png";
+import Location from '../../../Assets/Images/Location.png';
+import Homes2 from '../../../Assets/Images/Homes2.png';
+import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
+import Homes from '../../../Assets/Images/Homes.png';
+import Condos from '../../../Assets/Images/Condos.png';
+import Townhomes from '../../../Assets/Images/Townhomes.png';
+import Apartment from '../../../Assets/Images/Apartment.png';
 
 const Plan = [
   { id: 1, pictures: Homes, text: 'Single Family Homes' },
@@ -15,52 +15,82 @@ const Plan = [
 ];
 
 const Recent = [
-  [{ id: 1, text: "Am I a good fit for Hawaii Property Management?", content: "The mug is round. The jar is round. They should call it Roundtine." },
-  { id: 2, text: "Do you ever have issues with guests damaging the property?", content: "The mug is round. The jar is round. They should call it Roundtine." },
-  { id: 3, text: "Can I cancel at any time?", content: "The best way to answer this is to give you a detailed 12-month revenue projection. Give us a call, and we collect the info we need to create an accurate forecast and get back to you in 24hrs." },
-  { id: 4, text: "Can I stay at my own place?", content: "The best way to answer this is to give you a detailed 12-month revenue projection. Give us a call, and we collect the info we need to create an accurate forecast and get back to you in 24hrs." }],
+  [
+    {
+      id: 1,
+      text: 'Am I a good fit for Hawaii Property Management?',
+      content:
+        'The mug is round. The jar is round. They should call it Roundtine.',
+    },
+    {
+      id: 2,
+      text: 'Do you ever have issues with guests damaging the property?',
+      content:
+        'The mug is round. The jar is round. They should call it Roundtine.',
+    },
+    {
+      id: 3,
+      text: 'Can I cancel at any time?',
+      content:
+        'The best way to answer this is to give you a detailed 12-month revenue projection. Give us a call, and we collect the info we need to create an accurate forecast and get back to you in 24hrs.',
+    },
+    {
+      id: 4,
+      text: 'Can I stay at my own place?',
+      content:
+        'The best way to answer this is to give you a detailed 12-month revenue projection. Give us a call, and we collect the info we need to create an accurate forecast and get back to you in 24hrs.',
+    },
+  ],
 ];
 
 const OurServicesDetail: React.FC = () => (
-  <div className='pb-[50px]'>
-    <div className='bg-Neutral100 h-[200px] font-Leitura flex'>
-      <div className='text-[48px] lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]'>
+  <div className="pb-[50px]">
+    <div className="bg-Neutral100 h-[110px] lg:h-[200px] font-Leitura flex">
+      <div className=" text-[36px] lg:text-[48px] font-bold lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
         Our Services
       </div>
     </div>
-    <div className='lg:container 2xl:pl-80 2xl:pr-0 xl:pr-0 xl:pl-40 pt-[50px] pl-[20px] pr-[20px]'>
-      <img src={Location} alt='Location' className='w-[100%]' />
-      <div className='xl:flex flex-row'>
-        <div className='xl:pr-[70px]'>
-          <div className='font-Leitura text-[24px] font-bold pt-[50px]'>
+    <div className="lg:container 2xl:pl-80 2xl:pr-0 xl:pr-0 xl:pl-40 pt-[50px] pl-[20px] pr-[20px]">
+      <img src={Location} alt="Location" className="w-[100%] h-[400px]" />
+      <div className="md:flex flex-row">
+        <div className="xl:pr-[70px]">
+          <div className="font-Leitura text-[24px] font-bold pt-[50px]">
             Full-Service Property Management
           </div>
-          <div className='text-Black400 font-Arial w-[auto]'>
-            <div className='pt-[20px]'>
-              Et qui eius admodum argumentum, te dicta perpetua est. Sea clita splendide et, splendide complectitur usu ne. Has lorem eloquentiam no, nam volutpat accusamus eu, te vel facilisis adipiscing. Ne laudem deseruisse mei, pro meis delectus argumentum eu. Ad est nullam iisque, ei vel civibus urbanitas, ea usu ullum luptatum invidunt.
+          <div className="text-Black400 tex-[16px] font-Arial w-[auto]">
+            <div className="pt-[20px]">
+              Et qui eius admodum argumentum, te dicta perpetua est. Sea clita
+              splendide et, splendide complectitur usu ne. Has lorem eloquentiam
+              no, nam volutpat accusamus eu, te vel facilisis adipiscing. Ne
+              laudem deseruisse mei, pro meis delectus argumentum eu. Ad est
+              nullam iisque, ei vel civibus urbanitas, ea usu ullum luptatum
+              invidunt.
             </div>
-            <div className='pt-[20px]'>
-              For immediate answers to any questions you might have regarding the management of your property please contact <span className='text-Green100'>colbygbemail@email.com</span> or <span className='text-Green100'>000-000-0000.</span>
+            <div className="pt-[20px]">
+              For immediate answers to any questions you might have regarding
+              the management of your property please contact{' '}
+              <span className="text-Green100">colbygbemail@email.com</span> or{' '}
+              <span className="text-Green100">000-000-0000.</span>
             </div>
           </div>
         </div>
-        <div>
-          <div className='font-Arial text-[18px] font-bold pt-[50px]'>
+        <div className="md:pl-[20px]">
+          <div className="font-Arial text-[18px] font-bold pt-[50px]">
             Services for Property Management
           </div>
-          <div className='pt-[30px]'>
-            <div className='flex flex-wrap justify-around'>
+          <div className="pt-[30px]">
+            <div className="flex flex-wrap justify-around">
               {Recent?.map(item => (
                 <ul>
                   {item.map(res => (
-                    <div className='pt-[20px]' key={res?.id}>
-                      <div className='w-[350px] xl:w-[550px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial'>
+                    <div className="pt-[20px]" key={res?.id}>
+                      <div className="w-auto xl:w-[550px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial">
                         <details>
-                          <summary className='flex flex-row justify-between cursor-pointer'>
-                            <div className='p-[10px]'>{res?.text}</div>
-                            <span className='rounded-r'></span>
+                          <summary className="flex flex-row justify-between cursor-pointer text-[16px]">
+                            <div className="p-[10px]">{res?.text}</div>
+                            <i className="rounded-r"></i>
                           </summary>
-                          <div className="mt-3 text-sm leading-6 pl-[10px]">
+                          <div className="mt-3 text-sm leading-6 pl-[10px] pb-[10px]">
                             {res?.content}
                           </div>
                         </details>
@@ -73,41 +103,49 @@ const OurServicesDetail: React.FC = () => (
           </div>
         </div>
       </div>
-      <div className='pt-[50px] flex justify-center'>
-        <img src={DividerIcon} alt='Divider' />
+      <div className="pt-[50px] flex justify-center">
+        <img src={DividerIcon} alt="Divider" />
       </div>
-      <img src={Homes2} alt='Homes2' className='w-[100%] pt-[50px]' />
-      <div className='xl:flex flex-row'>
-        <div className='xl:pr-[70px]'>
-          <div className='font-Leitura text-[24px] font-bold pt-[50px]'>
+      <img src={Homes2} alt="Homes2" className="w-[100%] pt-[50px]" />
+      <div className="md:flex flex-row">
+        <div className="xl:pr-[70px]">
+          <div className="font-Leitura text-[24px] font-bold pt-[50px]">
             Vacant Home Management
           </div>
-          <div className='text-Black400 font-Arial w-[auto]'>
-            <div className='pt-[20px]'>
-              Et qui eius admodum argumentum, te dicta perpetua est. Sea clita splendide et, splendide complectitur usu ne. Has lorem eloquentiam no, nam volutpat accusamus eu, te vel facilisis adipiscing. Ne laudem deseruisse mei, pro meis delectus argumentum eu. Ad est nullam iisque, ei vel civibus urbanitas, ea usu ullum luptatum invidunt.
+          <div className="text-Black400 font-Arial w-[auto]">
+            <div className="pt-[20px]">
+              Et qui eius admodum argumentum, te dicta perpetua est. Sea clita
+              splendide et, splendide complectitur usu ne. Has lorem eloquentiam
+              no, nam volutpat accusamus eu, te vel facilisis adipiscing. Ne
+              laudem deseruisse mei, pro meis delectus argumentum eu. Ad est
+              nullam iisque, ei vel civibus urbanitas, ea usu ullum luptatum
+              invidunt.
             </div>
-            <div className='pt-[20px]'>
-              For immediate answers to any questions you might have regarding the management of your property please contact <span className='text-Green100'>colbygbemail@email.com</span> or <span className='text-Green100'>000-000-0000.</span>
+            <div className="pt-[20px]">
+              For immediate answers to any questions you might have regarding
+              the management of your property please contact{' '}
+              <span className="text-Green100">colbygbemail@email.com</span> or{' '}
+              <span className="text-Green100">000-000-0000.</span>
             </div>
           </div>
         </div>
-        <div>
-          <div className='font-Arial text-[18px] font-bold pt-[50px]'>
+        <div className="md:pl-[20px]">
+          <div className="font-Arial text-[18px] font-bold pt-[50px]">
             Services for Property Management
           </div>
-          <div className='pt-[30px]'>
-            <div className='flex flex-wrap justify-around'>
+          <div className="pt-[20px]">
+            <div className="flex flex-wrap justify-around">
               {Recent?.map(item => (
                 <ul>
                   {item.map(res => (
-                    <div className='pt-[20px]' key={res?.id}>
-                      <div className='w-[350px] xl:w-[550px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial'>
+                    <div className="pt-[20px]" key={res?.id}>
+                      <div className="w-auto xl:w-[550px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial">
                         <details>
-                          <summary className='flex flex-row justify-between cursor-pointer'>
-                            <div className='p-[10px]'>{res?.text}</div>
-                            <span className='rounded-r'></span>
+                          <summary className="flex flex-row justify-between cursor-pointer text-[16px]">
+                            <div className="p-[10px]">{res?.text}</div>
+                            <i className="rounded-r"></i>
                           </summary>
-                          <div className="mt-3 text-sm leading-6 pl-[10px]">
+                          <div className="mt-3 text-sm leading-6 pl-[10px] pb-[10px]">
                             {res?.content}
                           </div>
                         </details>
@@ -120,14 +158,16 @@ const OurServicesDetail: React.FC = () => (
           </div>
         </div>
       </div>
-      <div className='pt-[50px] flex justify-center'>
-        <img src={DividerIcon} alt='Divider' />
+      <div className="pt-[50px] flex justify-center">
+        <img src={DividerIcon} alt="Divider" />
       </div>
-      <div className='xl:flex justify-between pt-[50px]'>
+      <div className="md:flex flex-wrap justify-between pt-[50px]">
         {Plan?.map(res => (
-          <div key={res.id} className='pt-[20px]'>
-            <img src={res?.pictures} alt={`${res?.id}`} className='w-[100%]' />
-            <div className='border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial'>{res.text}</div>
+          <div key={res.id} className="pt-[20px]">
+            <img src={res?.pictures} alt={`${res?.id}`} className="w-[100%]" />
+            <div className="border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial">
+              {res.text}
+            </div>
           </div>
         ))}
       </div>

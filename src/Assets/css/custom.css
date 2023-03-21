@@ -29,7 +29,21 @@ details[open]>summary>span::before {
   content: '-';
   font-size: 30px;
   background-color: #fff;
+}
 
+details>summary>i::before {
+  content: url(/home/office/Project/hawaiipm/src/Assets/Images/DownArrowIcon.svg);
+  font-size: 30px;
+  width: 55px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+details[open]>summary>i::before {
+  content: url(/home/office/Project/hawaiipm/src/Assets/Images/UpArrowIcon.svg);
+  font-size: 30px;
 }
 
 details[open]>summary>div {

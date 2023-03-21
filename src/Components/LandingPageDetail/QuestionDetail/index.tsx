@@ -14,21 +14,21 @@ const Recent = [
 
 const QuestionDetail: React.FC = () => (
   <div className='container mx-auto xl:pl-[0px] xl:pr-[0px] pl-[20px] pr-[20px]'>
-    <div className='font-Leitura text-[36px] text-center pt-[70px]'>
+    <div className='font-Leitura text-[36px] text-center pt-[70px] font-bold'>
       Your questions answered
     </div>
-    <div className='flex flex-wrap justify-around pt-[30px]'>
+    <div className='flex flex-wrap justify-between pt-[30px]'>
       {Recent?.map((item, index) => (
         <ul key={index}>
           {item.map(res => (
             <div className='pt-[20px]' key={res?.id}>
-              <div className='w-[350px] xl:w-[550px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial'>
+              <div className='w-auto xl:w-[550px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial'>
                 <details>
                   <summary className='flex flex-row justify-between cursor-pointer'>
-                    <div className='p-[10px]'>{res?.text}</div>
+                    <div className='p-[10px] text-[16px]'>{res?.text}</div>
                     <span className='rounded-r'></span>
                   </summary>
-                  <div className="mt-3 text-sm leading-6 pl-[10px]">
+                  <div className="mt-3 text-sm text-[16px] pb-[10px] leading-6 pl-[10px]">
                     {res?.content}
                   </div>
                 </details>
@@ -40,12 +40,12 @@ const QuestionDetail: React.FC = () => (
     </div>
     <div className='pt-[50px] pb-[50px]'>
       <div className='relative w-full h-[432px] xl:h-[486px] lg:h-[400px]' style={{ backgroundImage: `url(${Room})` }}>
-        <div className='absolute top-[150px] left-[60px] 2xl:top-[190px] 2xl:left-[670px] xl:top-[190px] xl:left-[560px] lg:top-[150px] lg:left-[400px]  md:top-[150px] md:left-[260px] text-center'>
+        <div className='w-[100%] h-[100%] md:w-auto md:h-auto absolute top-[150px] 2xl:top-[190px] 2xl:left-[670px] xl:top-[190px] xl:left-[560px] lg:top-[150px] lg:left-[400px]  md:top-[150px] md:left-[260px] text-center'>
           <div className='font-Leitura text-[36px] text-Neutral000'>
             Ready to Earn?
           </div>
-          <div className='pt-[20px]'>
-            <button className='w-[200px] h-[44px] bg-Green100 text-Neutral000 rounded-lg'>Get Started</button>
+          <div className='pt-[20px] font-Arial'>
+            <button className='w-[200px] h-[44px] text-[16px] bg-Green100 text-Neutral000 rounded-lg'>Get Started</button>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ const BasicDetail: React.FC = () => (
   <>
     <div className='lg:flex flex-row justify-between container mx-auto xl:pl-[0px] xl:pr-[0px] pl-[20px] pr-[20px]' >
       <div className='md:pt-[50px] pt-[20px]'>
-        <div className='font-Leitura text-[24px]'>
+        <div className='font-Leitura text-[24px] font-bold'>
           Why Hawaii Property Management?
         </div>
         <div className='md:w-[740px] xl:w-[550px] lg:w-[400px] font-Arial text-[16px] text-Black400 pt-[20px]'>
@@ -41,7 +41,7 @@ const BasicDetail: React.FC = () => (
       <div className='lg:flex flex-row justify-evenly h-auto bg-Neutral200 rounded-lg'>
         <div className='pt-[50px]'>
           <div className='flex justify-center'>
-            <div className='font-Leitura max-w-[304px] text-center text-[24px]'>
+            <div className='font-Leitura max-w-[319px] text-center text-[24px] font-bold'>
               Results from two of my earliest
               short-term clients:
             </div>

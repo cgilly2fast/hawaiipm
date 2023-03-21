@@ -20,7 +20,7 @@ const Plandata = [
 
 const PlanDetail: React.FC = () => (
   <div className='container mx-auto xl:pl-[0px] xl:pr-[0px] pl-[20px] pr-[20px]'>
-    <div className='font-Leitura text-[36px] text-center pt-[70px]'>
+    <div className='font-Leitura text-[36px] text-center pt-[70px] font-bold'>
       Earn more in 3 Steps
     </div>
     <div className='lg:flex flex-row justify-between pt-[50px]'>
@@ -29,17 +29,17 @@ const PlanDetail: React.FC = () => (
           <div className='text-[36px] font-Leitura font-semibold pt-[10px]'>
             {res.id}.
           </div>
-          <div className='font-Arial font-semibold pt-[20px]'>
+          <div className='font-Arial font-semibold pt-[20px] text-[20px]'>
             {res.text}
           </div>
-          <div className='font-Arial lg:w-[320px] text-Black100 pt-[20px]'>
+          <div className='font-Arial lg:w-[320px] text-Black100 pt-[20px] text-[16px]'>
             {res.content}
           </div>
         </div>
       ))}
     </div>
     <div className='pt-[50px] font-Arial text-center'>
-      <button className='w-[250px] lg:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg'>Learn how to get started</button>
+      <button className='w-[250px] lg:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg text-[16px]'>Learn how to get started</button>
     </div>
     <div className='pt-[50px] flex justify-center'>
       <img src={DividerIcon} alt='Divider' />
@@ -50,10 +50,10 @@ const PlanDetail: React.FC = () => (
           <div className='text-[36px] font-Leitura font-semibold pt-[10px]'>
             <img src={res?.pictures} alt={`${res?.id}`} />
           </div>
-          <div className='font-Arial font-semibold pt-[20px]'>
+          <div className='font-Arial font-semibold pt-[20px] text-[20px]'>
             {res.text}
           </div>
-          <div className='font-Arial lg:w-[300px] text-Black100 pt-[20px]'>
+          <div className='font-Arial lg:w-[300px] text-Black100 pt-[20px] text-[16px]'>
             {res.content}
           </div>
         </div>
@@ -62,7 +62,7 @@ const PlanDetail: React.FC = () => (
     <div className='pt-[50px] flex justify-center'>
       <img src={DividerIcon} alt='Divider' />
     </div>
-    <div className='font-Leitura text-[36px] text-center pt-[70px]'>
+    <div className='font-Leitura text-[36px] text-center pt-[70px] font-bold'>
       Homeowner Stories
     </div>
     <div className='md:flex flex-row justify-around  pt-[50px]'>
@@ -71,14 +71,14 @@ const PlanDetail: React.FC = () => (
       </div>
       <div className='lg:pt-[100px] pt-[20px] md:pl-[40px] xl:pl-[0px]'>
         <img src={PathIcon} alt='Owner' />
-        <div className='md:w-[450px] font-Leitura pt-[20px] text-Black400'>
+        <div className='md:w-[450px] font-Leitura pt-[20px] text-[24px] text-Black400'>
           When we had a glitch or trouble, Colby was quick to step up with solutions and to improve/rectify the issue.
         </div>
-        <div className='font-Arial pt-[30px] text-Black400'>
+        <div className='font-Arial pt-[30px] text-[16px] text-Black400'>
           Kathleen, Stinson Beach, CA
         </div>
         <div className='pt-[30px] font-Arial'>
-          <button className='w-[100%] md:w-[200px] lg:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg'>Learn their story</button>
+          <button className='w-[100%] text-[16px] md:w-[200px] lg:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg'>Learn their story</button>
         </div>
       </div>
     </div>
