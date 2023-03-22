@@ -19,17 +19,17 @@ const Plandata = [
 ];
 
 const PlanDetail: React.FC = () => (
-  <div className='container mx-auto xl:pl-[0px] xl:pr-[0px] pl-[20px] pr-[20px]'>
-    <div className='font-Leitura text-[36px] text-center pt-[70px] font-bold'>
+  <div className='lg:container 2xl:pl-80 xl:pl-60 lg:pl-30 pl-[20px] pr-[20px]'>
+    <div className='font-Leitura text-[24px] md:text-[36px] text-center pt-[70px]'>
       Earn more in 3 Steps
     </div>
     <div className='lg:flex flex-row justify-between pt-[50px]'>
       {Plan?.map(res => (
         <div key={res.id}>
-          <div className='text-[36px] font-Leitura font-semibold pt-[10px]'>
+          <div className='text-[36px] font-Leitura pt-[10px]'>
             {res.id}.
           </div>
-          <div className='font-Arial font-semibold pt-[20px] text-[20px]'>
+          <div className='font-Arial font-bold pt-[20px] text-[20px]'>
             {res.text}
           </div>
           <div className='font-Arial lg:w-[320px] text-Black100 pt-[20px] text-[16px]'>
@@ -62,16 +62,16 @@ const PlanDetail: React.FC = () => (
     <div className='pt-[50px] flex justify-center'>
       <img src={DividerIcon} alt='Divider' />
     </div>
-    <div className='font-Leitura text-[36px] text-center pt-[70px] font-bold'>
+    <div className='font-Leitura md:text-[36px] text-[24px] text-center pt-[70px]'>
       Homeowner Stories
     </div>
-    <div className='md:flex flex-row justify-around  pt-[50px]'>
+    <div className='md:flex flex-row justify-between  pt-[50px]'>
       <div>
         <img src={MaskGroup} alt='Owner' />
       </div>
-      <div className='lg:pt-[100px] pt-[20px] md:pl-[40px] xl:pl-[0px]'>
+      <div className='lg:pt-[100px] pt-[20px] 2xl:pl-[0px] md:pl-[40px]'>
         <img src={PathIcon} alt='Owner' />
-        <div className='md:w-[450px] font-Leitura pt-[20px] text-[24px] text-Black400'>
+        <div className='md:w-[450px] font-Leitura pt-[20px] md:text-[24px] text-[20px] text-Black400'>
           When we had a glitch or trouble, Colby was quick to step up with solutions and to improve/rectify the issue.
         </div>
         <div className='font-Arial pt-[30px] text-[16px] text-Black400'>

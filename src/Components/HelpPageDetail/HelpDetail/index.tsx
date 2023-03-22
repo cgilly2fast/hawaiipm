@@ -56,7 +56,7 @@ const HelpDetail: React.FC = () => (
       alt="Background"
     />
     <div className="lg:container 2xl:pl-80 2xl:pr-0 xl:pr-0 xl:pl-40 pt-[50px] pl-[20px] pr-[20px]">
-      <div className="font-Leitura text-[36px] font-bold text-center">
+      <div className="font-Leitura text-[36px] text-center">
         Long Term Tenants
       </div>
       <div className="md:flex md:flex-wrap">
@@ -84,7 +84,7 @@ const HelpDetail: React.FC = () => (
       <div className="pt-[50px] flex justify-center">
         <img src={DividerIcon} alt="Divider" />
       </div>
-      <div className="font-Leitura text-[36px] font-bold text-center pt-[50px]">
+      <div className="font-Leitura text-[36px] text-center pt-[50px]">
         Property Owners
       </div>
       <div className="md:flex flex-wrap pt-[30px]">
@@ -112,7 +112,7 @@ const HelpDetail: React.FC = () => (
       <div className="pt-[50px] flex justify-center">
         <img src={DividerIcon} alt="Divider" />
       </div>
-      <div className="pt-[50px] font-Leitura font-bold text-[36px]">
+      <div className="pt-[50px] font-Leitura text-[36px]">
         Promoted articles:
       </div>
       <div className="md:flex flex-wrap">

@@ -88,12 +88,12 @@ const TestimonialsDetail: React.FC = () => {
   return (
     <div className="pb-[50px]">
       <div className="bg-Neutral100 h-[110px] lg:h-[200px] font-Leitura flex">
-        <div className="text-[36px] text-[48px] font-bold lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
+        <div className="text-[36px] text-[48px] lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
           Testimonials
         </div>
       </div>
-      <div className="lg:container 2xl:pl-80 xl:pr-0 xl:pl-40 pt-[50px] pl-[20px] pr-[20px]">
-        <div className="font-Leitura text-[36px] font-bold">
+      <div className="lg:container 2xl:pl-80 xl:pr-20 xl:pl-60 pt-[50px] pl-[20px] pr-[20px]">
+        <div className="font-Leitura text-[36px]">
           Testimonials and Thank You Notes
         </div>
         <div className="font-Arial text-[16px] text-Black400 pt-[50px]">
@@ -105,7 +105,7 @@ const TestimonialsDetail: React.FC = () => {
           {xyz?.map(item => (
             <ul className="space-y-8">
               {item?.map(res => (
-                <li className="xl:w-[370px] lg::w-[300px] h-auto border-2 rounded-lg text-sm leading-6">
+                <li className="2xl:w-[370px] lg:w-[300px] h-auto border-2 rounded-lg text-sm leading-6">
                   <div className="text-center font-Arial text-Black-400 pt-[20px] pb-[20px] pl-[20px] pr-[20px]">
                     <div className="flex justify-center">
                       <img src={TestimonialsIcon} alt="TestimonialsIcon" />

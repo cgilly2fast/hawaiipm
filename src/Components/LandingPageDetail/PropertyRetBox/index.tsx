@@ -23,11 +23,10 @@ const PropertyRetBox: React.FC<PropertyDetailProps> = ({
         <div className="text-[16px] pt-[20px]">
           Find out what you could earn
         </div>
-        <div>
+        <div className="p-[10px] h-[44px] border-2 rounded-lg">
           <input
-            type="text"
-            placeholder="   Address entry"
-            className="w-[100%] md:w-[300px] lg:w-[340px] h-[44px] border-2 rounded-lg"
+            placeholder="Address entry"
+            className="w-[100%] md:w-[300px] lg:w-[340px] focus-visible:outline-none focus:outline"
           />
         </div>
         <div className="text-[14px] pt-[20px] flex justify-around">

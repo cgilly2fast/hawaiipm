@@ -108,7 +108,7 @@ const BlogCommentsDetail: React.FC = () => (
               <div className="w-[100%] lg:w-[260px] h-[44px] border-2 bg-Neutral200 rounded-lg flex items-center justify-evenly">
                 <div className="flex bg-Neutral000 rounded p-1">
                   <img src={UplodIcon} alt="UplodIcon" />
-                  <span className="pl-[10px]">Upload Image</span>
+                  <button className="pl-[10px]">Upload Image</button>
                 </div>
                 <div className="text-[12px] pl-[10px]">Max 300kb</div>
               </div>

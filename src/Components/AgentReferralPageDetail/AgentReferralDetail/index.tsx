@@ -4,13 +4,13 @@ import Agent from '../../../Assets/Images/Agent.png';
 const AgentReferralDetail: React.FC = () => (
   <div className="pb-[50px]">
     <div className="bg-Neutral100 h-[110px] lg:h-[200px] font-Leitura flex">
-      <div className="text-[36px] lg:text-[48px] font-bold lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
+      <div className="text-[36px] lg:text-[48px] lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
         Agent Referral Program
       </div>
     </div>
-    <div className="lg:container 2xl:pl-80 xl:pr-0 xl:pl-40 pt-[50px] pl-[20px] pr-[20px]">
+    <div className="lg:container 2xl:pl-80 xl:pr-0 xl:pl-64 lg:pl-40 lg:pr-40 pt-[50px] pl-[20px] pr-[20px]">
       <img src={Agent} alt="Agent" className="w-[100%] h-[400px]" />
-      <div className="font-Leitura text-[24px] font-bold pt-[50px]">
+      <div className="font-Leitura text-[24px] pt-[50px]">
         Agents-We Are Your Property Management Partner
       </div>
       <div className="font-Arial text-[16px] text-Black400 pt-[20px]">
@@ -46,8 +46,8 @@ const AgentReferralDetail: React.FC = () => (
         </div>
         <div className="md:pt-[70px] pt-[30px] text-Black100 text-[20px]">
           Please contact{' '}
-          <span className="text-Green100">colbygbemail@email.com</span> or{' '}
-          <span className="text-Green100">000-000-0000</span> to learn more
+          <button className="text-Green100 font-bold">colbygbemail@email.com</button> or{' '}
+          <button className="text-Green100 font-bold">000-000-0000</button> to learn more
           about our agent referral program.
         </div>
       </div>

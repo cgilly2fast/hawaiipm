@@ -138,11 +138,11 @@ const settings = {
 
 const BlogDetail: React.FC = () => (
   <div className="pb-[50px]">
-    <div className="lg:container 2xl:pl-80 xl:pr-0 xl:pl-40 pl-[20px] pr-[20px]">
-      <div className="pt-[50px] xl:flex flex-row">
+    <div className="lg:container 2xl:pl-96 xl:pr-0 xl:pl-40 pl-[20px] pr-[20px]">
+      <div className="lg:pt-[50px] pt-[20px] lg:flex flex-row">
         <img src={Blog} alt="Blog" className="w-[100%] h-[400px]" />
-        <div className="text-Black400 font-Arial w-auto xl:pl-[70px] xl:pt-[0px] pt-[30px] xl:pt-[70px]">
-          <div className="font-bold font-Leitura text-Black100 text-[24px]">
+        <div className="text-Black400 font-Arial w-auto lg:pl-[70px] xl:pt-[0px] pt-[30px] xl:pt-[70px]">
+          <div className="font-Leitura text-Black100 text-[24px]">
             Screening tenants is an important step in property management.
           </div>
           <div className="pt-[30px]">

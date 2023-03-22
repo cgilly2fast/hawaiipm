@@ -8,7 +8,7 @@ const PropertyDetail: React.FC = () => {
   return (
     <div>
       <div
-        className="relative w-full h-[432px] xl:h-[486px] lg:h-[400px]"
+        className="relative w-full h-[432px] xl:h-[486px] lg:h-[400px] bg-right"
         style={{ backgroundImage: `url(${Background})` }}
       >
         {open === 1 ? (
@@ -18,8 +18,8 @@ const PropertyDetail: React.FC = () => {
         )}
       </div>
       <div>
-        <div className="bg-Neutral100 h-[160px] font-Leitura flex justify-center">
-          <span className="md:max-w-[530px] max-w-[271px] md:pt-[30px] text-[36px] text-Green100 text-center">
+        <div className="bg-Neutral100 md:h-[160px] h-[140px] font-Leitura flex justify-center">
+          <span className="md:max-w-[600px] max-w-[226px] md:pt-[30px] md:text-[36px] text-[24px] pt-[20px] text-Green100 text-center">
             Tenant in 30 days | Earn $5000 more Or We Pay you
           </span>
         </div>

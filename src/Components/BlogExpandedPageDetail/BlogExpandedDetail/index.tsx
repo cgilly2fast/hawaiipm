@@ -27,9 +27,9 @@ const Plan = [
 const BlogExpandedDetail: React.FC = () => (
   <div className="pb-[50px]">
     <div className="lg:container 2xl:pl-80 xl:pr-0 xl:pl-40 pt-[50px] pl-[20px] pr-[20px]">
-      <img src={Blog2} alt="Blog2" className="w-[100%] h-[400px]" />
-      <div className="rext-center md:flex justify-between pt-[20px] md:pl-[80px]">
-        <div className="md:w-[600px] font-Leitura text-[36px] font-bold">
+      <img src={Blog2} alt="Blog2" className="w-[100%] h-[400px] " />
+      <div className="rext-center md:flex justify-between pt-[20px] lg:pl-[80px]">
+        <div className="lg:w-[600px] font-Leitura text-[36px]">
           Screening tenants is an important step in property management.
         </div>
         <div className="w-[112px] flex flex-row items-start gap-[20px] w-[50%] sm:w-[25%] pt-[20px]">
@@ -38,10 +38,10 @@ const BlogExpandedDetail: React.FC = () => (
           <img src={YoutubeIcon} alt="youtube" />
         </div>
       </div>
-      <div className="font-Arial text-Black400 text-[14px] md:pl-[80px] pt-[20px]">
+      <div className="font-Arial text-Black400 text-[14px] lg:pl-[80px] pt-[20px]">
         By Colby Gilbert on November 2nd, 2019
       </div>
-      <div className="font-Arial text-Black100 text-[16px] md:pl-[80px] xl:pr-[150px] lg:pr-[100px]">
+      <div className="font-Arial text-Black100 text-[16px] lg:pl-[80px] xl:pr-[150px] lg:pr-[100px]">
         <div className="lg:border-r-2 mt-[30px] border-b-2"></div>
         <div className="pt-[20px]">
           Screening tenants is an important step in property management. When

@@ -1,3 +1,10 @@
+// @import url(../fonts/LeituraDisplayRoman.otf);
+
+@font-face {
+  font-family: 'Leitura Display';
+  src: url(../fonts/LeituraDisplayRoman.otf);
+}
+
 .font-Arial {
   font-family: 'Arial';
 }
@@ -32,7 +39,7 @@ details[open]>summary>span::before {
 }
 
 details>summary>i::before {
-  content: url(/home/office/Project/hawaiipm/src/Assets/Images/DownArrowIcon.svg);
+  content: url(../Images/DownArrowIcon.svg);
   font-size: 30px;
   width: 55px;
   height: 100%;
@@ -42,7 +49,7 @@ details>summary>i::before {
 }
 
 details[open]>summary>i::before {
-  content: url(/home/office/Project/hawaiipm/src/Assets/Images/UpArrowIcon.svg);
+  content: url(../Images/UpArrowIcon.svg);
   font-size: 30px;
 }
 

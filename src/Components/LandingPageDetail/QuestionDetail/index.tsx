@@ -13,8 +13,8 @@ const Recent = [
 ];
 
 const QuestionDetail: React.FC = () => (
-  <div className='container mx-auto xl:pl-[0px] xl:pr-[0px] pl-[20px] pr-[20px]'>
-    <div className='font-Leitura text-[36px] text-center pt-[70px] font-bold'>
+  <div className='lg:container 2xl:pl-80 xl:pl-60 lg:pl-30 pl-[20px] pr-[20px]'>
+    <div className='font-Leitura md:text-[36px] text-[20px] text-center pt-[70px]'>
       Your questions answered
     </div>
     <div className='flex flex-wrap justify-between pt-[30px]'>
@@ -22,7 +22,7 @@ const QuestionDetail: React.FC = () => (
         <ul key={index}>
           {item.map(res => (
             <div className='pt-[20px]' key={res?.id}>
-              <div className='w-auto xl:w-[550px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial'>
+              <div className='w-auto xl:w-[500px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial'>
                 <details>
                   <summary className='flex flex-row justify-between cursor-pointer'>
                     <div className='p-[10px] text-[16px]'>{res?.text}</div>
@@ -40,7 +40,7 @@ const QuestionDetail: React.FC = () => (
     </div>
     <div className='pt-[50px] pb-[50px]'>
       <div className='relative w-full h-[432px] xl:h-[486px] lg:h-[400px]' style={{ backgroundImage: `url(${Room})` }}>
-        <div className='w-[100%] h-[100%] md:w-auto md:h-auto absolute top-[150px] 2xl:top-[190px] 2xl:left-[670px] xl:top-[190px] xl:left-[560px] lg:top-[150px] lg:left-[400px]  md:top-[150px] md:left-[260px] text-center'>
+        <div className='w-[100%] h-[100%] md:w-auto md:h-auto absolute top-[150px] 2xl:top-[190px] 2xl:left-[510px] xl:top-[190px] xl:left-[400px] lg:top-[150px] lg:left-[400px]  md:top-[150px] md:left-[250px] text-center'>
           <div className='font-Leitura text-[36px] text-Neutral000'>
             Ready to Earn?
           </div>

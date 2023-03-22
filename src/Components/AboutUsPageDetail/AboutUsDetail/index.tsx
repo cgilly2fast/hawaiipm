@@ -3,12 +3,12 @@ import React from 'react';
 const AboutUsDetail: React.FC = () => (
   <div className="pb-[50px]">
     <div className="bg-Neutral100 h-[110px] lg:h-[200px] font-Leitura flex">
-      <div className="text-[48px] font-bold lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
+      <div className="text-[36px] md:text-[48px] lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
         About Us
       </div>
     </div>
     <div className="lg:container 2xl:pl-80 2xl:pr-0 xl:pl-60 lg:px-40 pt-[50px] pl-[20px] pr-[20px]">
-      <div className="font-Leitura text-[36px] font-bold">
+      <div className="font-Leitura text-[24px] md:text-[36px]">
         Quality-Integrity-Experience
       </div>
       <div className="font-Arial pt-[50px] w-auto text-Black400 text-[16px]">

@@ -46,7 +46,7 @@ const Recent = [
 const OurServicesDetail: React.FC = () => (
   <div className="pb-[50px]">
     <div className="bg-Neutral100 h-[110px] lg:h-[200px] font-Leitura flex">
-      <div className=" text-[36px] lg:text-[48px] font-bold lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
+      <div className=" text-[36px] lg:text-[48px] lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
         Our Services
       </div>
     </div>
@@ -54,7 +54,7 @@ const OurServicesDetail: React.FC = () => (
       <img src={Location} alt="Location" className="w-[100%] h-[400px]" />
       <div className="md:flex flex-row">
         <div className="xl:pr-[70px]">
-          <div className="font-Leitura text-[24px] font-bold pt-[50px]">
+          <div className="font-Leitura text-[24px] pt-[50px]">
             Full-Service Property Management
           </div>
           <div className="text-Black400 tex-[16px] font-Arial w-[auto]">
@@ -69,12 +69,12 @@ const OurServicesDetail: React.FC = () => (
             <div className="pt-[20px]">
               For immediate answers to any questions you might have regarding
               the management of your property please contact{' '}
-              <span className="text-Green100">colbygbemail@email.com</span> or{' '}
-              <span className="text-Green100">000-000-0000.</span>
+              <button className="text-Green100 font-bold">colbygbemail@email.com</button> or{' '}
+              <button className="text-Green100 font-bold">000-000-0000.</button>
             </div>
           </div>
         </div>
-        <div className="md:pl-[20px]">
+        <div className="xl:pl-[20px] md:pl-[70px]">
           <div className="font-Arial text-[18px] font-bold pt-[50px]">
             Services for Property Management
           </div>
@@ -106,10 +106,10 @@ const OurServicesDetail: React.FC = () => (
       <div className="pt-[50px] flex justify-center">
         <img src={DividerIcon} alt="Divider" />
       </div>
-      <img src={Homes2} alt="Homes2" className="w-[100%] pt-[50px]" />
+      <img src={Homes2} alt="Homes2" className="w-[100%] h-[350px] pt-[50px]" />
       <div className="md:flex flex-row">
         <div className="xl:pr-[70px]">
-          <div className="font-Leitura text-[24px] font-bold pt-[50px]">
+          <div className="font-Leitura text-[24px] pt-[50px]">
             Vacant Home Management
           </div>
           <div className="text-Black400 font-Arial w-[auto]">
@@ -124,12 +124,12 @@ const OurServicesDetail: React.FC = () => (
             <div className="pt-[20px]">
               For immediate answers to any questions you might have regarding
               the management of your property please contact{' '}
-              <span className="text-Green100">colbygbemail@email.com</span> or{' '}
-              <span className="text-Green100">000-000-0000.</span>
+              <button className="text-Green100 font-bold">colbygbemail@email.com</button> or{' '}
+              <button className="text-Green100 font-bold">000-000-0000.</button>
             </div>
           </div>
         </div>
-        <div className="md:pl-[20px]">
+        <div className="xl:pl-[20px] md:pl-[70px]">
           <div className="font-Arial text-[18px] font-bold pt-[50px]">
             Services for Property Management
           </div>

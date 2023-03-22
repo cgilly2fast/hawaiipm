@@ -4,12 +4,12 @@ import DividerIcon from "../../../Assets/Images/DividerIcon.svg";
 
 const BasicDetail: React.FC = () => (
   <>
-    <div className='lg:flex flex-row justify-between container mx-auto xl:pl-[0px] xl:pr-[0px] pl-[20px] pr-[20px]' >
+    <div className='lg:flex flex-row justify-between lg:container 2xl:pl-80 xl:pl-60 pl-[20px] pr-[20px]' >
       <div className='md:pt-[50px] pt-[20px]'>
-        <div className='font-Leitura text-[24px] font-bold'>
+        <div className='font-Leitura text-[20px] md:text-[24px]'>
           Why Hawaii Property Management?
         </div>
-        <div className='md:w-[740px] xl:w-[550px] lg:w-[400px] font-Arial text-[16px] text-Black400 pt-[20px]'>
+        <div className='md:w-[740px] xl:w-[500px] lg:w-[400px] font-Arial text-[16px] text-Black400 pt-[20px]'>
           <div>
             We guarantee your revenue. We find qualified tenants for long-term rentals in 30 days or less, or cover the rent until we do. Vacation rentals earn at least $5,000 in the first year with us or we'll make up the difference.
           </div>
@@ -24,7 +24,7 @@ const BasicDetail: React.FC = () => (
           </div>
         </div>
       </div>
-      <div className='text-center font-Leitura pt-[30px] lg:pt-[50px]'>
+      <div className='text-center font-Leitura pt-[30px] lg:pt-[50px] lg:pl-[50px]'>
         <div className='md:pl-[90px] lg:pl-[0px]'>
           <img src={Owner} alt='Owner' />
         </div>
@@ -37,11 +37,11 @@ const BasicDetail: React.FC = () => (
     <div className='pt-[30px] flex justify-center'>
       <img src={DividerIcon} alt='Divider' />
     </div>
-    <div className='pt-[50px] container mx-auto xl:pl-[0px] xl:pr-[0px] pl-[20px] pr-[20px]'>
-      <div className='lg:flex flex-row justify-evenly h-auto bg-Neutral200 rounded-lg'>
-        <div className='pt-[50px]'>
+    <div className='pt-[50px] lg:container 2xl:pl-80 xl:pl-60 pl-[20px] pr-[20px]'>
+      <div className='lg:flex flex-row justify-evenly bg-Neutral200 rounded-lg'>
+        <div className='pt-[50px] lg:pb-[30px]'>
           <div className='flex justify-center'>
-            <div className='font-Leitura max-w-[319px] text-center text-[24px] font-bold'>
+            <div className='font-Leitura max-w-[341px] text-center text-[24px]'>
               Results from two of my earliest
               short-term clients:
             </div>
@@ -49,19 +49,19 @@ const BasicDetail: React.FC = () => (
           <div className='pt-[20px] flex justify-center'>
             <img src={DividerIcon} alt='Divider' />
           </div>
-          <div className='font-Arial lg:w-[464px] text-Black100 pl-[10px] pr-[10px]'>
+          <div className='font-Arial text-Black400 lg:max-w-[404px] pl-[10px] pr-[10px]'>
             <div className='pt-[20px]'>
-              Client A: had a record year, <span className='underline text-Black400'>earning $11,928 more than the previous year.</span> Their property was invited to Airbnb Plus, which on average, results in an additional 22% increase in income.
+              <span className='text-Black100 font-bold'>Client A:</span> had a record year, <i className='underline font-bold'>earning $11,928 more than the previous year.</i> Their property was invited to Airbnb Plus, which on average, results in an additional 22% increase in income.
             </div>
             <div className='pt-[20px]'>
-              Client B: before working with me was making, on average, $2,148 per month. Now they are averaging $9,572 per month. <span className='underline text-Black400'>They will see an $89,093 increase in yearly revenue.</span>
+            <span className='text-Black100 font-bold'>Client B:</span> before working with me was making, on average, $2,148 per month. Now they are averaging $9,572 per month. <i className='underline font-bold'>They will see an $89,093 increase in yearly revenue.</i>
             </div>
           </div>
         </div>
         <div className='lg:border-r-2 mt-[50px] lg:mb-[50px] border-b-2'></div>
         <div className='lg:pt-[50px] pt-[30px] pb-[30px]'>
           <div className='text-center font-Arial text-Black100 pl-[10px] pr-[10px]'>
-            <div className='font-Leitura lg:max-w-[405px] pb-[20px] border-b-2'>
+            <div className='lg:max-w-[405px] pb-[20px] border-b-2'>
               “I highly recommend Colby as he takes care of property as if it were his own”
             </div>
             <div className='lg:w-[450px] md:w-[700px] pt-[20px] pb-[20px] border-b-2'>

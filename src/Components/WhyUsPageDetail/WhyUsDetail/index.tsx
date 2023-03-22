@@ -16,15 +16,15 @@ const Plan = [
 const WhyUsDetail: React.FC = () => (
   <div className="pb-[50px]">
     <div className="bg-Neutral100 h-[110px] lg:h-[200px] font-Leitura flex">
-      <div className="lg:text-[48px] text-[36px] font-bold lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
+      <div className="md:text-[48px] text-[36px] lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
         Why Us
       </div>
     </div>
     <div className="lg:container 2xl:pl-80 xl:pr-0 xl:pl-40 pt-[50px] pl-[20px] pr-[20px]">
-      <div className="font-Leitura text-[36px] font-bold">Why Hawaii PM?</div>
-      <div className="pt-[50px] xl:flex flex-row">
+      <div className="font-Leitura text-[24px] md:text-[36px]">Why Hawaii PM?</div>
+      <div className="pt-[50px] lg:flex flex-row">
         <img src={WhyUs} alt="WhyUs" className="w-[100%]" />
-        <div className="text-Black400 text-[16px] font-Arial w-auto xl:pl-[70px] xl:pt-[0px] pt-[30px]">
+        <div className="text-Black400 text-[16px] font-Arial w-auto lg:pl-[70px] lg:pt-[0px] pt-[30px]">
           <div>
             Lorem ipsum dolor sit amet consectetur. Odio nam dictum donec
             eleifend consequat volutpat fermentum malesuada. Orci libero duis
@@ -44,18 +44,18 @@ const WhyUsDetail: React.FC = () => (
           <div className="pt-[30px]">
             For immediate answers to any questions you might have regarding the
             management of your property please contact{' '}
-            <span className="text-Green100">colbygbemail@email.com</span> or{' '}
-            <span className="text-Green100">000-000-0000.</span>
+            <button className="text-Green100 font-bold">colbygbemail@email.com</button> or{' '}
+            <button className="text-Green100 font-bold">000-000-0000.</button>
           </div>
         </div>
       </div>
       <div className="pt-[50px] flex justify-center">
         <img src={DividerIcon} alt="Divider" />
       </div>
-      <div className="font-Leitura text-[24px] font-bold pt-[50px]">
+      <div className="font-Leitura text-[24px] pt-[50px]">
         Residential Specialists in:
       </div>
-      <div className="md:flex flex-wrap justify-between pt-[50px]">
+      <div className="md:flex flex-wrap justify-between md:pt-[30px]">
         {Plan?.map(res => (
           <div key={res.id} className="pt-[20px]">
             <img src={res?.pictures} alt={`${res?.id}`} className="w-[100%]" />

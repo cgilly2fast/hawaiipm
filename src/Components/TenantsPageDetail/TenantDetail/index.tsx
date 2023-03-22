@@ -5,15 +5,15 @@ import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
 const TenantDetail: React.FC = () => (
   <div className="pb-[50px]">
     <div className="bg-Neutral100 h-[110px] lg:h-[200px] font-Leitura flex">
-      <div className=" text-[36px] lg:text-[48px] font-bold lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
+      <div className="text-[36px] lg:text-[48px] lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
         Applying for Rental
       </div>
     </div>
     <div className="lg:container 2xl:pl-80 xl:pr-0 xl:pl-40 pt-[50px] pl-[20px] pr-[20px]">
-      <div className="xl:flex flex-row">
+      <div className="lg:flex flex-row">
         <img src={Key} alt="key" className="w-[100%]" />
-        <div className="text-Black400 font-Arial w-auto xl:pl-[70px] xl:pt-[0px] pt-[30px]">
-          <div className="font-Leitura text-Black100 font-bold text-[24px] font-bold">
+        <div className="text-Black400 font-Arial w-auto lg:pl-[70px] lg:pt-[0px] pt-[30px]">
+          <div className="font-Leitura text-Black100 text-[24px]">
             Thank You for considering one of Hawaii PM's rental unit as your
             potential new home.
           </div>
@@ -28,27 +28,27 @@ const TenantDetail: React.FC = () => (
           <div className="pt-[30px] text-[16px]">
             For immediate answers to any questions you might have regarding the
             management of your property please contact{' '}
-            <span className="text-Green100">colbygbemail@email.com</span> or{' '}
-            <span className="text-Green100">000-000-0000.</span>
+            <span className="text-Green100 font-bold">colbygbemail@email.com</span> or{' '}
+            <span className="text-Green100 font-bold">000-000-0000.</span>
           </div>
         </div>
       </div>
       <div className="pt-[50px] flex justify-center">
         <img src={DividerIcon} alt="Divider" />
       </div>
-      <div className="font-Leitura text-[24px] font-bold font-bold pt-[50px]">
+      <div className="font-Leitura text-[24px] pt-[50px]">
         Application Forms
       </div>
-      <div className="font-Arial pt-[20px] text-[16px ]">
+      <div className="font-Arial text-Black400 pt-[20px] text-[16px ]">
         <div>
-          <span className="font-bold">IMPORTANT:</span> Please thoroughly read
+          <span className="font-bold text-Black100">IMPORTANT:</span> Please thoroughly read
           and follow{' '}
-          <span className="font-bold">
+          <span className="font-bold text-Black100">
             "Important Requirements and Instructions"
           </span>{' '}
           section on the application form. If you have any questions please
-          contact <span className="text-Green100">colbygbemail@email.com</span>{' '}
-          or <span className="text-Green100">000-000-0000.</span>
+          contact <span className="text-Green100 font-bold">colbygbemail@email.com</span>{' '}
+          or <span className="text-Green100 font-bold">000-000-0000.</span>
         </div>
         <div className="pt-[20px]">
           By clicking on the Apply Online button below a new browser window or

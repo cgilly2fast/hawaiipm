@@ -89,7 +89,7 @@ const GeneralLeaseDetail: React.FC = () => (
           </div>
         </div>
         <div className="lg:pl-[70px] w-[100%]">
-          <div className="font-Arial font-bold text-[36px] pt-[20px]">
+          <div className="font-Leitura text-[36px] pt-[20px]">
             General Lease Terms
           </div>
           <div>
@@ -177,7 +177,7 @@ const GeneralLeaseDetail: React.FC = () => (
             </div>
             <div className="text-center pt-[20px]">
               Have more questions?{' '}
-              <span className="text-Green100">Submit a request</span>
+              <button className="text-Green100">Submit a request</button>
             </div>
           </div>
           <div className="lg:border-r-2 mt-[50px] border-b-2"></div>

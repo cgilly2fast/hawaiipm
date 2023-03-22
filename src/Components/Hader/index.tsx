@@ -11,8 +11,8 @@ import { Link } from 'react-router-dom';
 const Hader: React.FC = () => (
   <div className="relative">
     <div className="pl-[30px] hidden sm:block lg:block md:hidden absolute z-10">
-      <div className="flex w-[312px] h-[156px] bg-Green100 absolute flex flex-col justify-center items-center rounded-b-lg md:w-[150px] h-[120px] xl:w-[312px] h-[156px]">
-        <img src={LogoIcon} alt="logo" />
+      <div className="flex w-[312px] xl:h-[156px] h-[130px] bg-Green100 absolute flex flex-col justify-center items-center rounded-b-lg md:w-[150px] h-[120px]  2xl:w-[300px] xl:w-[230px]">
+        <img src={LogoIcon} alt="logo" className="lg:w-[125px] 2xl:w-[232px] xl:w-[200px]" />
       </div>
     </div>
     <div className="text-Black400 bg-Neutral200 p-[10px] h-[40px] block sm:hidden md:block lg:hidden">
@@ -30,7 +30,7 @@ const Hader: React.FC = () => (
       </div>
     </div>
     <div className="text-Black400 bg-Neutral200 sm:flex flex-col items-center p-[10px] h-[40px] hidden md:hidden lg:block lg:flex flex-col items-center">
-      <div className="w-[650px] flex justify-between flex-row items-center font-Arial">
+      <div className="w-[650px] text-[14px] flex justify-between flex-row items-center font-Arial">
         <div>
           <Link to="/blogexpanded">Resident Login</Link>
         </div>
@@ -263,14 +263,14 @@ const Hader: React.FC = () => (
         </div>
       </div>
     </div>
-    <div className="sm:flex hidden justify-end p-[30px] md:hidden lg:flex hidden justify-end p-[30px]">
+    <div className="sm:flex hidden justify-end pt-[20px] md:hidden lg:flex hidden justify-end pb-[20px] pr-[50px] text-[18px]">
       <div className="w-[760px] flex justify-between items-center font-Arial">
         <div>
-          <Link to="/" className='hover:font-bold'>Home</Link>
+          <Link to="/">Home</Link>
         </div>
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex w-full justify-center hover:bg-gray-50 hover:font-bold">
+            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50">
               Options
               <img
                 src={DownArrowIcon}
@@ -336,11 +336,11 @@ const Hader: React.FC = () => (
           </Transition>
         </Menu>
         <div>
-          <Link to="/available" className='hover:font-bold'>Available rentals</Link>
+          <Link to="/available">Available rentals</Link>
         </div>
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex w-full justify-center hover:bg-gray-50 hover:font-bold">
+            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50">
               Owners
               <img
                 src={DownArrowIcon}
@@ -420,7 +420,7 @@ const Hader: React.FC = () => (
         </Menu>
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex w-full justify-center hover:bg-gray-50 hover:font-bold">
+            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50">
               Tenants
               <img
                 src={DownArrowIcon}
@@ -486,10 +486,10 @@ const Hader: React.FC = () => (
           </Transition>
         </Menu>
         <div>
-          <Link to="/agentReferral" className='hover:font-bold'>Agent referral program</Link>
+          <Link to="/agentReferral">Agent referral program</Link>
         </div>
         <div>
-          <Link to="/help" className='hover:font-bold'>Help</Link>
+          <Link to="/help">Help</Link>
         </div>
       </div>
     </div>

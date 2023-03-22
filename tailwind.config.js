@@ -11,6 +11,7 @@ module.exports = {
         Neutral100: '#F5FAF9',
         Neutral000: '#FFFFFF',
         Green100: '#36998E',
+        Green400: '#8ED7CF',
         Green500: '#e9fdfb',
         Black100: '#484848',
         Black400: '#707070',

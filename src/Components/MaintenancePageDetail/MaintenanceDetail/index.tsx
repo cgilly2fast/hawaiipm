@@ -33,7 +33,7 @@ const Recent = [
 const MaintenanceDetail: React.FC = () => (
   <div className="pb-[50px]">
     <div className="bg-Neutral100 h-[110px] lg:h-[200px] font-Leitura flex">
-      <div className="text-[36px] lg:text-[48px] font-bold lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
+      <div className="text-[36px] lg:text-[48px] lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
         Maintenance
       </div>
     </div>
@@ -41,20 +41,20 @@ const MaintenanceDetail: React.FC = () => (
       <img src={Maintenance} alt="Maintenance" className="w-[100%] h-[400px] pt-[50px]" />
       <div className="md:flex flex-row">
         <div className="xl:pr-[70px]">
-          <div className="font-Leitura text-[24px] font-bold pt-[50px]">
+          <div className="font-Leitura text-[24px] pt-[50px]">
             Repair and Maintenance of Your Home
           </div>
           <div className="text-Black400 font-Arial w-[auto]">
             <div className="pt-[20px]">
               For repair requests during business hours, call Tenant Services at{' '} 
-              <span className="text-Green100">000.000.0000</span> or send the
+              <button className="text-Green100 font-bold">000.000.0000</button> or send the
               request to{' '}
-              <span className="text-Green100">colbygbemail@email.com.</span>
+              <button className="text-Green100 font-bold">colbygbemail@email.com.</button>
             </div>
             <div className="pt-[20px]">
               For repair requests after hours or on weekends, contact your
               Property Manager or call{' '}
-              <span className="text-Green100">000-000-0000.</span>
+              <button className="text-Green100 font-bold">000-000-0000.</button>
             </div>
             <div className="pt-[20px]">
               Before sending the request please read the Maintenance
@@ -63,7 +63,7 @@ const MaintenanceDetail: React.FC = () => (
             </div>
           </div>
         </div>
-        <div className='md:pl-[20px]'>
+        <div className='md:pl-[70px]'>
           <div className="font-Arial text-[18px] font-bold pt-[50px]">
             Maintenance Request-tips and Trouble Shooting Guide
           </div>
