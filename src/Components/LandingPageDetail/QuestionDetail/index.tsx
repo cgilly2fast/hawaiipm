@@ -13,7 +13,7 @@ const Recent = [
 ];
 
 const QuestionDetail: React.FC = () => (
-  <div className='lg:container 2xl:pl-80 xl:pl-60 lg:pl-30 pl-[20px] pr-[20px]'>
+  <div className='2xl:px-80 xl:px-60 lg:px-32 pl-[20px] pr-[20px]'>
     <div className='font-Leitura md:text-[36px] text-[20px] text-center pt-[70px]'>
       Your questions answered
     </div>
@@ -22,7 +22,7 @@ const QuestionDetail: React.FC = () => (
         <ul key={index}>
           {item.map(res => (
             <div className='pt-[20px]' key={res?.id}>
-              <div className='w-auto xl:w-[500px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial'>
+              <div className='w-auto 2xl:w-[550px] xl:w-[450px] md:w-[350px] h-auto border-2 rounded-lg font-Arial'>
                 <details>
                   <summary className='flex flex-row justify-between cursor-pointer'>
                     <div className='p-[10px] text-[16px]'>{res?.text}</div>

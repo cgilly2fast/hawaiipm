@@ -19,11 +19,11 @@ const Plandata = [
 ];
 
 const PlanDetail: React.FC = () => (
-  <div className='lg:container 2xl:pl-80 xl:pl-60 lg:pl-30 pl-[20px] pr-[20px]'>
+  <div className='2xl:px-80 xl:px-60 lg:px-32 pl-[20px] pr-[20px]'>
     <div className='font-Leitura text-[24px] md:text-[36px] text-center pt-[70px]'>
       Earn more in 3 Steps
     </div>
-    <div className='lg:flex flex-row justify-between pt-[50px]'>
+    <div className='xl:flex flex-row justify-between pt-[50px]'>
       {Plan?.map(res => (
         <div key={res.id}>
           <div className='text-[36px] font-Leitura pt-[10px]'>
@@ -32,7 +32,7 @@ const PlanDetail: React.FC = () => (
           <div className='font-Arial font-bold pt-[20px] text-[20px]'>
             {res.text}
           </div>
-          <div className='font-Arial lg:w-[320px] text-Black100 pt-[20px] text-[16px]'>
+          <div className='font-Arial xl:w-[320px] text-Black100 pt-[20px] text-[16px]'>
             {res.content}
           </div>
         </div>
@@ -44,7 +44,7 @@ const PlanDetail: React.FC = () => (
     <div className='pt-[50px] flex justify-center'>
       <img src={DividerIcon} alt='Divider' />
     </div>
-    <div className='lg:flex flex-row justify-between pt-[50px]'>
+    <div className='xl:flex flex-row justify-between pt-[50px]'>
       {Plandata?.map(res => (
         <div key={res.id}>
           <div className='text-[36px] font-Leitura font-semibold pt-[10px]'>
@@ -53,7 +53,7 @@ const PlanDetail: React.FC = () => (
           <div className='font-Arial font-semibold pt-[20px] text-[20px]'>
             {res.text}
           </div>
-          <div className='font-Arial lg:w-[300px] text-Black100 pt-[20px] text-[16px]'>
+          <div className='font-Arial xl:w-[300px] text-Black100 pt-[20px] text-[16px]'>
             {res.content}
           </div>
         </div>
@@ -67,10 +67,10 @@ const PlanDetail: React.FC = () => (
     </div>
     <div className='md:flex flex-row justify-between  pt-[50px]'>
       <div>
-        <img src={MaskGroup} alt='Owner' />
+        <img src={MaskGroup} alt='Owner' className='h-[400px]'/>
       </div>
-      <div className='lg:pt-[100px] pt-[20px] 2xl:pl-[0px] md:pl-[40px]'>
-        <img src={PathIcon} alt='Owner' />
+      <div className='xl:pt-[40px] pt-[30px] 2xl:pl-[0px] md:pl-[40px]'>
+        <img src={PathIcon} alt='Owner'/>
         <div className='md:w-[450px] font-Leitura pt-[20px] md:text-[24px] text-[20px] text-Black400'>
           When we had a glitch or trouble, Colby was quick to step up with solutions and to improve/rectify the issue.
         </div>

@@ -9,7 +9,7 @@ const RentDetail: React.FC = () => (
       style={{ backgroundImage: `url(${Background3})` }}
     >
       <div className="">
-        <div className="font-Arial absolute top-[128px] left-[375px]">
+        <div className="font-Arial absolute 2xl:top-[128px] 2xl:left-[375px] xl:top-[128px] xl:left-[250px]">
           <div className="text-[30px] text-Neutral000">960 Kanakou PI</div>
           <div className="text-[16px] text-Neutral000 pt-[10px]">
             Honolulu, HI 96825
@@ -29,7 +29,7 @@ const RentDetail: React.FC = () => (
             Try another address
           </div>
         </div>
-        <div className="w-[370px] h-[298px] bg-Neutral000 rounded-lg absolute top-[50px] left-[1000px] font-Arial">
+        <div className="w-[370px] h-[298px] bg-Neutral000 rounded-lg absolute 2xl:top-[50px] 2xl:left-[1080px] xl:top-[50px] xl:left-[830px] font-Arial">
           <div className="pl-[30px] pr-[30px] pt-[30px]">
             <div className="font-bold">Your Rent Extimate</div>
             <div className="flex pt-[20px]">

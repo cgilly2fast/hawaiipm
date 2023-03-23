@@ -55,7 +55,7 @@ const HelpDetail: React.FC = () => (
       src={Background}
       alt="Background"
     />
-    <div className="lg:container 2xl:pl-80 2xl:pr-0 xl:pr-0 xl:pl-40 pt-[50px] pl-[20px] pr-[20px]">
+    <div className="2xl:px-80 xl:px-40 lg:px-34 pt-[50px] pl-[20px] pr-[20px]">
       <div className="font-Leitura text-[36px] text-center">
         Long Term Tenants
       </div>
@@ -63,7 +63,7 @@ const HelpDetail: React.FC = () => (
         {Plan?.map(res => (
           <div className="2xl:p-4 xl:p-6 lg:p-9 md:p-10 pt-[20px] text-center">
             <div
-              className="2xl:w-[370px] w-auto md:w-[250px] h-[200px] 2xl:h-[251px] xl:w-[300px] border-2 rounded-lg flex justify-center items-center"
+              className="2xl:w-[370px] lg:w-[180px] w-auto md:w-[250px] h-[200px] 2xl:h-[251px] xl:w-[300px] border-2 rounded-lg flex justify-center items-center"
               key={res.id}
             >
               <div className="text-center">
@@ -91,7 +91,7 @@ const HelpDetail: React.FC = () => (
         {Plans?.map(res => (
           <div className="2xl:p-4 xl:p-6 lg:p-9 md:p-10 pt-[20px]">
             <div
-              className="2xl:w-[370px] w-auto md:w-[250px] h-[200px] 2xl:h-[251px] xl:w-[300px] border-2 rounded-lg flex justify-center items-center"
+              className="2xl:w-[370px] lg:w-[180px] w-auto md:w-[250px] h-[200px] 2xl:h-[251px] xl:w-[300px] border-2 rounded-lg flex justify-center items-center"
               key={res.id}
             >
               <div className="text-center">

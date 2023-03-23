@@ -57,9 +57,9 @@ const Recent = [
 
 const QuestionDetail: React.FC = () => (
   <div className="md:pt-[50px] pb-[50px]">
-    <div className="lg:container 2xl:pl-80 2xl:pr-0 xl:pl-60 pl-[20px] pr-[20px]">
+    <div className="2xl:px-96 xl:px-60 pl-[20px] pr-[20px]">
       <div className="container mx-auto xl:pl-[0px] xl:pr-[0px] pl-[20px] pr-[20px]">
-        <div className="font-Leitura text-[36px] font-bold">
+        <div className="font-Leitura text-[36px]">
           Your questions answered
         </div>
         <div className="flex flex-wrap justify-between">
@@ -67,7 +67,7 @@ const QuestionDetail: React.FC = () => (
             <ul>
               {item.map(res => (
                 <div className="pt-[20px]" key={res?.id}>
-                  <div className="w-auto xl:w-[550px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial">
+                  <div className="w-auto 2xl:w-[500px] xl:w-[450px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial">
                     <details>
                       <summary className="flex flex-row justify-between cursor-pointer">
                         <div className="p-[10px]">{res?.text}</div>

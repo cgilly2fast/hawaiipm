@@ -92,7 +92,7 @@ const TestimonialsDetail: React.FC = () => {
           Testimonials
         </div>
       </div>
-      <div className="lg:container 2xl:pl-80 xl:pr-20 xl:pl-60 pt-[50px] pl-[20px] pr-[20px]">
+      <div className="2xl:px-80 xl:px-64 lg:px-44 pt-[50px] pl-[20px] pr-[20px]">
         <div className="font-Leitura text-[36px]">
           Testimonials and Thank You Notes
         </div>
@@ -105,7 +105,7 @@ const TestimonialsDetail: React.FC = () => {
           {xyz?.map(item => (
             <ul className="space-y-8">
               {item?.map(res => (
-                <li className="2xl:w-[370px] lg:w-[300px] h-auto border-2 rounded-lg text-sm leading-6">
+                <li className="2xl:w-[370px] xl:w-[300px] lg:w-[230px] h-auto border-2 rounded-lg text-sm leading-6">
                   <div className="text-center font-Arial text-Black-400 pt-[20px] pb-[20px] pl-[20px] pr-[20px]">
                     <div className="flex justify-center">
                       <img src={TestimonialsIcon} alt="TestimonialsIcon" />

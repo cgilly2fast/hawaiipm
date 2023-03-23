@@ -32,18 +32,19 @@ const Recently = [
 
 const GeneralLeaseDetail: React.FC = () => (
   <div className="md:pt-[30px] pb-[50px]">
-    <div className="lg:container 2xl:pl-80 2xl:pr-0 xl:pl-60 md:pt-[50px] pl-[20px] pr-[20px]">
-      <div className="md:flex justify-between pt-[20px]">
+    <div className="2xl:px-80 xl:px-60 lg:px-44 pl-[20px] pr-[20px]">
+      <div className="md:flex justify-between lg:pt-[50px]">
         <div className="font-Arial md:flex md:block hidden">
           <span className="text-Green100  min-w-[100px]">Colby Gilbert</span>
           <img src={LeftIcon} alt="LeftIcon" className="w-[20px] h-[20px]" />
           <span className="text-Green100 min-w-[150px]">Long Term Tenants</span>
           <img src={LeftIcon} alt="LeftIcon" className="w-[20px] h-[20px]" />
-          <span className="text-Green100  min-w-[150px]">
+          <span className="text-Green100  min-w-[200px]">
             Application Process
           </span>
         </div>
-        <div className="lg:pl-[20px]">
+        
+        <div className="lg:pl-[20px] md:pt-[0px] pt-[20px]">
           <form className="flex items-center">
             <label className="sr-only">Search</label>
             <div className="relative w-full">
@@ -73,22 +74,40 @@ const GeneralLeaseDetail: React.FC = () => (
           </form>
         </div>
       </div>
-      <div className="pt-[10px] lg:flex">
-        <div>
+      <div className="pt-[10px] xl:flex">
+        <div className="hidden xl:block">
           <div className="font-Arial font-bold text-[24px] pt-[20px]">
             Articles in this section
           </div>
           <div className="pt-[20px]">
             {Promoted?.map(res => (
               <div className="pt-[10px]" key={res?.id}>
-                <div className="w-auto lg:w-[270px] min-h-[44px] border-2 rounded-lg font-Arial bg-Neutral200 hover:bg-Green100 hover:text-Neutral000">
+                <div className="w-auto xl:w-[270px] min-h-[44px] border-2 rounded-lg font-Arial bg-Neutral200 hover:bg-Green100 hover:text-Neutral000">
                   <div className="w-[auto] pl-[10px] pt-[10px]">{res.text}</div>
                 </div>
               </div>
             ))}
           </div>
         </div>
-        <div className="lg:pl-[70px] w-[100%]">
+        <div className='xl:hidden'>
+          <div className="w-auto flex items-center justify-between xl:w-[270px] min-h-[44px] border-2 rounded-lg font-Arial bg-Green100 text-Neutral000">
+            <div className="w-[auto] pl-[10px]">General Lease Terms</div>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="mr-[20px]"
+            >
+              <path
+                d="M19.6677 9.33802C19.5615 9.23091 19.4351 9.1459 19.2958 9.08788C19.1566 9.02987 19.0072 9 18.8564 9C18.7055 9 18.5562 9.02987 18.4169 9.08788C18.2776 9.1459 18.1513 9.23091 18.045 9.33802L12.8113 14.5717C12.7051 14.6788 12.5787 14.7638 12.4395 14.8218C12.3002 14.8799 12.1509 14.9097 12 14.9097C11.8491 14.9097 11.6998 14.8799 11.5605 14.8218C11.4213 14.7638 11.2949 14.6788 11.1887 14.5717L5.95497 9.33802C5.84874 9.23091 5.72235 9.1459 5.5831 9.08788C5.44385 9.02987 5.29449 9 5.14363 9C4.99278 9 4.84342 9.02987 4.70417 9.08788C4.56491 9.1459 4.43853 9.23091 4.3323 9.33802C4.11946 9.55212 4 9.84175 4 10.1436C4 10.4455 4.11946 10.7352 4.3323 10.9493L9.57742 16.1944C10.2202 16.8364 11.0915 17.197 12 17.197C12.9085 17.197 13.7798 16.8364 14.4226 16.1944L19.6677 10.9493C19.8805 10.7352 20 10.4455 20 10.1436C20 9.84175 19.8805 9.55212 19.6677 9.33802Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+        <div className="xl:pl-[70px] w-[100%]">
           <div className="font-Leitura text-[36px] pt-[20px]">
             General Lease Terms
           </div>
@@ -190,7 +209,10 @@ const GeneralLeaseDetail: React.FC = () => (
                 {Recently?.map((item, index) => (
                   <ul key={index}>
                     {item?.map(res => (
-                      <div className="2xl:w-[365px] xl:w-[300px] pt-[20px]" key={res.id}>
+                      <div
+                        className="2xl:w-[365px] xl:w-[300px] pt-[20px]"
+                        key={res.id}
+                      >
                         <div className="font-Arial text-[16px]">{res.text}</div>
                       </div>
                     ))}

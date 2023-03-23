@@ -23,7 +23,7 @@ const Promoted = [
 
 const ApplicationDetail: React.FC = () => (
   <div className="md:pt-[30px] pb-[50px]">
-    <div className="lg:container 2xl:pl-80 2xl:pr-0 xl:pl-60 lg:px-20 md:pt-[50px] md:pb-[200px] pl-[20px] pr-[20px]">
+    <div className="2xl:px-80 xl:px-60 lg:px-36 md:pt-[50px] md:pb-[200px] pl-[20px] pr-[20px]">
       <div className="md:flex justify-between pt-[20px]">
         <div className="font-Arial md:flex md:block hidden">
           <span className="text-Green100  min-w-[100px]">Colby Gilbert</span>

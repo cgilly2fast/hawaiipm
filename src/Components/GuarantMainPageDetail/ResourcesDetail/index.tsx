@@ -14,8 +14,8 @@ const Promoted = [
 
 const ReaoutcesDetail: React.FC = () => (
   <div className="md:pt-[50px]">
-    <div className="lg:container 2xl:pl-80 2xl:pr-0 xl:pl-60 pl-[20px] pr-[20px]">
-      <div className="font-Leitura text-[36px] font-bold">
+    <div className="2xl:px-96 xl:px-60 pl-[20px] pr-[20px]">
+      <div className="font-Leitura text-[36px]">
         Resources for Pricing and Renting your Property
       </div>
       <div className="md:flex flex-wrap">

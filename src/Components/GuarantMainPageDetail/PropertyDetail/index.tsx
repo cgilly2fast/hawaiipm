@@ -122,11 +122,11 @@ const Recent = [
 
 const PropertyDetail: React.FC = () => (
   <div className="md:pt-[50px]">
-    <div className="lg:container 2xl:pl-80 2xl:pr-0 xl:pl-60 pl-[20px] pr-[20px]">
+    <div className="2xl:px-96 xl:px-60 pl-[20px] pr-[20px]">
       <div>
         <Slider {...settings}>
           {Recent?.map(res => (
-            <div key={res.id} className="max-w-[270px]">
+            <div key={res.id} className="2xl:max-w-[260px] xl:max-w-[230px]">
               <img src={res?.pictures} alt={`${res?.id}`} />
               <div className="border-x-2 border-b-2 text-Black100 py-[20px] rounded-b-lg font-Arial">
                 <div className="text-center">

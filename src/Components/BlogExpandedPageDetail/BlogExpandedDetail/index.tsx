@@ -26,22 +26,22 @@ const Plan = [
 
 const BlogExpandedDetail: React.FC = () => (
   <div className="pb-[50px]">
-    <div className="lg:container 2xl:pl-80 xl:pr-0 xl:pl-40 pt-[50px] pl-[20px] pr-[20px]">
-      <img src={Blog2} alt="Blog2" className="w-[100%] h-[400px] " />
-      <div className="rext-center md:flex justify-between pt-[20px] lg:pl-[80px]">
-        <div className="lg:w-[600px] font-Leitura text-[36px]">
+    <div className="2xl:px-96 xl:px-72 lg:px-48 xl:pt-[70px] pt-[50px] pl-[20px] pr-[20px]">
+      <img src={Blog2} alt="Blog2" className="w-[100%] h-[400px]" />
+      <div className="rext-center md:flex justify-between pt-[20px] xl:pl-[80px] lg:px-[30px]">
+        <div className="lg:w-[600px] font-Leitura text-[24px] xl:text-[36px]">
           Screening tenants is an important step in property management.
         </div>
-        <div className="w-[112px] flex flex-row items-start gap-[20px] w-[50%] sm:w-[25%] pt-[20px]">
+        <div className="w-[112px] flex flex-row items-start gap-[20px] w-[50%] sm:w-[25%] pt-[10px]">
           <img src={FacebookIcon} alt="facebook" />
           <img src={InstagramIcon} alt="instagram" />
           <img src={YoutubeIcon} alt="youtube" />
         </div>
       </div>
-      <div className="font-Arial text-Black400 text-[14px] lg:pl-[80px] pt-[20px]">
+      <div className="font-Arial text-Black400 text-[14px] xl:pl-[80px] lg:pl-[30px] pt-[20px]">
         By Colby Gilbert on November 2nd, 2019
       </div>
-      <div className="font-Arial text-Black100 text-[16px] lg:pl-[80px] xl:pr-[150px] lg:pr-[100px]">
+      <div className="font-Arial text-Black100 text-[16px] xl:pl-[80px] lg:pl-[30px] xl:pr-[150px] lg:pr-[100px]">
         <div className="lg:border-r-2 mt-[30px] border-b-2"></div>
         <div className="pt-[20px]">
           Screening tenants is an important step in property management. When
@@ -149,13 +149,13 @@ const BlogExpandedDetail: React.FC = () => (
         <div>
           <div className="md:flex flex-wrap justify-between pt-[30px] font-Arial">
             {Plan?.map(res => (
-              <div key={res.id} className="pt-[20px]">
+              <div key={res.id} className="pt-[20px] 2xl:max-w-[250px] xl:max-w-[200px] lg:max-w-[210px] md:max-w-[230px]">
                 <img
                   src={res?.pictures}
                   alt={`${res?.id}`}
                   className="w-[100%]"
                 />
-                <div className="md:w-[270px] border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial text-start pl-[10px]">
+                <div className="border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial text-start pl-[10px]">
                   <div className="text-[14px] font-bold">
                     Unlocking the Secrets of Mastering Time Management
                   </div>
@@ -163,9 +163,9 @@ const BlogExpandedDetail: React.FC = () => (
                     Unlocking the Secrets of Mastering Time Management: A
                     Beginner's Guide" is an in-depth look at the...
                   </div>
-                  <div className="pt-[10px] text-[14px] text-Green100">
+                  <button className="pt-[10px] text-[14px] text-Green100">
                     Read more
-                  </div>
+                  </button>
                 </div>
               </div>
             ))}

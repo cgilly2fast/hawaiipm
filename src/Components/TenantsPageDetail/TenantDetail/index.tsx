@@ -9,10 +9,10 @@ const TenantDetail: React.FC = () => (
         Applying for Rental
       </div>
     </div>
-    <div className="lg:container 2xl:pl-80 xl:pr-0 xl:pl-40 pt-[50px] pl-[20px] pr-[20px]">
-      <div className="lg:flex flex-row">
-        <img src={Key} alt="key" className="w-[100%]" />
-        <div className="text-Black400 font-Arial w-auto lg:pl-[70px] lg:pt-[0px] pt-[30px]">
+    <div className="2xl:px-80 xl:px-64 lg:px-44 pt-[50px] pl-[20px] pr-[20px]">
+      <div className="xl:flex flex-row">
+        <img src={Key} alt="key" className="w-[100%] h-[400px] xl:w-[50%]" />
+        <div className="text-Black400 font-Arial w-auto xl:pl-[50px] xl:pt-[0px] lg:pt-[20px] pt-[30px]">
           <div className="font-Leitura text-Black100 text-[24px]">
             Thank You for considering one of Hawaii PM's rental unit as your
             potential new home.

@@ -16,15 +16,15 @@ const Plan = [
 const WhyUsDetail: React.FC = () => (
   <div className="pb-[50px]">
     <div className="bg-Neutral100 h-[110px] lg:h-[200px] font-Leitura flex">
-      <div className="md:text-[48px] text-[36px] lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
+      <div className="md:text-[48px] text-[36px] lg:container 2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
         Why Us
       </div>
     </div>
-    <div className="lg:container 2xl:pl-80 xl:pr-0 xl:pl-40 pt-[50px] pl-[20px] pr-[20px]">
+    <div className="2xl:px-80 xl:px-64 lg:px-44 pt-[50px] pl-[20px] pr-[20px]">
       <div className="font-Leitura text-[24px] md:text-[36px]">Why Hawaii PM?</div>
-      <div className="pt-[50px] lg:flex flex-row">
+      <div className="pt-[50px] xl:flex flex-row">
         <img src={WhyUs} alt="WhyUs" className="w-[100%]" />
-        <div className="text-Black400 text-[16px] font-Arial w-auto lg:pl-[70px] lg:pt-[0px] pt-[30px]">
+        <div className="text-Black400 text-[16px] font-Arial w-auto xl:pl-[70px] xl:pt-[0px] pt-[30px]">
           <div>
             Lorem ipsum dolor sit amet consectetur. Odio nam dictum donec
             eleifend consequat volutpat fermentum malesuada. Orci libero duis
@@ -57,7 +57,7 @@ const WhyUsDetail: React.FC = () => (
       </div>
       <div className="md:flex flex-wrap justify-between md:pt-[30px]">
         {Plan?.map(res => (
-          <div key={res.id} className="pt-[20px]">
+          <div key={res.id} className="pt-[20px] 2xl:max-w-[290px] lg:max-w-[220px] md:max-w-[230px]">
             <img src={res?.pictures} alt={`${res?.id}`} className="w-[100%]" />
             <div className="border-x-2 border-b-2 text-[16px] py-[20px] rounded-b-lg text-center font-Arial">
               {res.text}

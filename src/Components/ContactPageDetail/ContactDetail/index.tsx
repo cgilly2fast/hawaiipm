@@ -7,7 +7,7 @@ const ContactDetail: React.FC = () => (
         Contact
       </div>
     </div>
-    <div className="lg:container 2xl:pl-80 xl:pr-0 xl:pl-64 lg:pl-40 pt-[30px] pl-[20px] pr-[20px]">
+    <div className="2xl:px-80 xl:px-64 lg:px-44 pt-[30px] pl-[20px] pr-[20px]">
       <div className="md:flex">
         <div>
           <div className="font-Leitura text-[24px]">Contact Form</div>
@@ -15,20 +15,20 @@ const ContactDetail: React.FC = () => (
             <div className="h-[44px] p-[10px] mt-[10px] border-2 rounded-lg">
               <input
                 placeholder="Name"
-                className="w-[100%] md:w-[240px] lg:w-[240px] focus-visible:outline-none focus:outline"
+                className="w-[100%] md:w-[240px] xl:w-[240px] lg:w-[200px] focus-visible:outline-none focus:outline"
               />
             </div>
             <div className="h-[44px] p-[10px] mt-[10px] border-2 rounded-lg">
               <input
                 placeholder="Email"
-                className="w-[100%] md:w-[240px] lg:w-[240px] focus-visible:outline-none focus:outline"
+                className="w-[100%] md:w-[240px] xl:w-[240px] lg:w-[200px] focus-visible:outline-none focus:outline"
               />
             </div>
           </div>
           <div className="mt-[20px] p-[10px] font-Arial border-2 rounded-lg">
             <textarea
               placeholder="Message"
-              className="w-[100%] xl:w-[520px] lg:w-[350px] h-[160px] focus-visible:outline-none focus:outline"
+              className="w-[100%] xl:w-[520px] lg:w-[300px] h-[160px] focus-visible:outline-none focus:outline"
             />
           </div>
           <div className="pt-[20px] font-Arial">
@@ -37,7 +37,7 @@ const ContactDetail: React.FC = () => (
             </button>
           </div>
         </div>
-        <div className="md:pl-[70px]">
+        <div className="md:pl-[50px]">
           <div className="font-Leitura text-[24px] pt-[10px]">Contact info</div>
           <div className="text-Black400 text-[16px] font-Arial">
             <div className="pt-[10px]">

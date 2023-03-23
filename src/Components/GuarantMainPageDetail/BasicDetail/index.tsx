@@ -4,7 +4,7 @@ import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
 
 const BasicDetail: React.FC = () => (
   <div className="md:pt-[50px]">
-    <div className="lg:container 2xl:pl-80 2xl:pr-0 xl:pl-60 pl-[20px] pr-[20px]">
+    <div className="2xl:px-96 xl:px-60 pl-[20px] pr-[20px]">
       <div>
         <div className="font-Leitura text-[36px] text-Green100 underline">
           98625 Market Summary
@@ -16,19 +16,19 @@ const BasicDetail: React.FC = () => (
       <div className="pt-[20px] flex flex-row justify-between">
         <div>
           <div className="font-Arial text-[16px]">Median Rent</div>
-          <div className="font-Leitura text-[36px] font-bold">$15,500</div>
+          <div className="font-Leitura text-[36px]">$15,500</div>
         </div>
         <div>
           <div className="font-Arial text-[16px]">Month-Over-Month Charge</div>
-          <div className="font-Leitura text-[36px] font-bold">-$4,500</div>
+          <div className="font-Leitura text-[36px]">-$4,500</div>
         </div>
         <div>
           <div className="font-Arial text-[16px]">Year-Over-Year Charge</div>
-          <div className="font-Leitura text-[36px] font-bold">+$8,600</div>
+          <div className="font-Leitura text-[36px]">+$8,600</div>
         </div>
         <div>
           <div className="font-Arial text-[16px]">Available Rentals</div>
-          <div className="font-Leitura text-[36px] font-bold">7</div>
+          <div className="font-Leitura text-[36px]">7</div>
         </div>
       </div>
       <div className="text-Black400 font-Arial text-[16px] pt-[30px]">
@@ -38,7 +38,7 @@ const BasicDetail: React.FC = () => (
         <img src={DividerIcon} alt="Divider" />
       </div>
       <div className="pt-[50px]">
-        <div className="font-Leitura text-[36px] font-bold">
+        <div className="font-Leitura text-[36px]">
           Local Rentals Marketplace
         </div>
         <div className="text-Black400 font-Arial text-[16px] pt-[10px]">

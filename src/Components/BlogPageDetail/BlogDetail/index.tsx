@@ -10,9 +10,9 @@ import Popular2 from '../../../Assets/Images/Popular2.png';
 import Popular3 from '../../../Assets/Images/Popular3.png';
 import Popular4 from '../../../Assets/Images/Popular4.png';
 import SliderPrevIcon from '../../../Assets/Images/SliderPrevIcon.svg';
+import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Slider from 'react-slick';
 
 const Recent = [
   { id: 1, pictures: Recent1 },
@@ -114,7 +114,7 @@ const settings = {
       settings: {
         centerMode: true,
         centerPadding: '0px',
-        slidesToShow: 2.5,
+        slidesToShow: 3,
       },
     },
     {
@@ -138,10 +138,10 @@ const settings = {
 
 const BlogDetail: React.FC = () => (
   <div className="pb-[50px]">
-    <div className="lg:container 2xl:pl-96 xl:pr-0 xl:pl-40 pl-[20px] pr-[20px]">
-      <div className="lg:pt-[50px] pt-[20px] lg:flex flex-row">
-        <img src={Blog} alt="Blog" className="w-[100%] h-[400px]" />
-        <div className="text-Black400 font-Arial w-auto lg:pl-[70px] xl:pt-[0px] pt-[30px] xl:pt-[70px]">
+    <div className="2xl:px-96 xl:px-[17rem] lg:px-48 pl-[20px] pr-[20px]">
+      <div className="lg:pt-[50px] xl:pt-[70px] pt-[20px] lg:flex flex-row">
+        <img src={Blog} alt="Blog" className="w-[100%] lg:w-[50%] h-[400px]" />
+        <div className="text-Black400 font-Arial w-auto xl:pl-[50px] lg:pl-[50px] pt-[20px] xl:pt-[30px]">
           <div className="font-Leitura text-Black100 text-[24px]">
             Screening tenants is an important step in property management.
           </div>
@@ -164,7 +164,7 @@ const BlogDetail: React.FC = () => (
       <div className="font-Arial pt-[50px]">
         <div className="text-[24px] font-bold">Recent Posts</div>
         <div className="md:hidden">
-          <div className="xl:flex justify-between pt-[50px] font-Arial">
+          <div className="xl:flex justify-between font-Arial">
             {Recent?.map(res => (
               <div key={res.id} className="pt-[20px]">
                 <img
@@ -198,7 +198,10 @@ const BlogDetail: React.FC = () => (
         <div>
           <Slider {...settings}>
             {Recent?.map(res => (
-              <div key={res.id} className="max-w-[270px]">
+              <div
+                key={res.id}
+                className="2xl:max-w-[250px] xl:max-w-[200px] lg:max-w-[200px] md:max-w-[230px]"
+              >
                 <img src={res?.pictures} alt={`${res?.id}`} />
                 <div className="border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial text-start pl-[10px]">
                   <div className="text-[14px] font-bold">
@@ -226,7 +229,10 @@ const BlogDetail: React.FC = () => (
           <div>
             <Slider {...settings}>
               {Popular?.map(res => (
-                <div key={res.id} className="max-w-[270px]">
+                <div
+                  key={res.id}
+                  className="2xl:max-w-[250px] xl:max-w-[200px] lg:max-w-[200px] md:max-w-[230px]"
+                >
                   <img src={res?.pictures} alt={`${res?.id}`} />
                   <div className="border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial text-start pl-[10px]">
                     <div className="text-[14px] font-bold">
@@ -246,7 +252,7 @@ const BlogDetail: React.FC = () => (
           </div>
         </div>
         <div className="md:hidden">
-          <div className="xl:flex justify-between pt-[50px] font-Arial">
+          <div className="xl:flex justify-between font-Arial">
             {Popular?.map(res => (
               <div key={res.id} className="pt-[20px]">
                 <img

@@ -6,7 +6,7 @@ import UplodIcon from '../../../Assets/Images/UplodIcon.svg';
 
 const BlogCommentsDetail: React.FC = () => (
   <div className="pb-[50px]">
-    <div className="lg:container 2xl:pl-80 xl:pr-0 xl:pl-40 pl-[20px] pr-[20px]">
+    <div className="2xl:px-80 xl:px-72 lg:px-48 pl-[20px] pr-[20px]">
       <div className="font-Arial text-[24px] font-bold">Comments</div>
       <div className="pt-[50px] font-Arial">
         <ul className="divide-y divide-slate-200">
@@ -105,31 +105,37 @@ const BlogCommentsDetail: React.FC = () => (
         <div>
           <div className="md:flex">
             <div className="pt-[20px]">
-              <div className="w-[100%] lg:w-[260px] h-[44px] border-2 bg-Neutral200 rounded-lg flex items-center justify-evenly">
-                <div className="flex bg-Neutral000 rounded p-1">
-                  <img src={UplodIcon} alt="UplodIcon" />
-                  <button className="pl-[10px]">Upload Image</button>
+              <div className="w-[100%] xl:w-[260px] h-[44px] border-dashed border-2 border-Neutral400 bg-Neutral200 rounded-lg flex items-center justify-evenly">
+                <input className="hidden" type="file" id="uploadlogo" />
+                <label
+                  htmlFor="uploadlogo"
+                  className="flex bg-Neutral000 lg:h-[30px] rounded p-1 cursor-pointer"
+                >
+                  <img src={UplodIcon} alt="UplodIcon"/>
+                  <div className="pl-[3px] w-[120px]">Upload Image</div>
+                </label>
+                <div className="text-[12px] pl-[10px] text-Black400">
+                  Max 300kb
                 </div>
-                <div className="text-[12px] pl-[10px]">Max 300kb</div>
               </div>
             </div>
-            <div className="h-[44px] p-[10px] ml-[10px] mt-[20px] border-2 rounded-lg">
+            <div className="h-[44px] p-[10px] md:ml-[10px] mt-[20px] border-2 rounded-lg">
               <input
                 placeholder="Name"
-                className="w-[100%] md:w-[260px] focus-visible:outline-none focus:outline"
+                className="w-[100%] focus-visible:outline-none focus:outline"
               />
             </div>
-            <div className="h-[44px] p-[10px] ml-[10px] mt-[20px] border-2 rounded-lg">
+            <div className="h-[44px] p-[10px] md:ml-[10px] mt-[20px] border-2 rounded-lg">
               <input
                 placeholder="Email"
-                className="w-[100%] md:w-[260px] focus-visible:outline-none focus:outline"
+                className="w-[100%] focus-visible:outline-none focus:outline"
               />
             </div>
           </div>
           <div className="mt-[20px] p-[10px] font-Arial border-2 rounded-lg">
             <textarea
               placeholder="Message"
-              className="w-[100%] lg:w-[520px] h-[160px] focus-visible:outline-none focus:outline"
+              className="w-[100%] h-[160px] focus-visible:outline-none focus:outline"
             />
           </div>
           <div className="pt-[20px]">

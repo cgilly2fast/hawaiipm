@@ -7,7 +7,7 @@ const OwnerLoginDetail: React.FC = () => (
         Owner Login
       </div>
     </div>
-    <div className="lg:container 2xl:pl-80 2xl:pr-0 xl:pl-60 lg:px-40 pt-[50px] pl-[20px] pr-[20px]">
+    <div className="2xl:px-80 xl:px-64 lg:px-44 pt-[50px] pl-[20px] pr-[20px]">
       <div className="font-Arial text-Black400 w-auto text-[16px]">
         <div>Aloha Owners,</div>
         <div className="pt-[30px]">

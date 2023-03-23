@@ -33,14 +33,14 @@ const Recent = [
 const MaintenanceDetail: React.FC = () => (
   <div className="pb-[50px]">
     <div className="bg-Neutral100 h-[110px] lg:h-[200px] font-Leitura flex">
-      <div className="text-[36px] lg:text-[48px] lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
+      <div className="text-[36px] lg:text-[48px] lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex items-center ml-[20px]">
         Maintenance
       </div>
     </div>
-    <div className="lg:container 2xl:pl-80 2xl:pr-0 xl:pr-0 xl:pl-40 lg:pt-[20px] pl-[20px] pr-[20px]">
+    <div className="2xl:px-80 xl:px-[16rem] lg:px-48 pl-[20px] pr-[20px]">
       <img src={Maintenance} alt="Maintenance" className="w-[100%] h-[400px] pt-[50px]" />
-      <div className="md:flex flex-row">
-        <div className="xl:pr-[70px]">
+      <div className="xl:flex flex-row">
+        <div className="xl:pr-[50px]">
           <div className="font-Leitura text-[24px] pt-[50px]">
             Repair and Maintenance of Your Home
           </div>
@@ -63,17 +63,17 @@ const MaintenanceDetail: React.FC = () => (
             </div>
           </div>
         </div>
-        <div className='md:pl-[70px]'>
+        <div>
           <div className="font-Arial text-[18px] font-bold pt-[50px]">
             Maintenance Request-tips and Trouble Shooting Guide
           </div>
           <div className="pt-[10px]">
-            <div className="flex flex-wrap justify-around">
+            <div className="xl:flex flex-wrap justify-around">
               {Recent?.map(item => (
                 <ul>
                   {item.map(res => (
                     <div className="pt-[20px]" key={res?.id}>
-                      <div className="w-auto xl:w-[550px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial">
+                      <div className="w-auto xl:w-[530px] h-auto border-2 rounded-lg font-Arial">
                         <details>
                           <summary className="flex flex-row justify-between cursor-pointer">
                             <div className="p-[10px]">{res?.text}</div>

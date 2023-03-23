@@ -50,10 +50,10 @@ const OurServicesDetail: React.FC = () => (
         Our Services
       </div>
     </div>
-    <div className="lg:container 2xl:pl-80 2xl:pr-0 xl:pr-0 xl:pl-40 pt-[50px] pl-[20px] pr-[20px]">
+    <div className="2xl:px-80 xl:px-[16rem] lg:px-48 pt-[50px] pl-[20px] pr-[20px]">
       <img src={Location} alt="Location" className="w-[100%] h-[400px]" />
-      <div className="md:flex flex-row">
-        <div className="xl:pr-[70px]">
+      <div className="xl:flex flex-row">
+        <div className="xl:pr-[50px]">
           <div className="font-Leitura text-[24px] pt-[50px]">
             Full-Service Property Management
           </div>
@@ -74,17 +74,17 @@ const OurServicesDetail: React.FC = () => (
             </div>
           </div>
         </div>
-        <div className="xl:pl-[20px] md:pl-[70px]">
+        <div className="xl:pl-[20px]">
           <div className="font-Arial text-[18px] font-bold pt-[50px]">
             Services for Property Management
           </div>
           <div className="pt-[30px]">
-            <div className="flex flex-wrap justify-around">
+            <div className="xl:flex flex-wrap justify-around">
               {Recent?.map(item => (
                 <ul>
                   {item.map(res => (
                     <div className="pt-[20px]" key={res?.id}>
-                      <div className="w-auto xl:w-[550px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial">
+                      <div className="w-auto xl:w-[530px] h-auto border-2 rounded-lg font-Arial">
                         <details>
                           <summary className="flex flex-row justify-between cursor-pointer text-[16px]">
                             <div className="p-[10px]">{res?.text}</div>
@@ -107,8 +107,8 @@ const OurServicesDetail: React.FC = () => (
         <img src={DividerIcon} alt="Divider" />
       </div>
       <img src={Homes2} alt="Homes2" className="w-[100%] h-[350px] pt-[50px]" />
-      <div className="md:flex flex-row">
-        <div className="xl:pr-[70px]">
+      <div className="xl:flex flex-row">
+        <div className="xl:pr-[50px]">
           <div className="font-Leitura text-[24px] pt-[50px]">
             Vacant Home Management
           </div>
@@ -129,17 +129,17 @@ const OurServicesDetail: React.FC = () => (
             </div>
           </div>
         </div>
-        <div className="xl:pl-[20px] md:pl-[70px]">
+        <div className="xl:pl-[20px]">
           <div className="font-Arial text-[18px] font-bold pt-[50px]">
             Services for Property Management
           </div>
           <div className="pt-[20px]">
-            <div className="flex flex-wrap justify-around">
+            <div className="xl:flex flex-wrap justify-around">
               {Recent?.map(item => (
                 <ul>
                   {item.map(res => (
                     <div className="pt-[20px]" key={res?.id}>
-                      <div className="w-auto xl:w-[550px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial">
+                      <div className="w-auto xl:w-[530px] h-auto border-2 rounded-lg font-Arial">
                         <details>
                           <summary className="flex flex-row justify-between cursor-pointer text-[16px]">
                             <div className="p-[10px]">{res?.text}</div>
@@ -163,7 +163,7 @@ const OurServicesDetail: React.FC = () => (
       </div>
       <div className="md:flex flex-wrap justify-between pt-[50px]">
         {Plan?.map(res => (
-          <div key={res.id} className="pt-[20px]">
+          <div key={res.id} className="pt-[20px] 2xl:max-w-[250px] xl:max-w-[200px] lg:max-w-[200px] md:max-w-[230px]">
             <img src={res?.pictures} alt={`${res?.id}`} className="w-[100%]" />
             <div className="border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial">
               {res.text}
