@@ -23,7 +23,7 @@ const AvailableRentalsDetail: React.FC = () => (
         </div>
       </div>
       <div className="pt-[20px] font-Arial">
-        <button className="w-[100%] text-[16px] md:w-[180px] lg:w-[250px] h-[44px] bg-Green100 text-Neutral000 rounded-lg">
+        <button className="w-[100%] text-[16px] md:w-[180px] lg:w-[250px] h-[44px] bg-Green100 text-Neutral000 rounded-lg outline-none">
           Available Rentals
         </button>
       </div>

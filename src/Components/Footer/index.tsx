@@ -19,7 +19,7 @@ const Footer: React.FC = () => (
           </div>
           <div className="sm:max-w-[700px] w-full flex font-Arial flex-wrap xl:justify-start md:justify-end">
             <div className="text-[14px] w-[50%] sm:w-[25%] pt-[20px] sm:pt-[0px] md:w-[20%]">
-              <div className="text-Black100 font-bold">Company</div>
+              <div className="text-Black100 font-bold tracking-[4px]">Company</div>
               <div className="text-Black400 pt-[20px]">
                 <div>Our Story</div>
                 <div>Carreers</div>
@@ -28,7 +28,7 @@ const Footer: React.FC = () => (
               </div>
             </div>
             <div className="text-[14px] w-[50%] sm:w-[25%] pt-[20px] sm:pt-[0px]">
-              <div className="text-Black100 font-bold">Homeowner</div>
+              <div className="text-Black100 font-bold tracking-[4px]">Homeowner</div>
               <div className="text-Black400 pt-[20px]">
                 <div>Why Use a Manager</div>
                 <div>Refer Homeowners</div>
@@ -37,7 +37,7 @@ const Footer: React.FC = () => (
               </div>
             </div>
             <div className="text-[14px] w-[50%] sm:w-[25%] pt-[20px] sm:pt-[0px]">
-              <div className="text-Black100 font-bold">Guest</div>
+              <div className="text-Black100 font-bold tracking-[4px]">Guest</div>
               <div className="text-Black400 pt-[20px]">
                 <div>Invite Friends</div>
                 <div>Trust & Safety</div>

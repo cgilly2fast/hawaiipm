@@ -139,7 +139,7 @@ const BlogCommentsDetail: React.FC = () => (
             />
           </div>
           <div className="pt-[20px]">
-            <button className="w-[100%]  md:w-[230px] lg:w-[250px] h-[44px] bg-Green100 text-Neutral000 rounded-lg">
+            <button className="w-[100%]  md:w-[230px] lg:w-[250px] h-[44px] bg-Green100 text-Neutral000 rounded-lg outline-none">
               Post Comment
             </button>
           </div>

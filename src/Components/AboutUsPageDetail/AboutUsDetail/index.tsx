@@ -7,11 +7,11 @@ const AboutUsDetail: React.FC = () => (
         About Us
       </div>
     </div>
-    <div className="2xl:px-80 xl:px-60 lg:px-44 pt-[50px] pl-[20px] pr-[20px]">
-      <div className="font-Leitura text-[24px] md:text-[36px]">
+    <div className="2xl:px-80 xl:px-60 lg:px-44 lg:pt-[50px] pt-[20px] pl-[20px] pr-[20px]">
+      <div className="font-Leitura text-[24px] md:text-[36px] md:w-auto w-[300px]">
         Quality-Integrity-Experience
       </div>
-      <div className="font-Arial pt-[50px] w-auto text-Black400 text-[16px]">
+      <div className="font-Arial lg:pt-[50px] pt-[20px] w-auto text-Black400 text-[16px]">
         <div>
           Hawaii PM is a locally owned full-service property management and real
           estate company based in Honolulu. A company with combined 50 years of

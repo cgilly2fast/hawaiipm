@@ -152,7 +152,7 @@ const BlogDetail: React.FC = () => (
             home, running a...
           </div>
           <div className="pt-[20px] font-Arial">
-            <button className="w-[100%]  md:w-[180px] lg:w-[250px] h-[44px] bg-Green100 text-Neutral000 rounded-lg">
+            <button className="w-[100%]  md:w-[180px] lg:w-[250px] h-[44px] bg-Green100 text-Neutral000 rounded-lg outline-none">
               Read More
             </button>
           </div>
@@ -180,15 +180,15 @@ const BlogDetail: React.FC = () => (
                     Unlocking the Secrets of Mastering Time Management: A
                     Beginner's Guide" is an in-depth look at the...
                   </div>
-                  <div className="pt-[10px] text-[14px] text-Green100">
+                  <button className="pt-[10px] text-[14px] text-Green100 outline-none">
                     Read more
-                  </div>
+                  </button>
                 </div>
               </div>
             ))}
           </div>
           <div className="pt-[50px] font-Arial text-center">
-            <button className="w-[300px] md:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg md:hidden">
+            <button className="w-[300px] md:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg md:hidden outline-none">
               Load More
             </button>
           </div>
@@ -203,7 +203,7 @@ const BlogDetail: React.FC = () => (
                 className="2xl:max-w-[250px] xl:max-w-[200px] lg:max-w-[200px] md:max-w-[230px]"
               >
                 <img src={res?.pictures} alt={`${res?.id}`} />
-                <div className="border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial text-start pl-[10px]">
+                <div className="border-x-[1px] border-b-[1px] py-[20px] rounded-b-lg text-center font-Arial text-start pl-[10px]">
                   <div className="text-[14px] font-bold">
                     Unlocking the Secrets of Mastering Time Management
                   </div>
@@ -211,9 +211,9 @@ const BlogDetail: React.FC = () => (
                     Unlocking the Secrets of Mastering Time Management: A
                     Beginner's Guide" is an in-depth look at the...
                   </div>
-                  <div className="pt-[10px] text-[14px] text-Green100">
+                  <button className="pt-[10px] text-[14px] text-Green100 outline-none">
                     Read more
-                  </div>
+                  </button>
                 </div>
               </div>
             ))}
@@ -234,7 +234,7 @@ const BlogDetail: React.FC = () => (
                   className="2xl:max-w-[250px] xl:max-w-[200px] lg:max-w-[200px] md:max-w-[230px]"
                 >
                   <img src={res?.pictures} alt={`${res?.id}`} />
-                  <div className="border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial text-start pl-[10px]">
+                  <div className="border-x-[1px] border-b-[1px] py-[20px] rounded-b-lg text-center font-Arial text-start pl-[10px]">
                     <div className="text-[14px] font-bold">
                       Unlocking the Secrets of Mastering Time Management
                     </div>
@@ -242,9 +242,9 @@ const BlogDetail: React.FC = () => (
                       Unlocking the Secrets of Mastering Time Management: A
                       Beginner's Guide" is an in-depth look at the...
                     </div>
-                    <div className="pt-[10px] text-[14px] text-Green100">
+                    <button className="pt-[10px] text-[14px] text-Green100 outline-none">
                       Read more
-                    </div>
+                    </button>
                   </div>
                 </div>
               ))}
@@ -268,15 +268,15 @@ const BlogDetail: React.FC = () => (
                     Unlocking the Secrets of Mastering Time Management: A
                     Beginner's Guide" is an in-depth look at the...
                   </div>
-                  <div className="pt-[10px] text-[14px] text-Green100">
+                  <button className="pt-[10px] text-[14px] text-Green100 outline-none">
                     Read more
-                  </div>
+                  </button>
                 </div>
               </div>
             ))}
           </div>
           <div className="pt-[50px] font-Arial text-center">
-            <button className="w-[300px] md:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg md:hidden">
+            <button className="w-[300px] md:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg md:hidden outline-none">
               Load More
             </button>
           </div>

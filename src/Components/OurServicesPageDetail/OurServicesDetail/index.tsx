@@ -6,6 +6,7 @@ import Homes from '../../../Assets/Images/Homes.png';
 import Condos from '../../../Assets/Images/Condos.png';
 import Townhomes from '../../../Assets/Images/Townhomes.png';
 import Apartment from '../../../Assets/Images/Apartment.png';
+import { Link } from 'react-router-dom';
 
 const Plan = [
   { id: 1, pictures: Homes, text: 'Single Family Homes' },
@@ -69,8 +70,8 @@ const OurServicesDetail: React.FC = () => (
             <div className="pt-[20px]">
               For immediate answers to any questions you might have regarding
               the management of your property please contact{' '}
-              <button className="text-Green100 font-bold">colbygbemail@email.com</button> or{' '}
-              <button className="text-Green100 font-bold">000-000-0000.</button>
+              <Link to="" className="text-Green100 font-bold outline-none">colbygbemail@email.com</Link> or{' '}
+              <Link to="" className="text-Green100 font-bold outline-none">000-000-0000.</Link>
             </div>
           </div>
         </div>
@@ -85,8 +86,8 @@ const OurServicesDetail: React.FC = () => (
                   {item.map(res => (
                     <div className="pt-[20px]" key={res?.id}>
                       <div className="w-auto xl:w-[530px] h-auto border-2 rounded-lg font-Arial">
-                        <details>
-                          <summary className="flex flex-row justify-between cursor-pointer text-[16px]">
+                        <details className='example'>
+                          <summary className="flex flex-row justify-between cursor-pointer text-[16px] outline-none">
                             <div className="p-[10px]">{res?.text}</div>
                             <i className="rounded-r"></i>
                           </summary>
@@ -124,8 +125,8 @@ const OurServicesDetail: React.FC = () => (
             <div className="pt-[20px]">
               For immediate answers to any questions you might have regarding
               the management of your property please contact{' '}
-              <button className="text-Green100 font-bold">colbygbemail@email.com</button> or{' '}
-              <button className="text-Green100 font-bold">000-000-0000.</button>
+              <Link to="" className="text-Green100 font-bold outline-none">colbygbemail@email.com</Link> or{' '}
+              <Link to="" className="text-Green100 font-bold outline-none">000-000-0000.</Link>
             </div>
           </div>
         </div>
@@ -140,8 +141,8 @@ const OurServicesDetail: React.FC = () => (
                   {item.map(res => (
                     <div className="pt-[20px]" key={res?.id}>
                       <div className="w-auto xl:w-[530px] h-auto border-2 rounded-lg font-Arial">
-                        <details>
-                          <summary className="flex flex-row justify-between cursor-pointer text-[16px]">
+                        <details className='example'>
+                          <summary className="flex flex-row justify-between cursor-pointer text-[16px] outline-none">
                             <div className="p-[10px]">{res?.text}</div>
                             <i className="rounded-r"></i>
                           </summary>
@@ -163,7 +164,7 @@ const OurServicesDetail: React.FC = () => (
       </div>
       <div className="md:flex flex-wrap justify-between pt-[50px]">
         {Plan?.map(res => (
-          <div key={res.id} className="pt-[20px] 2xl:max-w-[250px] xl:max-w-[200px] lg:max-w-[200px] md:max-w-[230px]">
+          <div key={res.id} className="pt-[20px] 2xl:max-w-[270px] xl:max-w-[220px] lg:max-w-[200px] md:max-w-[230px]">
             <img src={res?.pictures} alt={`${res?.id}`} className="w-[100%]" />
             <div className="border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial">
               {res.text}

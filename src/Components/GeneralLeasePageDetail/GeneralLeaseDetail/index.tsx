@@ -6,6 +6,7 @@ import YoutubeIcon from '../../../Assets/Images/YoutubeIcon.svg';
 import FacebookIcon from '../../../Assets/Images/FacebookIcon.svg';
 import YesIcon from '../../../Assets/Images/YesIcon.svg';
 import NoIcon from '../../../Assets/Images/NoIcon.svg';
+import { Link } from 'react-router-dom';
 
 const Promoted = [
   { id: 1, text: 'General Lease Terms' },
@@ -43,7 +44,7 @@ const GeneralLeaseDetail: React.FC = () => (
             Application Process
           </span>
         </div>
-        
+
         <div className="lg:pl-[20px] md:pt-[0px] pt-[20px]">
           <form className="flex items-center">
             <label className="sr-only">Search</label>
@@ -66,7 +67,7 @@ const GeneralLeaseDetail: React.FC = () => (
               <input
                 type="text"
                 id="simple-search"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus-visible:outline-none focus:outline rounded-lg block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border dark:placeholder-gray-400 dark:text-white dark:focus:border"
                 placeholder="Search"
                 required
               />
@@ -83,15 +84,15 @@ const GeneralLeaseDetail: React.FC = () => (
             {Promoted?.map(res => (
               <div className="pt-[10px]" key={res?.id}>
                 <div className="w-auto xl:w-[270px] min-h-[44px] border-2 rounded-lg font-Arial bg-Neutral200 hover:bg-Green100 hover:text-Neutral000">
-                  <div className="w-[auto] pl-[10px] pt-[10px]">{res.text}</div>
+                  <button className="w-[auto] pl-[10px] pt-[10px] outline-none">{res.text}</button>
                 </div>
               </div>
             ))}
           </div>
         </div>
-        <div className='xl:hidden'>
+        <div className="xl:hidden">
           <div className="w-auto flex items-center justify-between xl:w-[270px] min-h-[44px] border-2 rounded-lg font-Arial bg-Green100 text-Neutral000">
-            <div className="w-[auto] pl-[10px]">General Lease Terms</div>
+            <button className="w-[auto] pl-[10px] outline-none">General Lease Terms</button>
             <svg
               width="24"
               height="24"
@@ -129,7 +130,7 @@ const GeneralLeaseDetail: React.FC = () => (
                 </ul>
               </div>
               <div className="p-6 font-Arial text-center">
-                <button className="w-[100%] md:w-[150px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg">
+                <button className="w-[100%] md:w-[150px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg outline-none">
                   Follow
                 </button>
               </div>
@@ -182,13 +183,13 @@ const GeneralLeaseDetail: React.FC = () => (
             </div>
             <div className="flex justify-center pt-[20px]">
               <div className="font-Arial text-center ">
-                <button className="w-[100px] md:w-[150px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg flex justify-center items-center">
+                <button className="w-[100px] md:w-[150px] outline-none h-[44px] text-Green100 border-2 border-Green100 rounded-lg flex justify-center items-center">
                   <img src={YesIcon} alt="YesIcon" />
                   <span className="pl-[10px]">Yes</span>
                 </button>
               </div>
               <div className="font-Arial text-center pl-[10px]">
-                <button className="w-[100px] md:w-[150px] h-[44px] text-Red600 border-2 border-Red600 rounded-lg flex justify-center items-center">
+                <button className="w-[100px] md:w-[150px] outline-none h-[44px] text-Red600 border-2 border-Red600 rounded-lg flex justify-center items-center">
                   <img src={NoIcon} alt="NoIcon" />
                   <span className="pl-[10px]">No</span>
                 </button>
@@ -196,7 +197,7 @@ const GeneralLeaseDetail: React.FC = () => (
             </div>
             <div className="text-center pt-[20px]">
               Have more questions?{' '}
-              <button className="text-Green100">Submit a request</button>
+              <button className="text-Green100 outline-none">Submit a request</button>
             </div>
           </div>
           <div className="lg:border-r-2 mt-[50px] border-b-2"></div>
@@ -213,7 +214,9 @@ const GeneralLeaseDetail: React.FC = () => (
                         className="2xl:w-[365px] xl:w-[300px] pt-[20px]"
                         key={res.id}
                       >
-                        <div className="font-Arial text-[16px]">{res.text}</div>
+                        <Link to="" className="font-Arial text-[16px] outline-none">
+                          {res.text}
+                        </Link>
                       </div>
                     ))}
                   </ul>
@@ -227,11 +230,15 @@ const GeneralLeaseDetail: React.FC = () => (
             <div>
               <div className="text-Green100">
                 <div className="pt-[20px]">
-                  <div className="font-Arial text-[16px]">
-                    Hawaii PM’s Communication Policy
+                  <div>
+                    <Link to="" className="font-Arial text-[16px] outline-none">
+                      Hawaii PM’s Communication Policy
+                    </Link>
                   </div>
-                  <div className="font-Arial text-[16px] pt-[10px]">
-                    Common Reasons to be Declined
+                  <div className='pt-[10px]'>
+                    <Link to="" className="font-Arial text-[16px] outline-none">
+                      Common Reasons to be Declined
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -250,7 +257,7 @@ const GeneralLeaseDetail: React.FC = () => (
           </div>
           <div className="lg:border-r-2 mt-[50px] border-b-2"></div>
           <div className="pt-[50px] font-Arial text-[16px]">
-            Please <button className="text-Green100">Sign In</button> to leave a
+            Please <button className="text-Green100 outline-none">Sign In</button> to leave a
             comment.
           </div>
         </div>

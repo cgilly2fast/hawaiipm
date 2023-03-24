@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Agent from '../../../Assets/Images/Agent.png';
 
 const AgentReferralDetail: React.FC = () => (
   <div className="pb-[50px]">
-    <div className="bg-Neutral100 h-[110px] lg:h-[200px] font-Leitura flex">
-      <div className="text-[36px] lg:text-[48px] lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
+    <div className="bg-Neutral100 h-[160px] md:h-[110px] lg:h-[200px] font-Leitura flex">
+      <div className="w-[328px] md:w-[auto] text-[36px] lg:text-[48px] lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
         Agent Referral Program
       </div>
     </div>
@@ -46,8 +47,8 @@ const AgentReferralDetail: React.FC = () => (
         </div>
         <div className="md:pt-[70px] pt-[30px] text-Black100 text-[20px]">
           Please contact{' '}
-          <button className="text-Green100 font-bold">colbygbemail@email.com</button> or{' '}
-          <button className="text-Green100 font-bold">000-000-0000</button> to learn more
+          <Link to="" className="text-Green100 font-bold outline-none">colbygbemail@email.com</Link> or{' '}
+          <Link to="" className="text-Green100 font-bold outline-none">000-000-0000</Link> to learn more
           about our agent referral program.
         </div>
       </div>

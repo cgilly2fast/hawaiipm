@@ -37,13 +37,13 @@ const PropertyManagementBox: React.FC<PropertyDetailProps> = ({
             <div className="text-Neutral000 lg:text-Black100 font-bold">
               Qualified tenant in 30 days or we pay you.
             </div>
-            <button className="lg:text-Green100 text-Green400 underline">
+            <button className="lg:text-Green100 text-Green400 underline focus-visible:outline-none focus:outline">
               Learn more
             </button>
           </div>
           <div className="pt-[20px]">
             <button
-              className="w-[100%] md:w-[400px] lg:w-[510px] h-[44px] bg-Green100 text-Neutral000 rounded-lg"
+              className="w-[100%] md:w-[400px] lg:w-[510px] h-[44px] bg-Green100 text-Neutral000 rounded-lg focus-visible:outline-none focus:outline"
               onClick={() => {
                 setOpen(open + 1);
               }}

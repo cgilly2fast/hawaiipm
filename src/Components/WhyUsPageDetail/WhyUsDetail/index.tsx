@@ -5,6 +5,7 @@ import Condos from '../../../Assets/Images/Condos.png';
 import Townhomes from '../../../Assets/Images/Townhomes.png';
 import Apartment from '../../../Assets/Images/Apartment.png';
 import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
+import { Link } from 'react-router-dom';
 
 const Plan = [
   { id: 1, pictures: Homes, text: 'Single Family Homes' },
@@ -44,8 +45,8 @@ const WhyUsDetail: React.FC = () => (
           <div className="pt-[30px]">
             For immediate answers to any questions you might have regarding the
             management of your property please contact{' '}
-            <button className="text-Green100 font-bold">colbygbemail@email.com</button> or{' '}
-            <button className="text-Green100 font-bold">000-000-0000.</button>
+            <Link to="" className="text-Green100 font-bold outline-none">colbygbemail@email.com</Link> or{' '}
+            <Link to="" className="text-Green100 font-bold outline-none">000-000-0000.</Link>
           </div>
         </div>
       </div>

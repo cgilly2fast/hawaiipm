@@ -13,32 +13,47 @@
   font-family: 'Leitura Display';
 }
 
-details>summary {
-  list-style: none;
+details {
+  transition: all 500ms;
+  // overflow: hidden;
 }
 
-details>summary::-webkit-details-marker {
+details:not([open]) {
+  height: 44px;
+}
+
+details[open] {
+  height: 100px;
+  overflow: scroll;
+}
+
+.example::-webkit-scrollbar {
   display: none;
 }
 
-details>summary>span::before {
+.example {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+details > summary > span::before {
   content: '+';
   font-size: 30px;
   width: 55px;
   height: 100%;
-  background-color: #E9E9E9;
+  background-color: #e9e9e9;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-details[open]>summary>span::before {
+details[open] > summary > span::before {
   content: '-';
   font-size: 30px;
   background-color: #fff;
 }
 
-details>summary>i::before {
+details > summary > i::before {
   content: url(../Images/DownArrowIcon.svg);
   font-size: 30px;
   width: 55px;
@@ -48,14 +63,13 @@ details>summary>i::before {
   align-items: center;
 }
 
-details[open]>summary>i::before {
+details[open] > summary > i::before {
   content: url(../Images/UpArrowIcon.svg);
   font-size: 30px;
 }
 
-details[open]>summary>div {
+details[open] > summary > div {
   font-weight: bold;
-
 }
 
 .slick-slide {
@@ -64,7 +78,6 @@ details[open]>summary>div {
 
 .slick-prev {
   z-index: 10;
-
 }
 
 .slick-prev::before {

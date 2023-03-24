@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Maintenance from '../../../Assets/Images/Maintenance.png';
 
 const Recent = [
@@ -47,14 +48,14 @@ const MaintenanceDetail: React.FC = () => (
           <div className="text-Black400 font-Arial w-[auto]">
             <div className="pt-[20px]">
               For repair requests during business hours, call Tenant Services at{' '} 
-              <button className="text-Green100 font-bold">000.000.0000</button> or send the
+              <Link to="" className="text-Green100 font-bold outline-none">000.000.0000</Link> or send the
               request to{' '}
-              <button className="text-Green100 font-bold">colbygbemail@email.com.</button>
+              <Link to="" className="text-Green100 font-bold outline-none">colbygbemail@email.com.</Link>
             </div>
             <div className="pt-[20px]">
               For repair requests after hours or on weekends, contact your
               Property Manager or call{' '}
-              <button className="text-Green100 font-bold">000-000-0000.</button>
+              <Link to="" className="text-Green100 font-bold outline-none">000-000-0000.</Link>
             </div>
             <div className="pt-[20px]">
               Before sending the request please read the Maintenance
@@ -74,8 +75,8 @@ const MaintenanceDetail: React.FC = () => (
                   {item.map(res => (
                     <div className="pt-[20px]" key={res?.id}>
                       <div className="w-auto xl:w-[530px] h-auto border-2 rounded-lg font-Arial">
-                        <details>
-                          <summary className="flex flex-row justify-between cursor-pointer">
+                        <details className='example'>
+                          <summary className="flex flex-row justify-between cursor-pointer outline-none">
                             <div className="p-[10px]">{res?.text}</div>
                             <i className="rounded-r"></i>
                           </summary>

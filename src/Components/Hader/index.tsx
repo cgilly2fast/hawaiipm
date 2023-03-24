@@ -12,34 +12,48 @@ const Hader: React.FC = () => (
   <div className="relative">
     <div className="pl-[30px] hidden sm:block lg:block md:hidden absolute z-10">
       <div className="flex w-[312px] xl:h-[156px] h-[130px] bg-Green100 absolute flex flex-col justify-center items-center rounded-b-lg md:w-[150px] h-[120px]  2xl:w-[300px] xl:w-[230px]">
-        <img src={LogoIcon} alt="logo" className="lg:w-[125px] 2xl:w-[232px] xl:w-[200px]" />
+        <img
+          src={LogoIcon}
+          alt="logo"
+          className="lg:w-[125px] 2xl:w-[232px] xl:w-[200px]"
+        />
       </div>
     </div>
     <div className="text-Black400 bg-Neutral200 p-[10px] h-[40px] block sm:hidden md:block lg:hidden">
       <div className="flex justify-between flex-row font-Arial md:flex justify-between flex-row">
         <div>
-          <Link to="login">Login</Link>
+          <Link to="login" className="outline-none">Login</Link>
         </div>
         <div>
-          <Link to="/guarantee">Referrals</Link>
+          <Link to="/guarantee" className="outline-none">Referrals</Link>
         </div>
         <div>
-          <Link to="/blog">Blog</Link>
+          <Link to="/blog" className="outline-none">
+            Blog
+          </Link>
         </div>
-        <div>415-209-5847</div>
+        <div>
+          <Link to="/blog" className="outline-none">
+            415-209-5847
+          </Link>
+        </div>
       </div>
     </div>
     <div className="text-Black400 bg-Neutral200 sm:flex flex-col items-center p-[10px] h-[40px] hidden md:hidden lg:block lg:flex flex-col items-center">
       <div className="w-[650px] text-[14px] flex justify-between flex-row items-center font-Arial">
         <div>
-          <Link to="/blogexpanded">Resident Login</Link>
+          <Link to="/blogexpanded" className="outline-none">
+            Resident Login
+          </Link>
         </div>
         <div>
-          <Link to="/guarantee">Realtor Referrals</Link>
+          <Link to="/guarantee" className="outline-none">
+            Realtor Referrals
+          </Link>
         </div>
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50">
+            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50 outline-none">
               <img src={TenantsIcon} alt="Tenants" /> <div>Tenants</div>
               <img
                 src={DownArrowIcon}
@@ -106,7 +120,7 @@ const Hader: React.FC = () => (
         </Menu>
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50">
+            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50 outline-none">
               <img src={UserIcon} alt="user" /> <div>Owners</div>{' '}
               <img
                 src={DownArrowIcon}
@@ -185,9 +199,11 @@ const Hader: React.FC = () => (
           </Transition>
         </Menu>
         <div>
-          <Link to="/blog">Blog</Link>
+          <Link to="/blog" className="outline-none">
+            Blog
+          </Link>
         </div>
-        <div>415-209-5847</div>
+        <div className="outline-none">415-209-5847</div>
       </div>
     </div>
     <div>
@@ -196,7 +212,7 @@ const Hader: React.FC = () => (
           <img src={Logo} alt="logo" />
           <Menu as="div" className="relative inline-block text-left">
             <div>
-              <Menu.Button className="inline-flex w-full justify-center">
+              <Menu.Button className="inline-flex w-full justify-center outline-none">
                 <img
                   src={MenuIcon}
                   alt="manu"
@@ -266,11 +282,13 @@ const Hader: React.FC = () => (
     <div className="sm:flex hidden justify-end pt-[20px] md:hidden lg:flex hidden justify-end pb-[20px] pr-[50px] text-[18px]">
       <div className="w-[760px] flex justify-between items-center font-Arial">
         <div>
-          <Link to="/">Home</Link>
+          <Link to="/" className="outline-none">
+            Home
+          </Link>
         </div>
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50">
+            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50 outline-none">
               Options
               <img
                 src={DownArrowIcon}
@@ -336,11 +354,13 @@ const Hader: React.FC = () => (
           </Transition>
         </Menu>
         <div>
-          <Link to="/available">Available rentals</Link>
+          <Link to="/available" className="outline-none">
+            Available rentals
+          </Link>
         </div>
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50">
+            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50 outline-none">
               Owners
               <img
                 src={DownArrowIcon}
@@ -420,7 +440,7 @@ const Hader: React.FC = () => (
         </Menu>
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50">
+            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50 outline-none">
               Tenants
               <img
                 src={DownArrowIcon}
@@ -486,10 +506,14 @@ const Hader: React.FC = () => (
           </Transition>
         </Menu>
         <div>
-          <Link to="/agentReferral">Agent referral program</Link>
+          <Link to="/agentReferral" className="outline-none">
+            Agent referral program
+          </Link>
         </div>
         <div>
-          <Link to="/help">Help</Link>
+          <Link to="/help" className="outline-none">
+            Help
+          </Link>
         </div>
       </div>
     </div>

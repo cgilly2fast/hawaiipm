@@ -1,6 +1,7 @@
 import React from 'react';
 import Key from '../../../Assets/Images/Key.png';
 import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
+import { Link } from 'react-router-dom';
 
 const TenantDetail: React.FC = () => (
   <div className="pb-[50px]">
@@ -28,8 +29,8 @@ const TenantDetail: React.FC = () => (
           <div className="pt-[30px] text-[16px]">
             For immediate answers to any questions you might have regarding the
             management of your property please contact{' '}
-            <span className="text-Green100 font-bold">colbygbemail@email.com</span> or{' '}
-            <span className="text-Green100 font-bold">000-000-0000.</span>
+            <Link to="" className="text-Green100 font-bold outline-none">colbygbemail@email.com</Link> or{' '}
+            <Link to="" className="text-Green100 font-bold outline-none">000-000-0000.</Link>
           </div>
         </div>
       </div>
@@ -47,8 +48,8 @@ const TenantDetail: React.FC = () => (
             "Important Requirements and Instructions"
           </span>{' '}
           section on the application form. If you have any questions please
-          contact <span className="text-Green100 font-bold">colbygbemail@email.com</span>{' '}
-          or <span className="text-Green100 font-bold">000-000-0000.</span>
+          contact <Link to="" className="text-Green100 font-bold outline-none">colbygbemail@email.com</Link>{' '}
+          or <Link to="" className="text-Green100 font-bold outline-none">000-000-0000.</Link>
         </div>
         <div className="pt-[20px]">
           By clicking on the Apply Online button below a new browser window or
@@ -59,7 +60,7 @@ const TenantDetail: React.FC = () => (
       </div>
       <div className="md:flex font-Arial pt-[10px]">
         <div className="pt-[20px] text-[16px]">
-          <button className="w-[100%] md:w-[200px] lg:w-[250px] h-[44px] bg-Green100 text-Neutral000 rounded-lg">
+          <button className="w-[100%] md:w-[200px] lg:w-[250px] h-[44px] bg-Green100 text-Neutral000 rounded-lg outline-none">
             Apply Online
           </button>
         </div>

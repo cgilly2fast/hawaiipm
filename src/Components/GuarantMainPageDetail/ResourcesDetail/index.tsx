@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
 
 const Promoted = [
@@ -21,9 +22,9 @@ const ReaoutcesDetail: React.FC = () => (
       <div className="md:flex flex-wrap">
         {Promoted?.map(res => (
           <div className="md:min-w-[450px] pt-[20px]" key={res.id}>
-            <div className="font-Arial text-[16px] text-Green100">
+            <Link to="" className="font-Arial text-[16px] text-Green100 outline-none">
               {res.text}
-            </div>
+            </Link>
           </div>
         ))}
       </div>

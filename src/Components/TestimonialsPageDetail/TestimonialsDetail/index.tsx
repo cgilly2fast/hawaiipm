@@ -15,7 +15,6 @@ const xyz = [
     },
     {
       id: 2,
-      pictures: User,
       name: 'Leslie Alexander',
       text: 'C.A.G Novus',
       content:
@@ -23,7 +22,6 @@ const xyz = [
     },
     {
       id: 3,
-      pictures: User,
       name: 'Cody Fisher',
       text: 'Forrit',
       content:
@@ -33,7 +31,6 @@ const xyz = [
   [
     {
       id: 4,
-      pictures: User,
       name: 'Jane Cooper',
       text: 'Clerk.io',
       content:
@@ -41,7 +38,6 @@ const xyz = [
     },
     {
       id: 5,
-      pictures: User,
       name: 'Cameron Williamson',
       text: 'Solid Media AS',
       content:
@@ -49,7 +45,6 @@ const xyz = [
     },
     {
       id: 6,
-      pictures: User,
       name: 'Devon Lane',
       text: 'Mediafy',
       content:
@@ -59,7 +54,6 @@ const xyz = [
   [
     {
       id: 7,
-      pictures: User,
       name: 'Wade Warren',
       text: 'LM Care',
       content:
@@ -67,7 +61,6 @@ const xyz = [
     },
     {
       id: 8,
-      pictures: User,
       name: 'Jenny Wilson',
       text: 'MT Sales',
       content:
@@ -75,7 +68,6 @@ const xyz = [
     },
     {
       id: 9,
-      pictures: User,
       name: 'Theresa Webb',
       text: 'Tilitoimisto Lemon Tree Oy',
       content:
@@ -110,7 +102,9 @@ const TestimonialsDetail: React.FC = () => {
                     <div className="flex justify-center">
                       <img src={TestimonialsIcon} alt="TestimonialsIcon" />
                     </div>
-                    <div className="pt-[20px] text-[16px] text-Black400">{res.content}</div>
+                    <div className="pt-[20px] text-[16px] text-Black400">
+                      {res.content}
+                    </div>
                     <div className="pt-[50px] flex justify-center">
                       <img src={DividerIcon} alt="Divider" />
                     </div>
@@ -118,11 +112,25 @@ const TestimonialsDetail: React.FC = () => {
                       <ul className="divide-y divide-slate-200 pt-[30px]">
                         <li className="first:pt-0 last:pb-0">
                           <div className="flex justify-center">
-                            <img src={res?.pictures} alt={`${res?.id}`} />
+                            {res.pictures ? (
+                              <img
+                                className="h-20 w-20 rounded-full"
+                                src={res?.pictures}
+                                alt={`${res?.id}`}
+                              />
+                            ) : (
+                              <span className="h-20 w-20 text-[20px] 5xl:text-[24px] bg-Neutral500 flex items-center justify-center rounded-full font-bold border border-Miscgrey capitalize">
+                                {res.name[0]}
+                              </span>
+                            )}
                           </div>
                           <div className="ml-3 overflow-hidden">
-                            <p className="font-bold text-Black100 text-[16px]">{res.name}</p>
-                            <p className="truncate text-Black400 text-[12px]">{res.text}</p>
+                            <p className="font-bold text-Black100 text-[16px]">
+                              {res.name}
+                            </p>
+                            <p className="truncate text-Black400 text-[12px]">
+                              {res.text}
+                            </p>
                           </div>
                         </li>
                       </ul>
@@ -134,7 +142,7 @@ const TestimonialsDetail: React.FC = () => {
           ))}
         </div>
         <div className="pt-[30px] text-center font-Arial">
-          <button className="w-[100%]  md:w-[230px] lg:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg">
+          <button className="w-[100%]  md:w-[230px] lg:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg outline-none">
             Load More
           </button>
         </div>

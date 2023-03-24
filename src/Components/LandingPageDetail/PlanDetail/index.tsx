@@ -39,7 +39,7 @@ const PlanDetail: React.FC = () => (
       ))}
     </div>
     <div className='pt-[50px] font-Arial text-center'>
-      <button className='w-[250px] lg:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg text-[16px]'>Learn how to get started</button>
+      <button className='w-[250px] lg:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg text-[16px] outline-none'>Learn how to get started</button>
     </div>
     <div className='pt-[50px] flex justify-center'>
       <img src={DividerIcon} alt='Divider' />
@@ -78,7 +78,7 @@ const PlanDetail: React.FC = () => (
           Kathleen, Stinson Beach, CA
         </div>
         <div className='pt-[30px] font-Arial'>
-          <button className='w-[100%] text-[16px] md:w-[200px] lg:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg'>Learn their story</button>
+          <button className='w-[100%] text-[16px] md:w-[200px] lg:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg outline-none'>Learn their story</button>
         </div>
       </div>
     </div>

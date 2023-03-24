@@ -55,28 +55,22 @@ const HelpDetail: React.FC = () => (
       src={Background}
       alt="Background"
     />
-    <div className="2xl:px-80 xl:px-40 lg:px-34 pt-[50px] pl-[20px] pr-[20px]">
+    <div className="2xl:px-80 xl:px-40 lg:px-44 pt-[50px] pl-[20px] pr-[20px]">
       <div className="font-Leitura text-[36px] text-center">
         Long Term Tenants
       </div>
-      <div className="md:flex md:flex-wrap">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 pt-[20px]">
         {Plan?.map(res => (
-          <div className="2xl:p-4 xl:p-6 lg:p-9 md:p-10 pt-[20px] text-center">
-            <div
-              className="2xl:w-[370px] lg:w-[180px] w-auto md:w-[250px] h-[200px] 2xl:h-[251px] xl:w-[300px] border-2 rounded-lg flex justify-center items-center"
-              key={res.id}
-            >
-              <div className="text-center">
-                <div className="flex justify-center">
-                  <img src={res?.pictures} alt={`${res?.id}`} />
-                </div>
-                <div className="font-Arial text-[18px] pt-[20px]">
-                  {res.text}
-                </div>
-                <div className="font-Arial text-[16px] pt-[10px]">
-                  {res.mas}
-                </div>
+          <div
+            key={res.id}
+            className="border-2 max-w-[370px] w-[100%] rounded-lg h-[251px] flex justify-center items-center max-h-[251px] text-center"
+          >
+            <div className="text-center">
+              <div className="flex justify-center">
+                <img src={res?.pictures} alt={`${res?.id}`} />
               </div>
+              <div className="font-Arial text-[18px] pt-[20px]">{res.text}</div>
+              <div className="font-Arial text-[16px] pt-[10px]">{res.mas}</div>
             </div>
           </div>
         ))}
@@ -87,24 +81,18 @@ const HelpDetail: React.FC = () => (
       <div className="font-Leitura text-[36px] text-center pt-[50px]">
         Property Owners
       </div>
-      <div className="md:flex flex-wrap pt-[30px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 pt-[20px]">
         {Plans?.map(res => (
-          <div className="2xl:p-4 xl:p-6 lg:p-9 md:p-10 pt-[20px]">
-            <div
-              className="2xl:w-[370px] lg:w-[180px] w-auto md:w-[250px] h-[200px] 2xl:h-[251px] xl:w-[300px] border-2 rounded-lg flex justify-center items-center"
-              key={res.id}
-            >
-              <div className="text-center">
-                <div className="flex justify-center">
-                  <img src={res?.pictures} alt={`${res?.id}`} />
-                </div>
-                <div className="font-Arial text-[18px] pt-[20px]">
-                  {res.text}
-                </div>
-                <div className="font-Arial text-[16px] pt-[10px]">
-                  {res.mas}
-                </div>
+          <div
+            key={res.id}
+            className="border-2 max-w-[370px] w-[100%] rounded-lg h-[251px] flex justify-center items-center max-h-[251px] text-center"
+          >
+            <div className="text-center">
+              <div className="flex justify-center">
+                <img src={res?.pictures} alt={`${res?.id}`} />
               </div>
+              <div className="font-Arial text-[18px] pt-[20px]">{res.text}</div>
+              <div className="font-Arial text-[16px] pt-[10px]">{res.mas}</div>
             </div>
           </div>
         ))}
@@ -117,7 +105,10 @@ const HelpDetail: React.FC = () => (
       </div>
       <div className="md:flex flex-wrap">
         {Promoted?.map(res => (
-          <div className="flex md:min-w-[360px] pt-[20px]" key={res.id}>
+          <div
+            className="flex 2xl:min-w-[400px] xl:min-w-[370px] md:min-w-[336px] pt-[20px]"
+            key={res.id}
+          >
             <img src={res?.pictures} alt={`${res?.id}`} />
             <div className="font-Arial text-[18px]">{res.text}</div>
           </div>

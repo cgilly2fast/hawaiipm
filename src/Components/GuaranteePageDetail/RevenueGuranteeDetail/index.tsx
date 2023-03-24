@@ -71,7 +71,7 @@ const RevenueGuaranteeDetail: React.FC = () => (
           </div>
         </div>
         <div className="xl:pl-[70px] pt-[50px]">
-          <div className="xl:w-[470px] h-[700px] md:h-[500px] lg:h-[570px] bg-Neutral200 rounded-lg">
+          <div className="xl:w-[470px] bg-Neutral200 rounded-lg">
             <div className="pl-[20px] pr-[20px]">
               <div className="font-Arial font-bold pt-[20px] text-center text-[20px]">
                 Testimonial
@@ -100,9 +100,9 @@ const RevenueGuaranteeDetail: React.FC = () => (
               <div className="font-Arial text-[16px] text-center text-Black400 font-bold pt-[20px]">
                 Matt Golis
               </div>
-              <div className="font-Arial text-[12px] text-center text-Black400 pt-[20px]">
-                Former Board Member of the Vacation Rental Management
-                Association (VRMA)
+              <div className="font-Arial text-[12px] text-center pb-[20px] text-Black400 pt-[20px]">
+                Former Board Member of the <br />
+                Vacation Rental Management Association (VRMA)
               </div>
             </div>
           </div>

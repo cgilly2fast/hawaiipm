@@ -55,11 +55,11 @@ const RevenueDetail: React.FC = () => (
             />
           </div>
           <div className="pt-[20px]">
-            <button className="w-[100%] text-[16px]  lg:w-[410px] h-[44px] bg-Green100 text-Neutral000 rounded-lg">
+            <button className="w-[100%] text-[16px]  lg:w-[410px] h-[44px] bg-Green100 text-Neutral000 rounded-lg outline-none">
               Learn More
             </button>
           </div>
-          <div className="pt-[10px] pb-[10px] w-[100%] text-Black400">
+          <div className="pt-[10px] pb-[10px] w-[100%] text-Black400 text-[16px]">
             Or Call:{' '}
             <span className="text-Black100 font-bold">415-209-5847</span>
           </div>

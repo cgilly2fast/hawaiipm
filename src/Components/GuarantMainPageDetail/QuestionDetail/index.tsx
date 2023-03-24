@@ -68,8 +68,8 @@ const QuestionDetail: React.FC = () => (
               {item.map(res => (
                 <div className="pt-[20px]" key={res?.id}>
                   <div className="w-auto 2xl:w-[500px] xl:w-[450px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial">
-                    <details>
-                      <summary className="flex flex-row justify-between cursor-pointer">
+                    <details className='example'>
+                      <summary className="flex flex-row justify-between cursor-pointer outline-none">
                         <div className="p-[10px]">{res?.text}</div>
                         <span className="rounded-r"></span>
                       </summary>

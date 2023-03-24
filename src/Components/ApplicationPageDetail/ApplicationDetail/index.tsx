@@ -2,6 +2,7 @@ import React from 'react';
 import LeftIcon from '../../../Assets/Images/LeftIcon.svg';
 import StareIcon from '../../../Assets/Images/StareIcon.svg';
 import FileIcon from '../../../Assets/Images/FileIcon.svg';
+import { Link } from 'react-router-dom';
 
 const Promoted = [
   {
@@ -30,7 +31,7 @@ const ApplicationDetail: React.FC = () => (
           <img src={LeftIcon} alt="LeftIcon" className="w-[20px] h-[20px]" />
           <span className="text-Green100 min-w-[150px]">Long Term Tenants</span>
           <img src={LeftIcon} alt="LeftIcon" className="w-[20px] h-[20px]" />
-          <span className="text-Green100  min-w-[150px]">
+          <span className="text-Green100 min-w-[150px]">
             Application Process
           </span>
         </div>
@@ -56,7 +57,7 @@ const ApplicationDetail: React.FC = () => (
               <input
                 type="text"
                 id="simple-search"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus-visible:outline-none focus:outline rounded-lg block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border dark:placeholder-gray-400 dark:text-white dark:focus:border"
                 placeholder="Search"
                 required
               />
@@ -66,13 +67,13 @@ const ApplicationDetail: React.FC = () => (
       </div>
       <div className="md:flex">
         <div className="md:pt-[20px] pt-[20px]">
-          <div className="font-Leitura text-[36px]">
+          <div className="font-Leitura text-[24px] lg:text-[36px]">
             Application Process
           </div>
           <div className="md:flex flex-wrap">
             {Promoted?.map(res => (
               <div
-                className="flex md:min-w-[370px] pt-[20px] items-center"
+                className="flex 2xl:min-w-[400px] xl:min-w-[350px] md:min-w-[370px] pt-[20px] items-center"
                 key={res.id}
               >
                 {res?.picture ? (
@@ -81,16 +82,19 @@ const ApplicationDetail: React.FC = () => (
                 {res?.pictures ? (
                   <img src={res?.pictures} alt={`${res?.id}`} />
                 ) : null}
-                <div className="font-Arial text-[18px] pl-[10px]">
+                <Link
+                  to=""
+                  className="font-Arial text-Green100 text-[18px] pl-[10px] outline-none"
+                >
                   {res.text}
-                </div>
+                </Link>
               </div>
             ))}
           </div>
         </div>
         <div>
           <div className="pt-[50px] font-Arial text-center">
-            <button className="w-[100%] md:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg">
+            <button className="w-[100%] md:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg outline-none">
               Follow
             </button>
           </div>
