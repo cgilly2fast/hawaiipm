@@ -1,32 +1,22 @@
+import { Disclosure } from '@headlessui/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Maintenance from '../../../Assets/Images/Maintenance.png';
+import { ChevronUpIcon } from '@heroicons/react/20/solid';
 
 const Recent = [
   [
     {
       id: 1,
-      text: 'Am I a good fit for Hawaii Property Management?',
+      text: 'Information needed to help us expedite your request',
       content:
         'The mug is round. The jar is round. They should call it Roundtine.',
     },
     {
       id: 2,
-      text: 'Do you ever have issues with guests damaging the property?',
+      text: 'Trouble Shooting Guide - Please read before sending us a request',
       content:
-        'The mug is round. The jar is round. They should call it Roundtine.',
-    },
-    {
-      id: 3,
-      text: 'Can I cancel at any time?',
-      content:
-        'The best way to answer this is to give you a detailed 12-month revenue projection. Give us a call, and we collect the info we need to create an accurate forecast and get back to you in 24hrs.',
-    },
-    {
-      id: 4,
-      text: 'Can I stay at my own place?',
-      content:
-        'The best way to answer this is to give you a detailed 12-month revenue projection. Give us a call, and we collect the info we need to create an accurate forecast and get back to you in 24hrs.',
+        'Lorem ipsum dolor sit amet consectetur. Pellentesque elementum sed viverra urna. Elit duis risus bibendum est nec. Leo commodo porttitor praesent rhoncus vitae purus. Sollicitudin vehicula pharetra tellus ipsum blandit. Mauris fusce adipiscing duis quam dignissim nullam id egestas.',
     },
   ],
 ];
@@ -39,7 +29,11 @@ const MaintenanceDetail: React.FC = () => (
       </div>
     </div>
     <div className="2xl:px-80 xl:px-[16rem] lg:px-48 pl-[20px] pr-[20px]">
-      <img src={Maintenance} alt="Maintenance" className="w-[100%] h-[400px] pt-[50px]" />
+      <img
+        src={Maintenance}
+        alt="Maintenance"
+        className="w-[100%] h-[400px] pt-[50px]"
+      />
       <div className="xl:flex flex-row">
         <div className="xl:pr-[50px]">
           <div className="font-Leitura text-[24px] pt-[50px]">
@@ -47,15 +41,21 @@ const MaintenanceDetail: React.FC = () => (
           </div>
           <div className="text-Black400 font-Arial w-[auto]">
             <div className="pt-[20px]">
-              For repair requests during business hours, call Tenant Services at{' '} 
-              <Link to="" className="text-Green100 font-bold outline-none">000.000.0000</Link> or send the
-              request to{' '}
-              <Link to="" className="text-Green100 font-bold outline-none">colbygbemail@email.com.</Link>
+              For repair requests during business hours, call Tenant Services at{' '}
+              <Link to="" className="text-Green100 font-bold outline-none">
+                000.000.0000
+              </Link>{' '}
+              or send the request to{' '}
+              <Link to="" className="text-Green100 font-bold outline-none">
+                colbygbemail@email.com.
+              </Link>
             </div>
             <div className="pt-[20px]">
               For repair requests after hours or on weekends, contact your
               Property Manager or call{' '}
-              <Link to="" className="text-Green100 font-bold outline-none">000-000-0000.</Link>
+              <Link to="" className="text-Green100 font-bold outline-none">
+                000-000-0000.
+              </Link>
             </div>
             <div className="pt-[20px]">
               Before sending the request please read the Maintenance
@@ -74,16 +74,30 @@ const MaintenanceDetail: React.FC = () => (
                 <ul>
                   {item.map(res => (
                     <div className="pt-[20px]" key={res?.id}>
-                      <div className="w-auto xl:w-[530px] h-auto border-2 rounded-lg font-Arial">
-                        <details className='example'>
-                          <summary className="flex flex-row justify-between cursor-pointer outline-none">
-                            <div className="p-[10px]">{res?.text}</div>
-                            <i className="rounded-r"></i>
-                          </summary>
-                          <div className="mt-3 text-sm leading-6 pl-[10px] pb-[10px]">
-                            {res?.content}
-                          </div>
-                        </details>
+                      <div className="w-auto xl:w-[530px] h-auto border-[1px] rounded-lg font-Arial">
+                        <Disclosure>
+                          {({ open }) => (
+                            <>
+                              <Disclosure.Button className="font-Arial flex w-full justify-between rounded-lg px-4 py-2 text-left text-[16px] font-medium focus:outline-none">
+                                <span
+                                  className={`${
+                                    open ? 'font-bold' : ''
+                                  } w-[85%] pt-1`}
+                                >
+                                  {res?.text}
+                                </span>
+                                <ChevronUpIcon
+                                  className={`${
+                                    open ? 'rotate-180 transform' : ''
+                                  } h-7 w-7`}
+                                />
+                              </Disclosure.Button>
+                              <Disclosure.Panel className="px-4 pt-4 pb-2 text-[16px] text-Black100 leading-6">
+                                {res?.content}
+                              </Disclosure.Panel>
+                            </>
+                          )}
+                        </Disclosure>
                       </div>
                     </div>
                   ))}

@@ -1,3 +1,4 @@
+import { Disclosure } from '@headlessui/react';
 import React from 'react';
 import Room from '../../../Assets/Images/Room.png';
 
@@ -30,7 +31,7 @@ const Recent = [
   ],
   [
     {
-      id: 2,
+      id: 5,
       text: 'Do you ever have issues with guests damaging the property?',
       content:
         'The mug is round. The jar is round. They should call it Roundtine.',
@@ -66,16 +67,36 @@ const QuestionDetail: React.FC = () => (
         <ul key={index}>
           {item.map(res => (
             <div className="pt-[20px]" key={res?.id}>
-              <div className="w-auto 2xl:w-[550px] xl:w-[450px] md:w-[350px] h-auto border-2 rounded-lg font-Arial">
-                <details className='example'>
-                  <summary className="flex flex-row justify-between cursor-pointer outline-none ">
-                    <div className="p-[10px] text-[16px]">{res?.text}</div>
-                    <span className="rounded-r transition"></span>
-                  </summary>
-                  <p className="mt-3 text-[16px] pb-[10px] pl-[10px]">
-                    {res?.content}
-                  </p>
-                </details>
+              <div className="w-auto 2xl:w-[550px] xl:w-[450px] md:w-[350px] border-[1px] rounded-lg font-Arial">
+                <Disclosure>
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="w-[100%]">
+                        <div className="flex w-[100%] justify-between text-left font-medium focus:outline-none">
+                          <p
+                            className={`${
+                              open ? 'font-bold' : ''
+                            } pl-4 text-[16px] w-[85%] py-[10px]`}
+                          >
+                            {res?.text}
+                          </p>
+                          {!open ? (
+                            <div className="bg-Neutral300 text-[30px] flex justify-center items-center w-[55px]">
+                              +
+                            </div>
+                          ) : (
+                            <div className="rounded-r transition flex w-[55px] text-[30px] justify-center items-center">
+                              -
+                            </div>
+                          )}
+                        </div>
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-[16px] text-Black100 leading-6">
+                        {res?.content}
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
               </div>
             </div>
           ))}
@@ -87,7 +108,7 @@ const QuestionDetail: React.FC = () => (
         className="relative w-full h-[432px] xl:h-[486px] lg:h-[400px]"
         style={{ backgroundImage: `url(${Room})` }}
       >
-        <div className="w-[100%] h-[100%] md:w-auto md:h-auto absolute top-[150px] 2xl:top-[190px] 2xl:left-[510px] xl:top-[190px] xl:left-[400px] lg:top-[150px] lg:left-[400px]  md:top-[150px] md:left-[250px] text-center">
+        <div className="w-[100%] h-[100%] md:w-auto md:h-auto absolute top-[150px] 2xl:top-[190px] 2xl:left-[510px] xl:top-[190px] xl:left-[400px] lg:top-[150px] lg:left-[260px]  md:top-[150px] md:left-[250px] text-center">
           <div className="font-Leitura text-[36px] text-Neutral000">
             Ready to Earn?
           </div>

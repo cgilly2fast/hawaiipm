@@ -7,6 +7,8 @@ import Condos from '../../../Assets/Images/Condos.png';
 import Townhomes from '../../../Assets/Images/Townhomes.png';
 import Apartment from '../../../Assets/Images/Apartment.png';
 import { Link } from 'react-router-dom';
+import { Disclosure } from '@headlessui/react';
+import { ChevronUpIcon } from '@heroicons/react/20/solid';
 
 const Plan = [
   { id: 1, pictures: Homes, text: 'Single Family Homes' },
@@ -19,27 +21,50 @@ const Recent = [
   [
     {
       id: 1,
-      text: 'Am I a good fit for Hawaii Property Management?',
+      text: 'Agreement & Leasing',
       content:
         'The mug is round. The jar is round. They should call it Roundtine.',
     },
     {
       id: 2,
-      text: 'Do you ever have issues with guests damaging the property?',
+      text: 'Marketing',
       content:
         'The mug is round. The jar is round. They should call it Roundtine.',
     },
     {
       id: 3,
-      text: 'Can I cancel at any time?',
+      text: 'Showings, Screening & Selecting Tenants',
       content:
-        'The best way to answer this is to give you a detailed 12-month revenue projection. Give us a call, and we collect the info we need to create an accurate forecast and get back to you in 24hrs.',
+        'The mug is round. The jar is round. They should call it Roundtine.',
     },
     {
       id: 4,
-      text: 'Can I stay at my own place?',
+      text: 'Managing',
       content:
-        'The best way to answer this is to give you a detailed 12-month revenue projection. Give us a call, and we collect the info we need to create an accurate forecast and get back to you in 24hrs.',
+        'The mug is round. The jar is round. They should call it Roundtine.',
+    },
+    {
+      id: 5,
+      text: 'Financial & Reporting',
+      content:
+        'Lorem ipsum dolor sit amet consectetur. Pellentesque elementum sed viverra urna. Elit duis risus bibendum est nec. Leo commodo porttitor praesent rhoncus vitae purus. Sollicitudin vehicula pharetra tellus ipsum blandit. Mauris fusce adipiscing duis quam dignissim nullam id egestas.',
+    },
+  ],
+];
+
+const Recent2 = [
+  [
+    {
+      id: 1,
+      text: 'Interior Check-list',
+      content:
+        'The mug is round. The jar is round. They should call it Roundtine.',
+    },
+    {
+      id: 2,
+      text: 'Exterior Check-list (single family homes and townhomes)',
+      content:
+        'Lorem ipsum dolor sit amet consectetur. Purus elit urna laoreet aenean varius ullamcorper libero cras. Interdum cras sit augue massa. Vitae habitasse nisl pretium accumsan ipsum adipiscing sed. Nunc consequat dui at viverra pellentesque lorem amet proin.',
     },
   ],
 ];
@@ -70,8 +95,13 @@ const OurServicesDetail: React.FC = () => (
             <div className="pt-[20px]">
               For immediate answers to any questions you might have regarding
               the management of your property please contact{' '}
-              <Link to="" className="text-Green100 font-bold outline-none">colbygbemail@email.com</Link> or{' '}
-              <Link to="" className="text-Green100 font-bold outline-none">000-000-0000.</Link>
+              <Link to="" className="text-Green100 font-bold outline-none">
+                colbygbemail@email.com
+              </Link>{' '}
+              or{' '}
+              <Link to="" className="text-Green100 font-bold outline-none">
+                000-000-0000.
+              </Link>
             </div>
           </div>
         </div>
@@ -79,22 +109,36 @@ const OurServicesDetail: React.FC = () => (
           <div className="font-Arial text-[18px] font-bold pt-[50px]">
             Services for Property Management
           </div>
-          <div className="pt-[30px]">
+          <div className="pt-[10px]">
             <div className="xl:flex flex-wrap justify-around">
               {Recent?.map(item => (
                 <ul>
                   {item.map(res => (
                     <div className="pt-[20px]" key={res?.id}>
-                      <div className="w-auto xl:w-[530px] h-auto border-2 rounded-lg font-Arial">
-                        <details className='example'>
-                          <summary className="flex flex-row justify-between cursor-pointer text-[16px] outline-none">
-                            <div className="p-[10px]">{res?.text}</div>
-                            <i className="rounded-r"></i>
-                          </summary>
-                          <div className="mt-3 text-sm leading-6 pl-[10px] pb-[10px]">
-                            {res?.content}
-                          </div>
-                        </details>
+                      <div className="w-auto xl:w-[530px] h-auto border-[1px] rounded-lg font-Arial">
+                        <Disclosure>
+                          {({ open }) => (
+                            <>
+                              <Disclosure.Button className="font-Arial flex w-full justify-between rounded-lg px-4 py-2 text-left text-[16px] font-medium focus:outline-none">
+                                <span
+                                  className={`${
+                                    open ? 'font-bold' : ''
+                                  } w-[85%] pt-1`}
+                                >
+                                  {res?.text}
+                                </span>
+                                <ChevronUpIcon
+                                  className={`${
+                                    open ? 'rotate-180 transform' : ''
+                                  } h-7 w-7`}
+                                />
+                              </Disclosure.Button>
+                              <Disclosure.Panel className="px-4 pt-4 pb-2 text-[16px] text-Black100 leading-6">
+                                {res?.content}
+                              </Disclosure.Panel>
+                            </>
+                          )}
+                        </Disclosure>
                       </div>
                     </div>
                   ))}
@@ -125,8 +169,13 @@ const OurServicesDetail: React.FC = () => (
             <div className="pt-[20px]">
               For immediate answers to any questions you might have regarding
               the management of your property please contact{' '}
-              <Link to="" className="text-Green100 font-bold outline-none">colbygbemail@email.com</Link> or{' '}
-              <Link to="" className="text-Green100 font-bold outline-none">000-000-0000.</Link>
+              <Link to="" className="text-Green100 font-bold outline-none">
+                colbygbemail@email.com
+              </Link>{' '}
+              or{' '}
+              <Link to="" className="text-Green100 font-bold outline-none">
+                000-000-0000.
+              </Link>
             </div>
           </div>
         </div>
@@ -134,22 +183,36 @@ const OurServicesDetail: React.FC = () => (
           <div className="font-Arial text-[18px] font-bold pt-[50px]">
             Services for Property Management
           </div>
-          <div className="pt-[20px]">
+          <div className="pt-[10px]">
             <div className="xl:flex flex-wrap justify-around">
-              {Recent?.map(item => (
+              {Recent2?.map(item => (
                 <ul>
                   {item.map(res => (
                     <div className="pt-[20px]" key={res?.id}>
-                      <div className="w-auto xl:w-[530px] h-auto border-2 rounded-lg font-Arial">
-                        <details className='example'>
-                          <summary className="flex flex-row justify-between cursor-pointer text-[16px] outline-none">
-                            <div className="p-[10px]">{res?.text}</div>
-                            <i className="rounded-r"></i>
-                          </summary>
-                          <div className="mt-3 text-sm leading-6 pl-[10px] pb-[10px]">
-                            {res?.content}
-                          </div>
-                        </details>
+                      <div className="w-auto xl:w-[530px] h-auto border-[1px] rounded-lg font-Arial">
+                        <Disclosure>
+                          {({ open }) => (
+                            <>
+                              <Disclosure.Button className="font-Arial flex w-full justify-between rounded-lg px-4 py-2 text-left text-[16px] font-medium focus:outline-none">
+                                <span
+                                  className={`${
+                                    open ? 'font-bold' : ''
+                                  } w-[85%] pt-1`}
+                                >
+                                  {res?.text}
+                                </span>
+                                <ChevronUpIcon
+                                  className={`${
+                                    open ? 'rotate-180 transform' : ''
+                                  } h-7 w-7`}
+                                />
+                              </Disclosure.Button>
+                              <Disclosure.Panel className="px-4 pt-4 pb-2 text-[16px] text-Black100 leading-6">
+                                {res?.content}
+                              </Disclosure.Panel>
+                            </>
+                          )}
+                        </Disclosure>
                       </div>
                     </div>
                   ))}
@@ -164,7 +227,10 @@ const OurServicesDetail: React.FC = () => (
       </div>
       <div className="md:flex flex-wrap justify-between pt-[50px]">
         {Plan?.map(res => (
-          <div key={res.id} className="pt-[20px] 2xl:max-w-[270px] xl:max-w-[220px] lg:max-w-[200px] md:max-w-[230px]">
+          <div
+            key={res.id}
+            className="pt-[20px] 2xl:max-w-[270px] xl:max-w-[220px] lg:max-w-[200px] md:max-w-[230px]"
+          >
             <img src={res?.pictures} alt={`${res?.id}`} className="w-[100%]" />
             <div className="border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial">
               {res.text}

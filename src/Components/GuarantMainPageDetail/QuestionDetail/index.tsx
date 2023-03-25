@@ -1,4 +1,5 @@
 import React from 'react';
+import { Disclosure } from '@headlessui/react';
 
 const Recent = [
   [
@@ -57,26 +58,44 @@ const Recent = [
 
 const QuestionDetail: React.FC = () => (
   <div className="md:pt-[50px] pb-[50px]">
-    <div className="2xl:px-96 xl:px-60 pl-[20px] pr-[20px]">
+    <div className="2xl:px-80 xl:px-60 pl-[20px] pr-[20px]">
       <div className="container mx-auto xl:pl-[0px] xl:pr-[0px] pl-[20px] pr-[20px]">
-        <div className="font-Leitura text-[36px]">
-          Your questions answered
-        </div>
-        <div className="flex flex-wrap justify-between">
-          {Recent?.map(item => (
-            <ul>
+        <div className="font-Leitura text-[36px]">Your questions answered</div>
+        <div className="flex flex-wrap justify-between pt-[30px]">
+          {Recent?.map((item, index) => (
+            <ul key={index}>
               {item.map(res => (
                 <div className="pt-[20px]" key={res?.id}>
-                  <div className="w-auto 2xl:w-[500px] xl:w-[450px] lg:w-[400px] md:w-[350px] h-auto border-2 rounded-lg font-Arial">
-                    <details className='example'>
-                      <summary className="flex flex-row justify-between cursor-pointer outline-none">
-                        <div className="p-[10px]">{res?.text}</div>
-                        <span className="rounded-r"></span>
-                      </summary>
-                      <div className="mt-3 text-sm leading-6 pl-[10px]">
-                        {res?.content}
-                      </div>
-                    </details>
+                  <div className="w-auto 2xl:w-[550px] xl:w-[450px] md:w-[350px] border-[1px] rounded-lg font-Arial">
+                    <Disclosure>
+                      {({ open }) => (
+                        <>
+                          <Disclosure.Button className="w-[100%]">
+                            <div className="flex w-[100%] justify-between text-left font-medium focus:outline-none">
+                              <p
+                                className={`${
+                                  open ? 'font-bold' : ''
+                                } pl-4 text-[16px] w-[85%] py-[10px]`}
+                              >
+                                {res?.text}
+                              </p>
+                              {!open ? (
+                                <div className="bg-Neutral300 text-[30px] flex justify-center items-center w-[55px]">
+                                  +
+                                </div>
+                              ) : (
+                                <div className="rounded-r transition flex w-[55px] text-[30px] justify-center items-center">
+                                  -
+                                </div>
+                              )}
+                            </div>
+                          </Disclosure.Button>
+                          <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-[16px] text-Black100 leading-6">
+                            {res?.content}
+                          </Disclosure.Panel>
+                        </>
+                      )}
+                    </Disclosure>
                   </div>
                 </div>
               ))}

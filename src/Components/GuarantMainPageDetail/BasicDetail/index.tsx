@@ -4,7 +4,7 @@ import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
 
 const BasicDetail: React.FC = () => (
   <div className="md:pt-[50px]">
-    <div className="2xl:px-96 xl:px-60 pl-[20px] pr-[20px]">
+    <div className="2xl:px-80 xl:px-60 pl-[20px] pr-[20px]">
       <div>
         <div className="font-Leitura text-[36px] text-Green100 underline">
           98625 Market Summary

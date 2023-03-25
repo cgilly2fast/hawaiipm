@@ -22,10 +22,14 @@ const Hader: React.FC = () => (
     <div className="text-Black400 bg-Neutral200 p-[10px] h-[40px] block sm:hidden md:block lg:hidden">
       <div className="flex justify-between flex-row font-Arial md:flex justify-between flex-row">
         <div>
-          <Link to="login" className="outline-none">Login</Link>
+          <Link to="login" className="outline-none">
+            Login
+          </Link>
         </div>
         <div>
-          <Link to="/guarantee" className="outline-none">Referrals</Link>
+          <Link to="/guarantee" className="outline-none">
+            Referrals
+          </Link>
         </div>
         <div>
           <Link to="/blog" className="outline-none">
@@ -53,12 +57,12 @@ const Hader: React.FC = () => (
         </div>
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50 outline-none">
+            <Menu.Button className="inline-flex w-full justify-center gap-[7.5px] items-center hover:bg-gray-50 outline-none">
               <img src={TenantsIcon} alt="Tenants" /> <div>Tenants</div>
               <img
                 src={DownArrowIcon}
                 alt="down"
-                className="-mr-1 h-5 w-5 text-gray-400"
+                className="-mr-1 h-4 w-4 text-gray-400"
                 aria-hidden="true"
               />
             </Menu.Button>
@@ -120,12 +124,12 @@ const Hader: React.FC = () => (
         </Menu>
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50 outline-none">
+            <Menu.Button className="inline-flex w-full justify-center gap-[7.5px] items-center hover:bg-gray-50 outline-none">
               <img src={UserIcon} alt="user" /> <div>Owners</div>{' '}
               <img
                 src={DownArrowIcon}
                 alt="down"
-                className="-mr-1 h-5 w-5 text-gray-400"
+                className="-mr-1 h-4 w-4 text-gray-400"
                 aria-hidden="true"
               />
             </Menu.Button>
@@ -288,8 +292,8 @@ const Hader: React.FC = () => (
         </div>
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50 outline-none">
-              Options
+            <Menu.Button className="inline-flex w-full justify-center gap-[5px] items-center hover:bg-gray-50 outline-none">
+              <div>Our company</div>
               <img
                 src={DownArrowIcon}
                 alt="down"
@@ -360,8 +364,8 @@ const Hader: React.FC = () => (
         </div>
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50 outline-none">
-              Owners
+            <Menu.Button className="inline-flex w-full justify-center gap-[5px] items-center hover:bg-gray-50 outline-none">
+              <div>Owners</div>
               <img
                 src={DownArrowIcon}
                 alt="down"
@@ -440,8 +444,8 @@ const Hader: React.FC = () => (
         </Menu>
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex w-full justify-center items-center hover:bg-gray-50 outline-none">
-              Tenants
+            <Menu.Button className="inline-flex w-full justify-center gap-[5px] items-center hover:bg-gray-50 outline-none">
+              <div>Tenants</div>
               <img
                 src={DownArrowIcon}
                 alt="down"

@@ -122,7 +122,7 @@ const Recent = [
 
 const PropertyDetail: React.FC = () => (
   <div className="md:pt-[50px]">
-    <div className="2xl:px-96 xl:px-60 pl-[20px] pr-[20px]">
+    <div className="2xl:px-80 xl:px-60 pl-[20px] pr-[20px]">
       <div>
         <Slider {...settings}>
           {Recent?.map(res => (

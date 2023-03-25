@@ -18,19 +18,6 @@ module.exports = {
         Red600: '#BF4059',
         Blue100: '#0091FF',
       },
-      screens: {
-        // sm: '375px',
-        // 'ms': {'max': '426px'},
-        // 'ls': {'max': '769px'},
-        // 'lp': {'max': '1439px'},
-        // lg: '1439px',
-      },
-      blur: {
-        xs: '2px',
-      },
-      backgroundImage: {
-        // 'hero': "url('src/Assets/Images/Background.png')",
-      },
     },
   },
   plugins: [],
