@@ -1,81 +1,85 @@
-import React from 'react';
+import React, { useState } from 'react';
 import GoogleMapReact from 'google-map-react';
 import 'rheostat/initialize';
 import Rheostat from 'rheostat';
 import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
 
-const BasicDetail: React.FC = () => (
-  <div className="md:pt-[50px]">
-    <div className="2xl:px-80 xl:px-60 pl-[20px] pr-[20px]">
-      <div>
-        <div className="font-Leitura text-[36px] text-Green100 underline">
-          98625 Market Summary
-        </div>
-        <div className="text-Black400 font-Arial text-[16px]">
-          The median rent for 5 bedroom properties in 98625 is $15,500.
-        </div>
-      </div>
-      <div className="pt-[20px] flex flex-row justify-between">
+const BasicDetail: React.FC = () => {
+  return (
+    <div className="md:pt-[50px]">
+      <div className="2xl:px-80 xl:px-60 pl-[20px] pr-[20px]">
         <div>
-          <div className="font-Arial text-[16px]">Median Rent</div>
-          <div className="font-Leitura text-[36px]">$15,500</div>
-        </div>
-        <div>
-          <div className="font-Arial text-[16px]">Month-Over-Month Charge</div>
-          <div className="font-Leitura text-[36px]">-$4,500</div>
-        </div>
-        <div>
-          <div className="font-Arial text-[16px]">Year-Over-Year Charge</div>
-          <div className="font-Leitura text-[36px]">+$8,600</div>
-        </div>
-        <div>
-          <div className="font-Arial text-[16px]">Available Rentals</div>
-          <div className="font-Leitura text-[36px]">7</div>
-        </div>
-      </div>
-      <div className="text-Black400 font-Arial text-[16px] pt-[30px]">
-        Source: Hawaii PM Rentals Data
-      </div>
-      <div className="pt-[50px] flex justify-center">
-        <img src={DividerIcon} alt="Divider" />
-      </div>
-      <div className="pt-[50px]">
-        <div className="font-Leitura text-[36px]">
-          Local Rentals Marketplace
-        </div>
-        <div className="text-Black400 font-Arial text-[16px] pt-[10px]">
-          Based on your Rent extimate of $19,999{' '}
-          <span className="text-Blue100">Adjust rental price</span>
-        </div>
-        <div className="dropdown-button-price">
-          <Rheostat min={1} max={100} values={[1, 100]} />
-          <div className="pt-[10px] font-Arial text-Black400 flex justify-between">
-            <div>
-              <span>$19,999</span>
-              <br />
-              <span>Low</span>
-            </div>
-            <div>
-              <span>$20,000</span>
-              <br />
-              <span>High</span>
-            </div>
+          <div className="font-Leitura text-[36px] text-Green100 underline">
+            98625 Market Summary
+          </div>
+          <div className="text-Black400 font-Arial text-[16px]">
+            The median rent for 5 bedroom properties in 98625 is $15,500.
           </div>
         </div>
-        <div className="w-[100%] h-[500px] pt-[30px]">
-          <GoogleMapReact
-            bootstrapURLKeys={{ key: '' }}
-            defaultCenter={{
-              lat: 10.99835602,
-              lng: 77.01502627,
-            }}
-            defaultZoom={11}
-            yesIWantToUseGoogleMapApiInternals
-          />
+        <div className="pt-[20px] flex flex-row justify-between">
+          <div>
+            <div className="font-Arial text-[16px]">Median Rent</div>
+            <div className="font-Leitura text-[36px]">$15,500</div>
+          </div>
+          <div>
+            <div className="font-Arial text-[16px]">
+              Month-Over-Month Charge
+            </div>
+            <div className="font-Leitura text-[36px]">-$4,500</div>
+          </div>
+          <div>
+            <div className="font-Arial text-[16px]">Year-Over-Year Charge</div>
+            <div className="font-Leitura text-[36px]">+$8,600</div>
+          </div>
+          <div>
+            <div className="font-Arial text-[16px]">Available Rentals</div>
+            <div className="font-Leitura text-[36px]">7</div>
+          </div>
+        </div>
+        <div className="text-Black400 font-Arial text-[16px] pt-[30px]">
+          Source: Hawaii PM Rentals Data
+        </div>
+        <div className="pt-[50px] flex justify-center">
+          <img src={DividerIcon} alt="Divider" />
+        </div>
+        <div className="pt-[50px]">
+          <div className="font-Leitura text-[36px]">
+            Local Rentals Marketplace
+          </div>
+          <div className="text-Black400 font-Arial text-[16px] pt-[10px]">
+            Based on your Rent extimate of $19,999{' '}
+            <span className="text-Blue100">Adjust rental price</span>
+          </div>
+          <div className="dropdown-button-price">
+            <Rheostat min={19900} max={20000} values={[19900 || 20000]} />
+            <div className="pt-[10px] font-Arial text-Black400 flex justify-between">
+              <div>
+                <span>$19,900</span>
+                <br />
+                <span>Low</span>
+              </div>
+              <div>
+                <span>$20,000</span>
+                <br />
+                <span>High</span>
+              </div>
+            </div>
+          </div>
+          <div className="w-[100%] h-[500px] pt-[30px]">
+            <GoogleMapReact
+              bootstrapURLKeys={{ key: '' }}
+              defaultCenter={{
+                lat: 10.99835602,
+                lng: 77.01502627,
+              }}
+              defaultZoom={11}
+              yesIWantToUseGoogleMapApiInternals
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default BasicDetail;

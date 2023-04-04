@@ -8,7 +8,6 @@ const PropertyManagementBox: React.FC<PropertyDetailProps> = ({
   setOpen,
   open,
 }: PropertyDetailProps) => {
-  // const PropertyManagementBox: React.FC = () => {
   return (
     <div className="w-[100%] pb-[30px] lg:max-w-[570px] absolute items-center left-[0px] 2xl:flex 2xl:top-[82px] 2xl:left-[600px]  xl:left-[440px] xl:top-[80px] lg:top-[35px] lg:left-[230px] rounded-lg items-start flex justify-center lg:bg-Neutral000">
       <div className="max-w-[500px] h-auto lg:pt-[0px] pt-[30px] ml-[20px] mr-[20px]">

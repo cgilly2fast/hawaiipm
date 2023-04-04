@@ -9,7 +9,6 @@ const PropertyRetBox: React.FC<PropertyDetailProps> = ({
   setOpen,
   open,
 }: PropertyDetailProps) => {
-  // const PropertyRetBox: React.FC = () => (
   return (
     <div className="w-auto h-[380px] top-[25px] left-[13px] right-[13px] flex flex-col absolute 2xl:flex 2xl:top-[40px] 2xl:left-[1125px] rounded-lg items-start xl:flex xl:left-[780px] xl:top-[70px] lg:w-[420px] lg:h-[350px] md:w-[370px] md:h-[390px] lg:flex bg-Neutral000 lg:top-[25px] lg:left-[400px] md:flex md:left-[340px] md:top-[20px]">
       <div className="md:pl-[30px] pl-[20px] font-Arial">

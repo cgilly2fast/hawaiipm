@@ -85,7 +85,7 @@ const QuestionDetail: React.FC = () => (
                               +
                             </div>
                           ) : (
-                            <div className="rounded-r transition flex w-[55px] text-[30px] justify-center items-center">
+                            <div className="flex w-[55px] text-[30px] justify-center items-center">
                               -
                             </div>
                           )}

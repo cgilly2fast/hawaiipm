@@ -8,6 +8,7 @@ import Recent2 from '../../../Assets/Images/Recent2.png';
 import Recent3 from '../../../Assets/Images/Recent3.png';
 import Recent4 from '../../../Assets/Images/Recent4.png';
 import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
+import LocationIcon from '../../../Assets/Images/LocationIcon.svg';
 
 const NextArrow = ({ className, onClick }: any) => (
   <div
@@ -123,10 +124,13 @@ const Recent = [
 const PropertyDetail: React.FC = () => (
   <div className="md:pt-[50px]">
     <div className="2xl:px-80 xl:px-60 pl-[20px] pr-[20px]">
-      <div>
-        <Slider {...settings}>
-          {Recent?.map(res => (
-            <div key={res.id} className="2xl:max-w-[260px] xl:max-w-[230px]">
+      <Slider {...settings}>
+        {Recent?.map(res => (
+          <div className="container-wrapper">
+            <div
+              key={res.id}
+              className="2xl:max-w-[260px] xl:max-w-[230px] relative"
+            >
               <img src={res?.pictures} alt={`${res?.id}`} />
               <div className="border-x-2 border-b-2 text-Black100 py-[20px] rounded-b-lg font-Arial">
                 <div className="text-center">
@@ -160,9 +164,37 @@ const PropertyDetail: React.FC = () => (
                 </div>
               </div>
             </div>
-          ))}
-        </Slider>
-      </div>
+            <div className="middle">
+              <div className="2xl:max-w-[260px] xl:max-w-[230px] border-2 border-Green100 border-t-2 rounded-lg bg-Neutral100 h-[662px]">
+                <div className="h-[40px] bg-Green100 rounded-t text-Neutral000 flex items-center justify-center font-Arial font-[700]">
+                  My Property
+                </div>
+                <div className=" text-center font-Arial">
+                  <div className="text-center flex justify-center pt-[33px]">
+                    <img src={LocationIcon} />
+                  </div>
+                  <div className="pt-[33px]">
+                    <p className="font-bold">$20k / mo</p>
+                    <p>$$5.26 per sq ft</p>
+                    <p className="pt-[20px]">960 Kanakou PI</p>
+                  </div>
+                  <div className="pt-[30px]">
+                    <button className="w-[100%] lg:w-[230px] h-[44px] bg-Green100 text-Neutral000 rounded-lg">
+                      Adjust price
+                    </button>
+                  </div>
+                  <div className="pt-[30px] font-bold">
+                    <p>5 Beds</p>
+                    <p className="mt-[10px]">5 Baths</p>
+                    <p className="mt-[10px]">3800 sq ft</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </Slider>
+
       <div className="pt-[50px] flex justify-center">
         <img src={DividerIcon} alt="Divider" />
       </div>
