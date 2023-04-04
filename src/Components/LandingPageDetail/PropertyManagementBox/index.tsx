@@ -15,7 +15,6 @@ const PropertyManagementBox: React.FC<PropertyDetailProps> = ({
         <div className="flex justify-center">
           <div className="max-w-[75%] font-Leitura text-Neutral000 lg:text-[24px] lg:text-Black100 lg:pt-[30px] text-center">
             <span className="text-4xl font-normal leading-[50px]">
-              {' '}
               Property Management
             </span>
           </div>

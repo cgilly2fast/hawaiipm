@@ -11,6 +11,146 @@
   font-family: 'Leitura Display';
 }
 
+input[type='checkbox']:checked {
+  background: #36998e;
+}
+
+.rheostat {
+  position: relative;
+  overflow: visible;
+  // margin: 30px 22px;
+}
+@media (min-width: 1128px) {
+  .autoAdjustVerticalPosition {
+    top: 12px;
+  }
+}
+.DefaultProgressBar__vertical {
+  width: 24px;
+  height: 100%;
+}
+.DefaultProgressBar_progressBar {
+  background-color: #e9e9e9;
+  position: absolute;
+  height: 4px;
+  cursor: pointer;
+}
+.DefaultProgressBar_progressBar__vertical {
+  height: 100%;
+  width: 24px;
+}
+.DefaultProgressBar_background__vertical {
+  height: 100%;
+  top: 0px;
+  width: 15px;
+}
+.DefaultProgressBar_background__horizontal {
+  // height: 15px;
+  top: 0px;
+}
+.DefaultHandle_handle {
+  background-image: url(../Images/LocationIcon.svg) !important;
+  width: 36px;
+  height: 36px;
+  outline: none;
+  z-index: 2;
+  margin-inline-start: -12px;
+}
+
+.DefaultHandle_handle[data-handle-key='1'] {
+  display: none;
+}
+
+.DefaultHandle_handle:focus {
+  box-shadow: #abc4e8 0 0 1px 1px;
+}
+.DefaultHandle_handle:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #dadfe8;
+}
+.DefaultHandle_handle:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #dadfe8;
+}
+.DefaultHandle_handle__horizontal {
+  margin-left: -16px;
+  top: -32px;
+}
+
+.DefaultHandle_handle__vertical {
+  margin-top: -12px;
+  left: -10px;
+}
+.DefaultHandle_handle__vertical:before {
+  top: 10px;
+}
+.DefaultHandle_handle__vertical:after {
+  top: 13px;
+  left: 8px;
+  height: 1px;
+  width: 10px;
+}
+.DefaultHandle_handle__disabled {
+  border-color: #dbdbdb;
+}
+.DefaultBackground {
+  background-color: lightgrey;
+  height: 15px;
+  width: 100%;
+  // border: 1px solid #d8d8d8;
+  // position: relative;
+}
+.DefaultBackground_background__horizontal {
+  height: 4px;
+  cursor: pointer;
+  background: #c7c7c7;
+  // top: -2px;
+  // left: -2px;
+  // bottom: 4px;
+  width: 100%;
+}
+.DefaultBackground_background__vertical {
+  width: 15px;
+  top: 0px;
+  height: 100%;
+}
+.rheostat__vertical {
+  height: 100%;
+}
+.handleContainer {
+  height: 15px;
+  top: -2px;
+  left: -2px;
+  bottom: 4px;
+  width: 100%;
+  position: absolute;
+}
+.rheostat_background {
+  background-color: #fcfcfc;
+  border: 1px solid #d8d8d8;
+  position: relative;
+}
+.rheostat_background__horizontal {
+  height: 15px;
+  top: -2px;
+  left: -2px;
+  bottom: 4px;
+  width: 100%;
+}
+.rheostat_background__vertical {
+  width: 15px;
+  top: 0px;
+  height: 100%;
+}
+
+.dropdown-button-price {
+  padding-top: 70px;
+}
+
 .slick-slide {
   padding: 0px 0px !important;
 }

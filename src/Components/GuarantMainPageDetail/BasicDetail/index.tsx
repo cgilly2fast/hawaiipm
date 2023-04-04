@@ -1,5 +1,7 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
+import 'rheostat/initialize';
+import Rheostat from 'rheostat';
 import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
 
 const BasicDetail: React.FC = () => (
@@ -44,6 +46,21 @@ const BasicDetail: React.FC = () => (
         <div className="text-Black400 font-Arial text-[16px] pt-[10px]">
           Based on your Rent extimate of $19,999{' '}
           <span className="text-Blue100">Adjust rental price</span>
+        </div>
+        <div className="dropdown-button-price">
+          <Rheostat min={1} max={100} values={[1, 100]} />
+          <div className="pt-[10px] font-Arial text-Black400 flex justify-between">
+            <div>
+              <span>$19,999</span>
+              <br />
+              <span>Low</span>
+            </div>
+            <div>
+              <span>$20,000</span>
+              <br />
+              <span>High</span>
+            </div>
+          </div>
         </div>
         <div className="w-[100%] h-[500px] pt-[30px]">
           <GoogleMapReact

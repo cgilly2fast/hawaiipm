@@ -283,7 +283,7 @@ const Hader: React.FC = () => (
         </div>
       </div>
     </div>
-    <div className="sm:flex hidden justify-end pt-[20px] md:hidden lg:flex hidden justify-end pb-[20px] pr-[50px] text-[18px]">
+    <div className="justify-end pt-[20px] md:hidden lg:flex hidden justify-end pb-[20px] pr-[50px] text-[18px]">
       <div className="w-[760px] flex justify-between items-center font-Arial">
         <div>
           <Link to="/" className="outline-none">
