@@ -1,11 +1,11 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Footer from '../Components/Footer';
-import Hader from '../Components/Hader';
+import Header from '../Components/Header';
 
 const Admin: React.FC = () => (
   <div>
-    <Hader />
+    <Header />
     <Outlet />
     <Footer />
   </div>

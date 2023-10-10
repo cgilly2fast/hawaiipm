@@ -29,8 +29,13 @@ const TenantDetail: React.FC = () => (
           <div className="pt-[30px] text-[16px]">
             For immediate answers to any questions you might have regarding the
             management of your property please contact{' '}
-            <Link to="" className="text-Green100 font-bold outline-none">colbygbemail@email.com</Link> or{' '}
-            <Link to="" className="text-Green100 font-bold outline-none">000-000-0000.</Link>
+            <Link to="" className="text-Green100 font-bold outline-none">
+              colbygbemail@email.com
+            </Link>{' '}
+            or{' '}
+            <Link to="" className="text-Green100 font-bold outline-none">
+              000-000-0000.
+            </Link>
           </div>
         </div>
       </div>
@@ -42,19 +47,25 @@ const TenantDetail: React.FC = () => (
       </div>
       <div className="font-Arial text-Black400 pt-[20px] text-[16px ]">
         <div>
-          <span className="font-bold text-Black100">IMPORTANT:</span> Please thoroughly read
-          and follow{' '}
+          <span className="font-bold text-Black100">IMPORTANT:</span> Please
+          thoroughly read and follow{' '}
           <span className="font-bold text-Black100">
             "Important Requirements and Instructions"
           </span>{' '}
           section on the application form. If you have any questions please
-          contact <Link to="" className="text-Green100 font-bold outline-none">colbygbemail@email.com</Link>{' '}
-          or <Link to="" className="text-Green100 font-bold outline-none">000-000-0000.</Link>
+          contact{' '}
+          <Link to="" className="text-Green100 font-bold outline-none">
+            colbygbemail@email.com
+          </Link>{' '}
+          or{' '}
+          <Link to="" className="text-Green100 font-bold outline-none">
+            000-000-0000.
+          </Link>
         </div>
         <div className="pt-[20px]">
           By clicking on the Apply Online button below a new browser window or
           tab will open up that will take you to our partner site where you can
-          apply and pay the application fee. To return to the Pinnacle website
+          apply and pay the application fee. To return to the Hawaii PM website
           tab, please close that browser.
         </div>
       </div>

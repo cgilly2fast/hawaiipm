@@ -5,7 +5,7 @@ const Recent = [
   [
     {
       id: 1,
-      text: 'Am I a good fit for Hawaii Property Management?',
+      text: 'Am I a good fit for Hawaii PM?',
       content:
         'The mug is round. The jar is round. They should call it Roundtine.',
     },

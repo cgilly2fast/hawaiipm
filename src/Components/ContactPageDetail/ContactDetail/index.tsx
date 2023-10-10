@@ -40,20 +40,27 @@ const ContactDetail: React.FC = () => (
         <div className="md:pl-[50px]">
           <div className="font-Leitura text-[24px] pt-[10px]">Contact info</div>
           <div className="text-Black400 text-[16px] font-Arial">
-            <div className="pt-[10px]">
-              Lorem ipsum dolor sit amet, sit vocent verear mediocrem ei.
-              Facilis facilisis voluptatibus mei te, eu mea novum animal
-              eligendi. Veri reque scripta cu vis, natum fugit pertinax ad nam.
-              Integre percipitur complectitur his eu, id vocibus fastidii
-              percipitur est.
+            <div className="pt-[20px]">
+              <span className="font-bold">Phone</span>
+              <br />
+              <span>(808) 777-7777</span>
             </div>
             <div className="pt-[20px]">
-              <span>Hawaii PM (R-XXXXX)</span>
+              <span className="font-bold">Mailing Address</span>
+              <br />
+              <span>7192 Kalanianaole Hwy</span>
+              <br />
+              <span>Ste A-143A # 372</span>
+              <br />
+              <span>Honolulu, HI 96825</span>
+            </div>
+            {/* <div className="pt-[20px]">
+              <span className="font-bold">Office</span>
               <br />
               <span>1221 Kapiolani Blvd. Suite 6A4 </span>
               <br />
               <span>Honolulu, HI 96814</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

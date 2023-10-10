@@ -9,19 +9,30 @@ const PropertyManagementBox: React.FC<PropertyDetailProps> = ({
   open,
 }: PropertyDetailProps) => {
   return (
-    <div className="w-[100%] pb-[30px] lg:max-w-[570px] absolute items-center left-[0px] 2xl:flex 2xl:top-[82px] 2xl:left-[600px]  xl:left-[440px] xl:top-[80px] lg:top-[35px] lg:left-[230px] rounded-lg items-start flex justify-center lg:bg-Neutral000">
-      <div className="max-w-[500px] h-auto lg:pt-[0px] pt-[30px] ml-[20px] mr-[20px]">
+    <div className="w-auto [h-[440px] top-[25px] ml-[13px] mr-[13px] md:pl-[13px] md:pr-[13px] pb-[30px] bg-Neutral000 absolute items-center rounded-lg items-start flex justify-center">
+      <div className="max-w-[500px] h-auto lg:pt-[0px] md:pt-[20px] ml-[20px] mr-[20px]">
         <div className="flex justify-center">
-          <div className="max-w-[75%] font-Leitura text-Neutral000 lg:text-[24px] lg:text-Black100 lg:pt-[30px] text-center">
+          <div className="max-w-[75%] font-Leitura text-Black100 lg:text-[24px] lg:text-Black100 lg:pt-[30px] text-center">
             <span className="text-4xl font-normal leading-[50px]">
               Property Management
             </span>
           </div>
         </div>
+        <div className="lg:flex pt-[18px] text-[14px]">
+          <div className="text-Black100">
+            Revenue guaranteed or we pay you.{' '}
+            <button className="lg:text-Green100 text-Green400 underline focus-visible:outline-none focus:outline">
+              Learn more
+            </button>
+          </div>
+        </div>
         <div className="pt-[20px] font-Arial">
+          <div className="text-[16px] pt-[10px] font-bold text-Black100">
+            Find out what you could earn
+          </div>
           <div className="w-[100%] md:w-[400px] lg:w-[510px] bg-Neutral000 p-[10px] h-[44px] border-2 rounded-lg">
             <input
-              placeholder="Address entry"
+              placeholder="Rental Address"
               className="w-[100%] focus-visible:outline-none focus:outline"
             />
           </div>
@@ -31,22 +42,45 @@ const PropertyManagementBox: React.FC<PropertyDetailProps> = ({
               className="w-[100%] focus-visible:outline-none focus:outline"
             />
           </div>
-          <div className="lg:flex pt-[20px]">
-            <div className="text-Neutral000 lg:text-Black100 font-bold">
-              Qualified tenant in 30 days or we pay you.
+          <div className="flex flex-wrap  pt-[20px]">
+            <div className="flex items-center mr-2 md:mr-4">
+              <input
+                type="radio"
+                id="radioOption1"
+                name="radioGroup"
+                className="h-4 w-4 accent-Green100"
+              />
+              <label
+                htmlFor="radioOption1"
+                className="ml-2 text-[14px] text-Black100"
+              >
+                Short Term Rental
+              </label>
             </div>
-            <button className="lg:text-Green100 text-Green400 underline focus-visible:outline-none focus:outline">
-              Learn more
-            </button>
+
+            <div className="flex items-center mr-2 md:mr-4 ">
+              <input
+                type="radio"
+                id="radioOption2"
+                name="radioGroup"
+                className="h-4 w-4 accent-Green100"
+              />
+              <label
+                htmlFor="radioOption2"
+                className="ml-2 text-[14px] text-Black100"
+              >
+                Long Term Rental
+              </label>
+            </div>
           </div>
           <div className="pt-[20px]">
             <button
               className="w-[100%] md:w-[400px] lg:w-[510px] h-[44px] bg-Green100 text-Neutral000 rounded-lg focus-visible:outline-none focus:outline"
               onClick={() => {
-                setOpen(open + 1);
+                // setOpen(open + 1);
               }}
             >
-              Get Started
+              <span className="underline">Start</span> Maximizing Your Income
             </button>
           </div>
         </div>

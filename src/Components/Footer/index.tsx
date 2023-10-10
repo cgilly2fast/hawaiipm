@@ -4,11 +4,12 @@ import InstagramIcon from '../../Assets/Images/InstagramIcon.svg';
 import YoutubeIcon from '../../Assets/Images/YoutubeIcon.svg';
 import FacebookIcon from '../../Assets/Images/FacebookIcon.svg';
 import VectorIcon from '../../Assets/Images/VectorIcon.svg';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => (
   <>
     <div className="min-h-[280px] bg-Neutral200">
-      <div className="block sm:flex pt-[50px] pt-[30px] pl-[20px]">
+      <div className="mx-auto max-w-[1920px] block sm:flex pt-[50px] pt-[30px] pl-[20px]">
         <div className="block sm:flex flex-row w-full xl:justify-evenly md:justify-between">
           <div>
             <img
@@ -19,16 +20,22 @@ const Footer: React.FC = () => (
           </div>
           <div className="sm:max-w-[700px] w-full flex font-Arial flex-wrap xl:justify-start md:justify-end">
             <div className="text-[14px] w-[50%] sm:w-[25%] pt-[20px] sm:pt-[0px] md:w-[20%]">
-              <div className="text-Black100 font-bold tracking-[4px]">Company</div>
+              <div className="text-Black100 font-bold tracking-[4px]">
+                Company
+              </div>
               <div className="text-Black400 pt-[20px]">
-                <div>Our Story</div>
-                <div>Carreers</div>
+                <div>
+                  <Link to="aboutus">Our Story</Link>
+                </div>
+                {/* <div>Careers</div> */}
                 <div>Blog</div>
                 <div>Help</div>
               </div>
             </div>
             <div className="text-[14px] w-[50%] sm:w-[25%] pt-[20px] sm:pt-[0px]">
-              <div className="text-Black100 font-bold tracking-[4px]">Homeowner</div>
+              <div className="text-Black100 font-bold tracking-[4px]">
+                Homeowner
+              </div>
               <div className="text-Black400 pt-[20px]">
                 <div>Why Use a Manager</div>
                 <div>Refer Homeowners</div>
@@ -37,7 +44,9 @@ const Footer: React.FC = () => (
               </div>
             </div>
             <div className="text-[14px] w-[50%] sm:w-[25%] pt-[20px] sm:pt-[0px]">
-              <div className="text-Black100 font-bold tracking-[4px]">Guest</div>
+              <div className="text-Black100 font-bold tracking-[4px]">
+                Guest
+              </div>
               <div className="text-Black400 pt-[20px]">
                 <div>Invite Friends</div>
                 <div>Trust & Safety</div>
@@ -53,11 +62,11 @@ const Footer: React.FC = () => (
       </div>
       <div className="pt-[30px]">
         <div className="border-t-2">
-          <div className="font-Arial justify-around pt-[30px] block sm:flex pl-[20px] sm:pl-[0px]">
+          <div className="mx-auto max-w-[1920px] font-Arial justify-around pt-[30px] block sm:flex pl-[20px] sm:pl-[0px]">
             <div className="flex text-[14px] items-start">
               <img src={VectorIcon} alt="vector" />
               <div className="text-Black400 pl-[5px]">
-                2019 Hawaii Property Management LLC. All rights reserved.
+                2023 Hawaii PM LLC. All rights reserved.
               </div>
             </div>
             <div className="flex text-Black400 text-[14px] gap-[20px] pt-[10px] sm:pt-[0px]">

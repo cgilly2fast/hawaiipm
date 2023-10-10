@@ -4,7 +4,7 @@ import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
 
 const BasicDetail: React.FC = () => (
   <>
-    <div className="lg:flex flex-row justify-between 2xl:px-80 xl:px-60 lg:px-32 pl-[20px] pr-[20px]">
+    <div className="mx-auto max-w-[1920px] lg:flex flex-row justify-center 2xl:px-80 xl:px-60 lg:px-32 pl-[20px] pr-[20px]">
       <div className="md:pt-[50px] pt-[20px]">
         <div className="font-Leitura text-[20px] md:text-[24px]">
           Why Hawaii Property Management?
@@ -17,9 +17,9 @@ const BasicDetail: React.FC = () => (
             up the difference.
           </div>
           <div className="pt-[20px]">
-            Hawaii Property Management specializes in managing rentals for
-            property owners, both long and short-term, handling all aspects of
-            property management for you in the beautiful state of Hawaii.
+            Hawaii PM specializes in managing rentals for property owners, both
+            long and short-term, handling all aspects of property management for
+            you in the beautiful state of Hawaii.
           </div>
           <div className="pt-[20px]">
             We are especially attentive to continually optimizing your listing
@@ -33,8 +33,8 @@ const BasicDetail: React.FC = () => (
         </div>
       </div>
       <div className="text-center font-Leitura pt-[30px] lg:pt-[50px] lg:pl-[50px]">
-        <div className="md:pl-[90px] lg:pl-[0px]">
-          <img src={Owner} alt="Owner" className="xl:h-[300px] lg:h-[400px]" />
+        <div className=" w-full max-w-[550px]">
+          <img src={Owner} alt="Owner" className="w-full h-auto object-cover" />
         </div>
         <div className="pt-[20px]">
           <div>Colby Gilbert</div>
@@ -46,12 +46,17 @@ const BasicDetail: React.FC = () => (
     <div className="pt-[30px] flex justify-center">
       <img src={DividerIcon} alt="Divider" />
     </div>
-    <div className="pt-[50px] 2xl:px-80 xl:px-60 lg:px-32 pl-[20px] pr-[20px]">
+    <div className="mx-auto max-w-[1920px] pt-[50px] 2xl:px-80 xl:px-60 lg:px-32 pl-[20px] pr-[20px]">
       <div className="xl:flex flex-row justify-evenly bg-Neutral200 rounded-lg">
         <div className="pt-[50px] xl:pb-[30px]">
           <div className="flex justify-center">
             <div className="font-Leitura max-w-[341px] text-center text-[24px]">
-              Results from two of my earliest short-term clients:
+              Client Results:
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <div className="font-Leitura max-w-[341px] text-center text-Black100 text-[12px]">
+              (Short-term rental)
             </div>
           </div>
           <div className="pt-[20px] flex justify-center">

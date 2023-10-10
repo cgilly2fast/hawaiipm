@@ -10,9 +10,9 @@ const PropertyRetBox: React.FC<PropertyDetailProps> = ({
   open,
 }: PropertyDetailProps) => {
   return (
-    <div className="w-auto h-[380px] top-[25px] left-[13px] right-[13px] flex flex-col absolute 2xl:flex 2xl:top-[40px] 2xl:left-[1125px] rounded-lg items-start xl:flex xl:left-[780px] xl:top-[70px] lg:w-[420px] lg:h-[350px] md:w-[370px] md:h-[390px] lg:flex bg-Neutral000 lg:top-[25px] lg:left-[400px] md:flex md:left-[340px] md:top-[20px]">
+    <div className="w-auto h-[380px] top-[25px] left-[13px] right-[13px] bg-Neutral000  rounded-lg">
       <div className="md:pl-[30px] pl-[20px] font-Arial">
-        <div className="text-[26px] font-bold pt-[30px]">
+        <div className="text-[26px] font-bold font-Leitura pt-[30px]">
           Property Management
         </div>
         <div className="lg:flex pt-[10px] text-[14px]">
@@ -41,7 +41,7 @@ const PropertyRetBox: React.FC<PropertyDetailProps> = ({
               Short Term Invest
             </label>
           </div>
-          <div className='pl-[50px]'>
+          <div className="pl-[50px]">
             <input
               id="published"
               className="peer/published accent-Green100 cursor-pointer"

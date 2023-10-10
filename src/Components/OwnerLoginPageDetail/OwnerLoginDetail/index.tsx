@@ -13,11 +13,11 @@ const OwnerLoginDetail: React.FC = () => (
         <div className="pt-[30px]">
           By clicking on the Owner Login button below a new browser window or
           tab will open up that will take you to our partner site where you can
-          login to view your statement. To return to the Pinnacle website
+          login to view your statement. To return to the Hawaii PM website
           tab,please close that browser tab.
         </div>
         <div className="pt-[30px]">
-          <span>Thank you,</span>
+          <span>Mahalo,</span>
           <br />
           <span>Hawaii PM</span>
         </div>

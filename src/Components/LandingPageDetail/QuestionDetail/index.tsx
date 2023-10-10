@@ -6,7 +6,7 @@ const Recent = [
   [
     {
       id: 1,
-      text: 'Am I a good fit for Hawaii Property Management?',
+      text: 'Am I a good fit for Hawaii PM?',
       content:
         'The mug is round. The jar is round. They should call it Roundtine.',
     },
@@ -32,7 +32,7 @@ const Recent = [
   [
     {
       id: 5,
-      text: 'Do you ever have issues with guests damaging the property?',
+      text: 'Do guests ever damage the property?',
       content:
         'The mug is round. The jar is round. They should call it Roundtine.',
     },
@@ -58,16 +58,16 @@ const Recent = [
 ];
 
 const QuestionDetail: React.FC = () => (
-  <div className="2xl:px-80 xl:px-60 lg:px-32 pl-[20px] pr-[20px]">
-    <div className="font-Leitura md:text-[36px] text-[20px] text-center pt-[70px]">
+  <div className="mx-auto max-w-[1920px] 2xl:px-80 xl:px-60 lg:px-32 pl-[20px] pr-[20px]">
+    <div className="font-Leitura md:text-[36px] text-[24px] text-center pt-[70px]">
       Your questions answered
     </div>
-    <div className="flex flex-wrap justify-between pt-[30px]">
+    <div className="flex flex-wrap justify-center pt-[30px]">
       {Recent?.map((item, index) => (
         <ul key={index}>
           {item.map(res => (
             <div className="pt-[20px]" key={res?.id}>
-              <div className="w-auto 2xl:w-[550px] xl:w-[450px] md:w-[350px] border-[1px] rounded-lg font-Arial">
+              <div className="w-auto min-w-[320px] md:w-[365px] md:mr-4 lg:mr-6  border-[1px] rounded-lg font-Arial">
                 <Disclosure>
                   {({ open }) => (
                     <>
@@ -103,12 +103,12 @@ const QuestionDetail: React.FC = () => (
         </ul>
       ))}
     </div>
-    <div className="pt-[50px] pb-[50px]">
+    <div className="pt-[50px] pb-[50px] text-center">
       <div
-        className="relative w-full h-[432px] xl:h-[486px] lg:h-[400px]"
+        className="mx-auto block relative w-full max-w-[1170px] h-[336px] xl:h-[336px] lg:h-[400px]"
         style={{ backgroundImage: `url(${Room})` }}
       >
-        <div className="w-[100%] h-[100%] md:w-auto md:h-auto absolute top-[150px] 2xl:top-[190px] 2xl:left-[510px] xl:top-[190px] xl:left-[400px] lg:top-[150px] lg:left-[260px]  md:top-[150px] md:left-[250px] text-center">
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
           <div className="font-Leitura text-[36px] text-Neutral000">
             Ready to Earn?
           </div>
