@@ -1,13 +1,13 @@
 import React from 'react';
-import BasicDetail from './BasicDetail';
+import WhyDetail from './WhyDetail';
 import PlanDetail from './PlanDetail';
-import PropertyDetail from './PropertyDetail';
+import BannerDetail from './BannerDetail';
 import QuestionDetail from './QuestionDetail';
 
 const LandingPageDetail: React.FC = () => (
   <>
-    <PropertyDetail />
-    <BasicDetail />
+    <BannerDetail />
+    <WhyDetail />
     <PlanDetail />
     <QuestionDetail />
   </>

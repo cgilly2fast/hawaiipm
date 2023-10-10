@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import Background from '../../../Assets/Images/Background.png';
 import PropertyManagementBox from '../PropertyManagementBox';
-import PropertyRetBox from '../PropertyRetBox';
 
-const PropertyDetail: React.FC = () => {
+const BannerDetail: React.FC = () => {
   const [open, setOpen] = useState<number>(1);
   return (
     <div>
@@ -24,4 +23,4 @@ const PropertyDetail: React.FC = () => {
   );
 };
 
-export default PropertyDetail;
+export default BannerDetail;

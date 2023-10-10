@@ -58,7 +58,7 @@ const PlanDetail: React.FC = () => (
     </div>
     <div className="xl:flex flex-row justify-between pt-[50px]">
       {Plan?.map(res => (
-        <div key={res.id}>
+        <div key={res.id} className="mx-2">
           <div className="text-[36px] font-Leitura pt-[10px]">{res.id}.</div>
           <div className="font-Arial font-bold pt-[20px] text-[20px]">
             {res.text}
@@ -79,7 +79,7 @@ const PlanDetail: React.FC = () => (
     </div>
     <div className="xl:flex flex-row justify-between pt-[50px]">
       {Plandata?.map(res => (
-        <div key={res.id}>
+        <div key={res.id} className="mx-2">
           <div className="text-[36px] font-Leitura font-semibold pt-[10px]">
             <img src={res?.pictures} alt={`${res?.id}`} />
           </div>

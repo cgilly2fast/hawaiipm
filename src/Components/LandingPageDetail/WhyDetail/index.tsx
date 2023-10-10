@@ -2,7 +2,7 @@ import React from 'react';
 import Owner from '../../../Assets/Images/Owner.png';
 import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
 
-const BasicDetail: React.FC = () => (
+const WhyDetail: React.FC = () => (
   <>
     <div className="mx-auto max-w-[1920px] lg:flex flex-row justify-center 2xl:px-80 xl:px-60 lg:px-32 pl-[20px] pr-[20px]">
       <div className="md:pt-[50px] pt-[20px]">
@@ -109,4 +109,4 @@ const BasicDetail: React.FC = () => (
   </>
 );
 
-export default BasicDetail;
+export default WhyDetail;

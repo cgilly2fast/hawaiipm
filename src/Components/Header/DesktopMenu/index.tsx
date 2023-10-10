@@ -74,7 +74,7 @@ const DesktopMenu: React.FC = () => (
                     <Link
                       to="/aboutus"
                       className={`${
-                        active ? 'bg-Green500 text-Green100' : 'text-gray-700'
+                        active ? 'bg-Green500 text-Green100' : 'text-gray-500'
                       }
                   block px-4 py-2 text-sm`}
                     >
@@ -87,7 +87,7 @@ const DesktopMenu: React.FC = () => (
                 <Link
                   to="/guarantee"
                   className={`${
-                    active ? 'bg-Green500 text-Green100' : 'text-gray-700'
+                    active ? 'bg-Green500 text-Green100' : 'text-gray-500'
                   }
                   block px-4 py-2 text-sm`}
                 >
@@ -100,7 +100,7 @@ const DesktopMenu: React.FC = () => (
                     <Link
                       to="/contact"
                       className={`${
-                        active ? 'bg-Green500 text-Green100' : 'text-gray-700'
+                        active ? 'bg-Green500 text-Green100' : 'text-gray-500'
                       }
                   block px-4 py-2 text-sm`}
                     >
@@ -141,7 +141,7 @@ const DesktopMenu: React.FC = () => (
                     <Link
                       to="/owner"
                       className={`${
-                        active ? 'bg-Green500 text-Green100' : 'text-gray-700'
+                        active ? 'bg-Green500 text-Green100' : 'text-gray-500'
                       }
                   block px-4 py-2 text-sm`}
                     >
@@ -154,7 +154,7 @@ const DesktopMenu: React.FC = () => (
                     <Link
                       to="/services"
                       className={`${
-                        active ? 'bg-Green500 text-Green100' : 'text-gray-700'
+                        active ? 'bg-Green500 text-Green100' : 'text-gray-500'
                       }
                   block px-4 py-2 text-sm`}
                     >
@@ -167,7 +167,7 @@ const DesktopMenu: React.FC = () => (
                     <Link
                       to="/whyus"
                       className={`${
-                        active ? 'bg-Green500 text-Green100' : 'text-gray-700'
+                        active ? 'bg-Green500 text-Green100' : 'text-gray-500'
                       }
                   block px-4 py-2 text-sm`}
                     >
@@ -180,7 +180,7 @@ const DesktopMenu: React.FC = () => (
                     <Link
                       to="/testimonials"
                       className={`${
-                        active ? 'bg-Green500 text-Green100' : 'text-gray-700'
+                        active ? 'bg-Green500 text-Green100' : 'text-gray-500'
                       }
                   block px-4 py-2 text-sm`}
                     >
@@ -220,7 +220,7 @@ const DesktopMenu: React.FC = () => (
                     <Link
                       to="/available"
                       className={`${
-                        active ? 'bg-Green500 text-Green100' : 'text-gray-700'
+                        active ? 'bg-Green500 text-Green100' : 'text-gray-500'
                       }
                   block px-4 py-2 text-sm`}
                     >
@@ -233,7 +233,7 @@ const DesktopMenu: React.FC = () => (
                     <Link
                       to="/tenants"
                       className={`${
-                        active ? 'bg-Green500 text-Green100' : 'text-gray-700'
+                        active ? 'bg-Green500 text-Green100' : 'text-gray-500'
                       }
                   block px-4 py-2 text-sm`}
                     >
@@ -246,7 +246,7 @@ const DesktopMenu: React.FC = () => (
                     <Link
                       to="/maintenance"
                       className={`${
-                        active ? 'bg-Green500 text-Green100' : 'text-gray-700'
+                        active ? 'bg-Green500 text-Green100' : 'text-gray-500'
                       }
                   block px-4 py-2 text-sm`}
                     >
@@ -334,7 +334,7 @@ export default DesktopMenu;
                     <Menu.Item>
                       <Link
                         to="/available"
-                        className="text-gray-700 block px-4 py-2 text-sm"
+                        className="text-gray-500 block px-4 py-2 text-sm"
                       >
                         Available Rentals
                       </Link>
@@ -343,7 +343,7 @@ export default DesktopMenu;
                       <div>
                         <button
                           onClick={toggleCompany}
-                          className="text-gray-700 block px-4 py-2 text-sm"
+                          className="text-gray-500 block px-4 py-2 text-sm"
                         >
                           Our Company
                         </button>
@@ -352,7 +352,7 @@ export default DesktopMenu;
                             <li>
                               <Link
                                 to="/aboutus"
-                                className="text-gray-700 block px-4 py-2 text-sm"
+                                className="text-gray-500 block px-4 py-2 text-sm"
                               >
                                 About Us
                               </Link>
@@ -360,7 +360,7 @@ export default DesktopMenu;
                             <li>
                               <Link
                                 to="/contact"
-                                className="text-gray-700 block px-4 py-2 text-sm"
+                                className="text-gray-500 block px-4 py-2 text-sm"
                               >
                                 Contact
                               </Link>
@@ -382,7 +382,7 @@ export default DesktopMenu;
                     <Menu.Item>
                       <Link
                         to="/contact"
-                        className="text-gray-700 block px-4 py-2 text-sm"
+                        className="text-gray-500 block px-4 py-2 text-sm"
                       >
                         Contact Us
                       </Link>

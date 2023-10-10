@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 interface PropertyDetailProps {
   setOpen: any;
   open: any;
@@ -22,7 +23,7 @@ const PropertyManagementBox: React.FC<PropertyDetailProps> = ({
           <div className="text-Black100">
             Revenue guaranteed or we pay you.{' '}
             <button className="lg:text-Green100 text-Green400 underline focus-visible:outline-none focus:outline">
-              Learn more
+              <Link to="/guarantee">Learn more</Link>
             </button>
           </div>
         </div>
@@ -32,8 +33,12 @@ const PropertyManagementBox: React.FC<PropertyDetailProps> = ({
           </div>
           <div className="w-[100%] md:w-[400px] lg:w-[510px] bg-Neutral000 p-[10px] h-[44px] border-2 rounded-lg">
             <input
+              type="text"
+              id="address"
+              name="address"
               placeholder="Rental Address"
               className="w-[100%] focus-visible:outline-none focus:outline"
+              autoComplete="shipping address-level2"
             />
           </div>
           <div className="w-[100%] md:w-[400px] lg:w-[510px] bg-Neutral000 p-[10px] h-[44px] border-2 mt-[20px] rounded-lg">
