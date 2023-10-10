@@ -152,7 +152,7 @@ const DesktopMenu: React.FC = () => (
                 <Menu.Item>
                   {({ active }) => (
                     <Link
-                      to="/ourservices"
+                      to="/services"
                       className={`${
                         active ? 'bg-Green500 text-Green100' : 'text-gray-700'
                       }
@@ -231,7 +231,7 @@ const DesktopMenu: React.FC = () => (
                 <Menu.Item>
                   {({ active }) => (
                     <Link
-                      to="/tenantslogin"
+                      to="/tenants"
                       className={`${
                         active ? 'bg-Green500 text-Green100' : 'text-gray-700'
                       }

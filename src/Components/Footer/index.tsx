@@ -25,7 +25,7 @@ const Footer: React.FC = () => (
               </div>
               <div className="text-Black400 pt-[20px]">
                 <div>
-                  <Link to="aboutus">Our Story</Link>
+                  <Link to="/aboutus">Our Story</Link>
                 </div>
                 {/* <div>Careers</div> */}
                 <div>Blog</div>

@@ -9,14 +9,14 @@ import BlogExpanded from './Pages/BlogExpanded';
 import Contact from './Pages/Contact';
 import GeneralLease from './Pages/GeneralLease';
 import Guarantee from './Pages/Guarantee';
-import GuaranteeMain from './Pages/GuarnteeMain';
+import Quote from './Pages/Quote';
 import Help from './Pages/Help';
 import Landing from './Pages/Landing';
 import Login from './Pages/Login';
 import Maintenance from './Pages/Maintenance';
 import OurServices from './Pages/OurServices';
 import OwnerLogin from './Pages/OwnerLogin';
-import Tenants from './Pages/Tenants';
+import Apply from './Pages/Apply';
 import TenantsLogin from './Pages/TenantsLogin';
 import Testimonials from './Pages/Testimonials';
 import WhyUs from './Pages/WhyUs';
@@ -25,7 +25,7 @@ export default function Router() {
   const location = useLocation();
 
   const token = window.localStorage.getItem('user');
-  // console.log("token", token)
+
   const PrivateWrapper = ({ redirectPath = '/login', children }: any) => {
     // if (!token) {
     // return (
@@ -47,23 +47,23 @@ export default function Router() {
       children: [
         { path: '/', element: <Landing /> },
         { path: '/guarantee', element: <Guarantee /> },
-        { path: '/guaranteemain', element: <GuaranteeMain /> },
+        { path: '/quote', element: <Quote /> },
         { path: '/aboutus', element: <AboutUs /> },
         { path: '/available', element: <AvailableRentals /> },
         { path: '/owner', element: <OwnerLogin /> },
         { path: '/whyus', element: <WhyUs /> },
-        { path: '/ourservices', element: <OurServices /> },
-        { path: '/tenants', element: <Tenants /> },
-        { path: '/tenantslogin', element: <TenantsLogin /> },
+        { path: '/services', element: <OurServices /> },
+        { path: '/apply', element: <Apply /> },
+        { path: '/tenants', element: <TenantsLogin /> },
         { path: '/maintenance', element: <Maintenance /> },
-        { path: '/agentReferral', element: <AgentReferral /> },
+        // { path: '/agentReferral', element: <AgentReferral /> },
         { path: '/contact', element: <Contact /> },
         { path: '/help', element: <Help /> },
-        { path: '/application', element: <Application /> },
-        { path: '/generallease', element: <GeneralLease /> },
+        // { path: '/application', element: <Application /> },
+        // { path: '/generallease', element: <GeneralLease /> },
         { path: '/blog', element: <Blog /> },
         { path: '/blogexpanded', element: <BlogExpanded /> },
-        { path: '/testimonials', element: <Testimonials /> },
+        // { path: '/testimonials', element: <Testimonials /> },
       ],
     },
 

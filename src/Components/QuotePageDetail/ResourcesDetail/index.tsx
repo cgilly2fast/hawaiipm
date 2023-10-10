@@ -13,7 +13,7 @@ const Promoted = [
   { id: 8, text: 'Guide to raising rent' },
 ];
 
-const ReaoutcesDetail: React.FC = () => (
+const ResourcesDetail: React.FC = () => (
   <div className="md:pt-[50px]">
     <div className="2xl:px-80 xl:px-60 pl-[20px] pr-[20px]">
       <div className="font-Leitura text-[36px]">
@@ -22,7 +22,10 @@ const ReaoutcesDetail: React.FC = () => (
       <div className="md:flex flex-wrap">
         {Promoted?.map(res => (
           <div className="md:min-w-[450px] pt-[20px]" key={res.id}>
-            <Link to="" className="font-Arial text-[16px] text-Green100 outline-none">
+            <Link
+              to=""
+              className="font-Arial text-[16px] text-Green100 outline-none"
+            >
               {res.text}
             </Link>
           </div>
@@ -35,4 +38,4 @@ const ReaoutcesDetail: React.FC = () => (
   </div>
 );
 
-export default ReaoutcesDetail;
+export default ResourcesDetail;

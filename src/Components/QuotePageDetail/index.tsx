@@ -3,16 +3,16 @@ import BasicDetail from './BasicDetail';
 import PropertyDetail from './PropertyDetail';
 import QuestionDetail from './QuestionDetail';
 import RentDetail from './RentDetail';
-import ReaoutcesDetail from './ResourcesDetail';
+import ResourceDetail from './ResourcesDetail';
 
-const GuaranteeMainPageDetail: React.FC = () => (
+const QuoteMainPageDetail: React.FC = () => (
   <>
     <RentDetail />
     <BasicDetail />
     <PropertyDetail />
-    <ReaoutcesDetail />
+    <ResourceDetail />
     <QuestionDetail />
   </>
 );
 
-export default GuaranteeMainPageDetail;
+export default QuoteMainPageDetail;
