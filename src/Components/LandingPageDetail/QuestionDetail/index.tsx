@@ -8,7 +8,7 @@ const Recent = [
       id: 1,
       text: 'Am I a good fit for Hawaii PM?',
       content:
-        'The mug is round. The jar is round. They should call it Roundtine.',
+        'We exclusively take on clients who have properties in Hawaii and right now only the Honolulu metro area. Staying focused allows us to maximize revenue for clients.',
     },
     {
       id: 5,
@@ -20,13 +20,13 @@ const Recent = [
       id: 3,
       text: 'Can I cancel at any time?',
       content:
-        'The best way to answer this is to give you a detailed 12-month revenue projection. Give us a call, and we collect the info we need to create an accurate forecast and get back to you in 24hrs.',
+        'Yes. You can cancel our agreement with us at any time for no fee. Our agreement is simply for documentation and clarity around the services I am providing you and not binding in any way.',
     },
     {
       id: 4,
       text: 'Can I stay at my own place?',
       content:
-        'The best way to answer this is to give you a detailed 12-month revenue projection. Give us a call, and we collect the info we need to create an accurate forecast and get back to you in 24hrs.',
+        "Of course, it's your place! We do not limit homeowner use of vacation rentals.",
     },
   ],
   [
@@ -34,25 +34,25 @@ const Recent = [
       id: 5,
       text: 'Do guests ever damage the property?',
       content:
-        'The mug is round. The jar is round. They should call it Roundtine.',
+        "This is a very rare occupancy. People that can afford vacations in Hawaii are usually types that respect their home. If this did ever happen, you are still covered. In addition to our general liability insurance we gather evidence and submit a claim through Airbnb or VRBO's Resolution Center to charge the guest that provides protection for up to $1,000,000 in the rare event of guest damages. Homes are inspected for damage every turnover, so nothing is missed.",
     },
     {
       id: 6,
       text: 'How are guests vetted?',
       content:
-        'The best way to answer this is to give you a detailed 12-month revenue projection. Give us a call, and we collect the info we need to create an accurate forecast and get back to you in 24hrs.',
+        "For long term rental properties we evaluate payment history, previous landlord references, tenant and employment status to ensure the best fit for you. For short-term rental properties, we have developed a system that examines the guest profile, previous reviews, and message content to determine guest quality in addition to requiring a verified ID by Airbnb/VRBO's Trust & Safety Department.",
     },
     {
       id: 7,
       text: 'Will I have to worry about taxes?',
       content:
-        'The mug is round. The jar is round. They should call it Roundtine.',
+        'We take care of all collecting and remitting all County taxes, permits, and licenses for you.',
     },
     {
       id: 8,
       text: 'How do I get started?',
       content:
-        'The mug is round. The jar is round. They should call it Roundtine.',
+        'The fastest way to get started is to give us a call at 415-209-5847 or give us an email at Colby@HawaiiPM.com',
     },
   ],
 ];

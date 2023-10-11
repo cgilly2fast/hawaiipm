@@ -85,7 +85,9 @@ const PropertyManagementBox: React.FC<PropertyDetailProps> = ({
                 // setOpen(open + 1);
               }}
             >
-              <span className="underline">Start</span> Maximizing Your Income
+              <Link to="/quote">
+                <span className="underline">Start</span> Maximizing Your Income
+              </Link>
             </button>
           </div>
         </div>

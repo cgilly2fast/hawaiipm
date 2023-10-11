@@ -1,5 +1,6 @@
 import React from 'react';
 import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
+import Lisa from '../../../Assets/Images/LIsa.png';
 
 const RevenueGuaranteeDetail: React.FC = () => (
   <div className="pb-[50px]">
@@ -11,11 +12,13 @@ const RevenueGuaranteeDetail: React.FC = () => (
             straightforward and simple: we are only successful when you are.
           </div>
           <div className="pt-[20px]">
-            <span className="font-bold">Switching property managers?</span>
-            <br />
+            {/* <span className="font-bold">Switching property managers?</span>
+            <br /> */}
             <span>
-              We guarantee you’ll make at least $5,000 more in your first year
-              with us.
+              For long term rentals we find qualified tenants for long-term
+              rentals in 30 days or less, or cover the rent until we do.
+              Vacation rentals earn at least $5,000 in the first year with us or
+              we'll make up the difference.
             </span>
           </div>
           <div className="pt-[20px]">
@@ -26,23 +29,13 @@ const RevenueGuaranteeDetail: React.FC = () => (
           <div className="pt-[20px]">
             That’s why we’ve created the{' '}
             <span className="font-bold">Hawaii PM Revenue Guarantee</span> to
-            help you discover the smarter way to vacation rental.
+            help you discover the smarter way to manage your property.
           </div>
           <div className="pt-[20px]">
             <span>
               By every measure, Hawaii PM has proven we know what it takes to
-              make your vacation rental successful:
+              make your vacation rental successful.
             </span>
-            <br />
-            <li>
-              Winning Travel Weekly’s Magellan Award for Vacation Rental
-              Hospitality (twice!)
-            </li>
-            <li>
-              Managing thousands of homes and hundreds of thousands of bookings
-            </li>
-            <li>More than 90% guest ratings of 4 or 5</li>
-            <li>And more!</li>
           </div>
           <div className="pt-[20px]">
             We manage every aspect of your vacation rental, helping you earn
@@ -77,32 +70,41 @@ const RevenueGuaranteeDetail: React.FC = () => (
                 Testimonial
               </div>
               <div className="lg:border-r-2 mt-[20px] border-b-2"></div>
+              {/* <div className="w-auto font-Arial pt-[20px] text-[16px] text-center text-Black400">
+                I was managing my rental myself because I felt like no one would
+                take as good care of my house as I would, but Colby has changed
+                my view on that.{' '}
+              </div> */}
               <div className="w-auto font-Arial pt-[20px] text-[16px] text-center text-Black400">
-                Having made the switch to TurnKey, I feel I’m finally working
-                with a manager who ‘gets it.’ They maximize my bookings while
-                screening guests to take care of my property. TurnKey is the
-                only property manager who can do both well. And their technology
-                and housekeeping processes blow the doors off other property
-                managers.
+                He completely freed up my time, takes care of my home like his
+                own, and has been able to increase my revenue in 2019 by 20%.
               </div>
               <div className="font-Arial pt-[20px] text-center text-Black400">
                 <span className="font-bold text-[16px]">
-                  Hawaii PM is the gold standard
+                  I trust him to keep my beach house in sparkling condition
                 </span>{' '}
-                in vacation rental property management."
+                and highly recommend him to all property owners.
               </div>
               <div className="pt-[30px] flex justify-center">
                 <img src={DividerIcon} alt="Divider" />
               </div>
               <div className="flex items-center justify-center pt-[20px]">
-                <div className="w-[100px] h-[100px] bg-Neutral300 rounded-full "></div>
+                <div className="w-[100px] h-[100px] bg-Neutral300 rounded-full ">
+                  <img src={Lisa} />
+                </div>
               </div>
               <div className="font-Arial text-[16px] text-center text-Black400 font-bold pt-[20px]">
-                Matt Golis
+                Lisa Levin
               </div>
               <div className="font-Arial text-[12px] text-center pb-[20px] text-Black400 pt-[20px]">
-                Former Board Member of the <br />
-                Vacation Rental Management Association (VRMA)
+                Owner
+                <br />
+                Stinson Beach, CA
+              </div>
+              <div className=" flex pt-[5px] pb-[25px] font-Arial">
+                <button className="mx-auto w-[100%] text-[16px] md:w-[200px] lg:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg outline-none">
+                  Learn their story
+                </button>
               </div>
             </div>
           </div>

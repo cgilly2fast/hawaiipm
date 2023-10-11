@@ -17,7 +17,7 @@ const RevenueDetail: React.FC = () => (
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="max-w-[80%] lg:w-[410px] text-[14px] text-Black400">
+            <div className="max-w-[80%]  font-Arial lg:w-[410px] text-[14px] text-Black400">
               Be Confident in Your Vacation Rental Performance With Our Custom
               Revenue Guarantee.
             </div>
@@ -50,13 +50,13 @@ const RevenueDetail: React.FC = () => (
           </div>
           <div className="w-[100%]  lg:w-[410px] p-[10px] h-[44px] mt-[20px] border-2 rounded-lg">
             <input
-              placeholder="Number of Listing"
+              placeholder="Number of units"
               className="w-[100%] focus-visible:outline-none focus:outline"
             />
           </div>
           <div className="pt-[20px]">
             <button className="w-[100%] text-[16px]  lg:w-[410px] h-[44px] bg-Green100 text-Neutral000 rounded-lg outline-none">
-              Learn More
+              Get Started
             </button>
           </div>
           <div className="pt-[10px] pb-[10px] w-[100%] text-Black400 text-[16px]">
