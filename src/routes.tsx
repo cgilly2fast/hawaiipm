@@ -56,6 +56,7 @@ export default function Router() {
         { path: '/apply', element: <Apply /> },
         { path: '/tenants', element: <TenantsLogin /> },
         { path: '/maintenance', element: <Maintenance /> },
+        { path: '/login', element: <Login /> },
         // { path: '/agentReferral', element: <AgentReferral /> },
         { path: '/contact', element: <Contact /> },
         { path: '/help', element: <Help /> },

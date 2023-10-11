@@ -8,7 +8,7 @@ const DesktopMenu: React.FC = () => (
   <div className="mx-auto max-w-[1920px]">
     <div className="pl-[30px] hidden sm:block lg:block md:hidden absolute z-10">
       <Link to="/">
-        <div className="flex w-[312px] xl:h-[156px] h-[130px] bg-Green100 absolute flex flex-col justify-center items-center rounded-b-lg md:w-[150px] h-[120px]  2xl:w-[300px] xl:w-[230px]">
+        <div className="w-[312px] xl:h-[156px] h-[130px] bg-Green100 absolute flex flex-col justify-center items-center rounded-b-lg md:w-[150px]  2xl:w-[300px] xl:w-[230px]">
           <img
             src={Logo}
             alt="logo"
@@ -17,7 +17,7 @@ const DesktopMenu: React.FC = () => (
         </div>
       </Link>
     </div>
-    <div className="text-Black400 bg-Neutral200 sm:flex flex-col items-center p-[10px] h-[40px] hidden md:hidden lg:block lg:flex flex-col items-center">
+    <div className="text-Black400 bg-Neutral200 sm:flex flex-col items-center p-[10px] h-[40px] hidden md:hidden  lg:flex">
       <div className="w-[400px] text-[14px] flex justify-between flex-row items-center font-Arial">
         <div>
           <Link to="/blogexpanded" className="outline-none">
@@ -38,7 +38,7 @@ const DesktopMenu: React.FC = () => (
       </div>
     </div>
 
-    <div className=" text-Black100 justify-end pt-[20px] md:hidden lg:flex hidden font-Arial justify-end pb-[20px] pr-[50px] text-[18px]">
+    <div className=" text-Black100 justify-end pt-[20px] md:hidden lg:flex hidden font-Arial pb-[20px] pr-[50px] text-[18px]">
       <div className="w-[660px] flex justify-between items-center">
         <div>
           <Link to="/available" className="outline-none">

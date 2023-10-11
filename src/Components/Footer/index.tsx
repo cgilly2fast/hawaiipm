@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Footer: React.FC = () => (
   <>
     <div className="min-h-[280px] bg-Neutral200">
-      <div className="mx-auto max-w-[1920px] block sm:flex pt-[50px] pt-[30px] pl-[20px]">
+      <div className="mx-auto max-w-[1920px] block sm:flex pt-[50px] pl-[20px]">
         <div className="block sm:flex flex-row w-full xl:justify-evenly md:justify-between">
           <div>
             <img
@@ -52,11 +52,11 @@ const Footer: React.FC = () => (
                 <div>Trust & Safety</div>
               </div>
             </div>
-            <div className="w-[112px] flex flex-row items-start gap-[20px] w-[50%] sm:w-[25%] pt-[80px] sm:pt-[0px]">
+            {/* <div className="w-[112px] flex flex-row items-start gap-[20px] sm:w-[25%] pt-[80px] sm:pt-[0px]">
               <img src={InstagramIcon} alt="instagram" />
               <img src={YoutubeIcon} alt="youtube" />
               <img src={FacebookIcon} alt="facebook" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

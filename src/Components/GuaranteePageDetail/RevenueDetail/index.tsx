@@ -4,10 +4,10 @@ import Background2 from '../../../Assets/Images/Background2.png';
 const RevenueDetail: React.FC = () => (
   <div>
     <div
-      className="relative w-full h-[432px] xl:h-[570px] lg:h-[590px] md:h-[560px] h-[600px]"
+      className="relative w-full h-[432px] xl:h-[570px] lg:h-[590px] md:h-[560px] "
       style={{ backgroundImage: `url(${Background2})` }}
     >
-      <div className="w-auto top-[30px] left-[13px] right-[13px] flex flex-col text-center absolute 2xl:flex 2xl:top-[40px] 2xl:left-[1040px] items-center rounded-lg items-start xl:flex xl:left-[730px] xl:top-[35px] lg:w-[470px] md:w-[370px] lg:flex bg-Neutral000 lg:top-[45px] lg:left-[400px] md:flex md:left-[340px] md:top-[30px]">
+      <div className="w-auto top-[30px] left-[13px] right-[13px] flex flex-col text-center absolute 2xl:flex 2xl:top-[40px] 2xl:left-[1040px] items-center rounded-lg xl:flex xl:left-[730px] xl:top-[35px] lg:w-[470px] md:w-[370px] lg:flex bg-Neutral000 lg:top-[45px] lg:left-[400px] md:flex md:left-[340px] md:top-[30px]">
         <div className="font-Leitura justify-center">
           <div className="flex justify-center">
             <div className="lg:w-auto max-w-[80%] md:max-w-[100%] font-Leitura text-[24px] lg:text-[26px] lg:text-Black100 lg:pt-[10px] text-center">

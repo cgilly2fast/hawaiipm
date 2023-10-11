@@ -10,7 +10,7 @@ const PropertyManagementBox: React.FC<PropertyDetailProps> = ({
   open,
 }: PropertyDetailProps) => {
   return (
-    <div className="w-auto [h-[440px] top-[25px] ml-[13px] mr-[13px] md:pl-[13px] md:pr-[13px] pb-[30px] bg-Neutral000 absolute items-center rounded-lg items-start flex justify-center">
+    <div className="w-auto [h-[440px] top-[25px] ml-[13px] mr-[13px] md:pl-[13px] md:pr-[13px] pb-[30px] bg-Neutral000 absolute items-center rounded-lg flex justify-center">
       <div className="max-w-[500px] h-auto lg:pt-[0px] md:pt-[20px] ml-[20px] mr-[20px]">
         <div className="flex justify-center">
           <div className="max-w-[75%] font-Leitura text-Black100 lg:text-[24px] lg:text-Black100 lg:pt-[30px] text-center">
