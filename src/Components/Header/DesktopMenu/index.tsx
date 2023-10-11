@@ -20,7 +20,7 @@ const DesktopMenu: React.FC = () => (
     <div className="text-Black400 bg-Neutral200 sm:flex flex-col items-center p-[10px] h-[40px] hidden md:hidden  lg:flex">
       <div className="w-[400px] text-[14px] flex justify-between flex-row items-center font-Arial">
         <div>
-          <Link to="/blogexpanded" className="outline-none">
+          <Link to="/login" className="outline-none">
             Login
           </Link>
         </div>
@@ -139,13 +139,13 @@ const DesktopMenu: React.FC = () => (
                 <Menu.Item>
                   {({ active }) => (
                     <Link
-                      to="/owner"
+                      to="/quote"
                       className={`${
                         active ? 'bg-Green500 text-Green100' : 'text-gray-500'
                       }
                   block px-4 py-2 text-sm`}
                     >
-                      Owner Login
+                      Free Online Rent Analysis
                     </Link>
                   )}
                 </Menu.Item>
@@ -228,7 +228,7 @@ const DesktopMenu: React.FC = () => (
                     </Link>
                   )}
                 </Menu.Item>
-                <Menu.Item>
+                {/* <Menu.Item>
                   {({ active }) => (
                     <Link
                       to="/tenants"
@@ -240,7 +240,7 @@ const DesktopMenu: React.FC = () => (
                       Tenant Login
                     </Link>
                   )}
-                </Menu.Item>
+                </Menu.Item> */}
                 <Menu.Item>
                   {({ active }) => (
                     <Link
@@ -275,32 +275,6 @@ const DesktopMenu: React.FC = () => (
 
 export default DesktopMenu;
 
-{
-  /* <div className="text-Black400 bg-Neutral200 p-[10px] h-[40px] block sm:hidden md:block lg:hidden">
-        <div className="flex justify-between flex-row font-Arial md:flex justify-between flex-row">
-          <div>
-            <Link to="login" className="outline-none">
-              Login
-            </Link>
-          </div>
-          <div>
-            <Link to="/guarantee" className="outline-none">
-              Guarantee
-            </Link>
-          </div>
-          <div>
-            <Link to="/blog" className="outline-none">
-              Blog
-            </Link>
-          </div>
-          <div>
-            <Link to="/contact" className="outline-none">
-              415-209-5847
-            </Link>
-          </div>
-        </div>
-      </div> */
-}
 {
   /* <div>
         <div>

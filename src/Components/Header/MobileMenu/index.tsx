@@ -34,6 +34,30 @@ const MobileMenu: React.FC = () => {
 
   return (
     <div>
+      <div className="text-Black400 bg-Neutral200 p-[10px] h-[40px] block sm:hidden md:block lg:hidden">
+        <div className="flex justify-between flex-row font-Arial md:flex">
+          <div>
+            <Link to="login" className="outline-none">
+              Login
+            </Link>
+          </div>
+          <div>
+            <Link to="/guarantee" className="outline-none">
+              Guarantee
+            </Link>
+          </div>
+          <div>
+            <Link to="/blog" className="outline-none">
+              Blog
+            </Link>
+          </div>
+          <div>
+            <Link to="/contact" className="outline-none">
+              415-209-5847
+            </Link>
+          </div>
+        </div>
+      </div>
       <div className="sm:h-[56px] bg-Green100 p-[16px] flex justify-between sm:hidden md:flex lg:hidden">
         <Link to="/">
           <img src={Logo} alt="logo" className="sm: h-[20px] " />
@@ -47,6 +71,7 @@ const MobileMenu: React.FC = () => {
           />
         </button>
       </div>
+
       {expandMenu && (
         <div className="fixed inset-0 font-Arial z-50 transition-all ease-in-out duration-300">
           <div className="fixed inset-y-0  right-0 w-4/5 bg-Green100 bg-opacity-95 text-[20px] text-white  shadow-lg">
@@ -77,7 +102,7 @@ const MobileMenu: React.FC = () => {
               </li>
               {expandOwners && (
                 <ul className="bg-Neutral100 text-gray-700 pt-[10px] pb-[10px]">
-                  <li className="mr-7">Owner Login</li>
+                  <li className="mr-7">Free Online Rent Analysis</li>
                   <li className="mr-7">Services</li>
                   <li className="mr-7">Why Us</li>
                 </ul>
@@ -90,7 +115,7 @@ const MobileMenu: React.FC = () => {
                 {expandTenants && (
                   <ul className="bg-Neutral100 text-gray-700 pt-[10px] pb-[10px]">
                     <li className="mr-7">Apply for rental</li>
-                    <li className="mr-7">Tenant Login</li>
+                    {/* <li className="mr-7">Tenant Login</li> */}
                     <li className="mr-7">Maintenance</li>
                   </ul>
                 )}
