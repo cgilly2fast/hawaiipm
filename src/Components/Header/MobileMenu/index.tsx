@@ -82,7 +82,9 @@ const MobileMenu: React.FC = () => {
               X
             </button>
             <ul className="p-4 text-right">
-              <li className="pt-[10px] mr-7">Available Rentals</li>
+              <li className="pt-[10px] mr-7">
+                <Link to="/available">Available Rentals</Link>
+              </li>
               <li className="pt-[10px]">
                 <button onClick={toggleCompany}>
                   Our Company
@@ -91,8 +93,12 @@ const MobileMenu: React.FC = () => {
               </li>
               {expandCompany && (
                 <ul className="bg-Neutral100 text-gray-700 pt-[10px] pb-[10px]">
-                  <li className="mr-7">About Us</li>
-                  <li className="mr-7">Contact</li>
+                  <li className="mr-7">
+                    <Link to="/aboutus">About Us</Link>
+                  </li>
+                  <li className="mr-7">
+                    <Link to="/contact">Contact</Link>
+                  </li>
                 </ul>
               )}
               <li className="pt-[10px]">
@@ -102,9 +108,15 @@ const MobileMenu: React.FC = () => {
               </li>
               {expandOwners && (
                 <ul className="bg-Neutral100 text-gray-700 pt-[10px] pb-[10px]">
-                  <li className="mr-7">Free Online Rent Analysis</li>
-                  <li className="mr-7">Services</li>
-                  <li className="mr-7">Why Us</li>
+                  <li className="mr-7">
+                    <Link to="/quote">Free Online Rent Analysis</Link>
+                  </li>
+                  <li className="mr-7">
+                    <Link to="/services">Services</Link>
+                  </li>
+                  <li className="mr-7">
+                    <Link to="/whyus">Why Us</Link>
+                  </li>
                 </ul>
               )}
               <li className="pt-[10px]">
@@ -114,13 +126,19 @@ const MobileMenu: React.FC = () => {
                 </button>
                 {expandTenants && (
                   <ul className="bg-Neutral100 text-gray-700 pt-[10px] pb-[10px]">
-                    <li className="mr-7">Apply for rental</li>
+                    <li className="mr-7">
+                      <Link to="apply">Apply for rental</Link>
+                    </li>
                     {/* <li className="mr-7">Tenant Login</li> */}
-                    <li className="mr-7">Maintenance</li>
+                    <li className="mr-7">
+                      <Link to="/maintenance">Maintenance</Link>
+                    </li>
                   </ul>
                 )}
               </li>
-              <li className="pt-[10px] mr-7">Help</li>
+              <li className="pt-[10px] mr-7">
+                <Link to="/help">Help</Link>
+              </li>
             </ul>
           </div>
         </div>
