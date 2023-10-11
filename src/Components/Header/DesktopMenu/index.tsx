@@ -218,7 +218,7 @@ const DesktopMenu: React.FC = () => (
                 <Menu.Item>
                   {({ active }) => (
                     <Link
-                      to="/available"
+                      to="/apply"
                       className={`${
                         active ? 'bg-Green500 text-Green100' : 'text-gray-500'
                       }

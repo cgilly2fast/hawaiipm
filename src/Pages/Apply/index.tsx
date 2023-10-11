@@ -1,6 +1,6 @@
 import React from 'react';
-import TenantsPageDetail from '../../Components/TenantsPageDetail';
+import ApplyPageDetail from '../../Components/ApplyPageDetail';
 
-const Apply: React.FC = () => <TenantsPageDetail />;
+const Apply: React.FC = () => <ApplyPageDetail />;
 
 export default Apply;

@@ -3,7 +3,7 @@ import Key from '../../../Assets/Images/Key.png';
 import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
 import { Link } from 'react-router-dom';
 
-const TenantDetail: React.FC = () => (
+const ApplyDetail: React.FC = () => (
   <div className="pb-[50px]">
     <div className="bg-Neutral100 h-[110px] lg:h-[200px] font-Leitura flex">
       <div className="text-[36px] lg:text-[48px] lg:container  2xl:pl-80 xl:pl-60 lg:pl-40 flex flex-row items-center ml-[20px]">
@@ -85,4 +85,4 @@ const TenantDetail: React.FC = () => (
   </div>
 );
 
-export default TenantDetail;
+export default ApplyDetail;
