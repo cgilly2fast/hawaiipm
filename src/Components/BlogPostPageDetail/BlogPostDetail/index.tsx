@@ -24,7 +24,7 @@ const Plan = [
   { id: 4, pictures: Recent4 },
 ];
 
-const BlogExpandedDetail: React.FC = () => (
+const BlogPostDetail: React.FC = () => (
   <div className="pb-[50px]">
     <div className="2xl:px-96 xl:px-72 lg:px-48 xl:pt-[70px] pt-[50px] pl-[20px] pr-[20px]">
       <img src={Blog2} alt="Blog2" className="w-[100%] h-[400px]" />
@@ -32,7 +32,7 @@ const BlogExpandedDetail: React.FC = () => (
         <div className="lg:w-[600px] font-Leitura text-[24px] xl:text-[36px]">
           Screening tenants is an important step in property management.
         </div>
-        <div className="w-[112px] flex flex-row items-start gap-[20px] w-[50%] sm:w-[25%] pt-[10px]">
+        <div className="w-[112px] flex flex-row items-start gap-[20px] sm:w-[25%] pt-[10px]">
           <img src={FacebookIcon} alt="facebook" />
           <img src={InstagramIcon} alt="instagram" />
           <img src={YoutubeIcon} alt="youtube" />
@@ -149,13 +149,16 @@ const BlogExpandedDetail: React.FC = () => (
         <div>
           <div className="md:flex flex-wrap justify-between pt-[30px] font-Arial">
             {Plan?.map(res => (
-              <div key={res.id} className="pt-[20px] 2xl:max-w-[250px] xl:max-w-[200px] lg:max-w-[210px] md:max-w-[230px]">
+              <div
+                key={res.id}
+                className="pt-[20px] 2xl:max-w-[250px] xl:max-w-[200px] lg:max-w-[210px] md:max-w-[230px]"
+              >
                 <img
                   src={res?.pictures}
                   alt={`${res?.id}`}
                   className="w-[100%]"
                 />
-                <div className="border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial text-start px-[10px]">
+                <div className="border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial px-[10px]">
                   <div className="text-[14px] font-bold">
                     Unlocking the Secrets of Mastering Time Management
                   </div>
@@ -179,4 +182,4 @@ const BlogExpandedDetail: React.FC = () => (
   </div>
 );
 
-export default BlogExpandedDetail;
+export default BlogPostDetail;

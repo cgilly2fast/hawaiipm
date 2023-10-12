@@ -5,7 +5,7 @@ import AgentReferral from './Pages/AgentReferral';
 import Application from './Pages/Application';
 import AvailableRentals from './Pages/AvailableRentals';
 import Blog from './Pages/Blog';
-import BlogExpanded from './Pages/BlogExpanded';
+import BlogPost from './Pages/BlogPost';
 import Contact from './Pages/Contact';
 import GeneralLease from './Pages/GeneralLease';
 import Guarantee from './Pages/Guarantee';
@@ -63,7 +63,7 @@ export default function Router() {
         // { path: '/application', element: <Application /> },
         // { path: '/generallease', element: <GeneralLease /> },
         { path: '/blog', element: <Blog /> },
-        { path: '/blogexpanded', element: <BlogExpanded /> },
+        { path: '/blog/post', element: <BlogPost /> },
         // { path: '/testimonials', element: <Testimonials /> },
       ],
     },
