@@ -14,7 +14,7 @@ const BannerDetail: React.FC = () => {
         </div>
       </div>
       <div
-        className="relative w-full max-w-[1920px] h-[486px] mx-auto flex justify-center"
+        className="relative w-full max-w-[1920px] h-[450px] mx-auto flex justify-center"
         style={{ backgroundImage: `url(${Background})` }}
       >
         <PropertyManagementBox setOpen={setOpen} open={open} />

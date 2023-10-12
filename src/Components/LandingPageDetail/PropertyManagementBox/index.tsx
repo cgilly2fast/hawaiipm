@@ -10,7 +10,7 @@ const PropertyManagementBox: React.FC<PropertyDetailProps> = ({
   open,
 }: PropertyDetailProps) => {
   return (
-    <div className="w-auto [h-[440px] top-[25px] ml-[13px] mr-[13px] md:pl-[13px] md:pr-[13px] pb-[30px] bg-Neutral000 absolute items-center rounded-lg flex justify-center">
+    <div className="w-auto [h-[440px] top-[25px] ml-[13px] mr-[13px] md:pl-[13px] md:pr-[13px] pb-[30px] pt-[20px] bg-Neutral000 absolute items-center rounded-lg flex justify-center">
       <div className="max-w-[500px] h-auto lg:pt-[0px] md:pt-[20px] ml-[20px] mr-[20px]">
         <div className="flex justify-center">
           <div className="max-w-[75%] font-Leitura text-Black100 lg:text-[24px] lg:text-Black100 lg:pt-[30px] text-center">
@@ -41,12 +41,12 @@ const PropertyManagementBox: React.FC<PropertyDetailProps> = ({
               autoComplete="shipping address-level2"
             />
           </div>
-          <div className="w-[100%] md:w-[400px] lg:w-[510px] bg-Neutral000 p-[10px] h-[44px] border-2 mt-[20px] rounded-lg">
+          {/* <div className="w-[100%] md:w-[400px] lg:w-[510px] bg-Neutral000 p-[10px] h-[44px] border-2 mt-[20px] rounded-lg">
             <input
               placeholder="Email"
               className="w-[100%] focus-visible:outline-none focus:outline"
             />
-          </div>
+          </div> */}
           <div className="flex flex-wrap  pt-[20px]">
             <div className="flex items-center mr-2 md:mr-4">
               <input
@@ -86,7 +86,8 @@ const PropertyManagementBox: React.FC<PropertyDetailProps> = ({
               }}
             >
               <Link to="/quote">
-                <span className="underline">Start</span> Maximizing Your Income
+                Continue
+                {/* <span className="underline">Start</span> Maximizing Your Income */}
               </Link>
             </button>
           </div>
