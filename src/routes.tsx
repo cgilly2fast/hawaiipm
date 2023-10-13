@@ -5,7 +5,11 @@ import AgentReferral from './Pages/AgentReferral';
 import Application from './Pages/Application';
 import AvailableRentals from './Pages/AvailableRentals';
 import Blog from './Pages/Blog';
-import BlogPost from './Pages/BlogPost';
+import HowToScreenTenants from './Components/BlogPosts/HowToScreenTenants';
+import BenefitsOfAPropertyManager from './Components/BlogPosts/BenefitsOfAPropertyManager';
+import LisaLevin from './Components/BlogPosts/LisaLevin';
+import SteveONeal from './Components/BlogPosts/SteveONeal';
+import KathleenHurley from './Components/BlogPosts/KathleenHurley';
 import Contact from './Pages/Contact';
 import GeneralLease from './Pages/GeneralLease';
 import Guarantee from './Pages/Guarantee';
@@ -63,7 +67,26 @@ export default function Router() {
         // { path: '/application', element: <Application /> },
         // { path: '/generallease', element: <GeneralLease /> },
         { path: '/blog', element: <Blog /> },
-        { path: '/blog/post', element: <BlogPost /> },
+        {
+          path: '/blog/how-to-screen-tenants',
+          element: <HowToScreenTenants />,
+        },
+        {
+          path: '/blog/home-owner-story-kathleen',
+          element: <KathleenHurley />,
+        },
+        {
+          path: '/blog/home-owner-story-lisa',
+          element: <LisaLevin />,
+        },
+        {
+          path: '/blog/home-owner-story-steve',
+          element: <SteveONeal />,
+        },
+        {
+          path: '/blog/why-use-a-property-manager',
+          element: <BenefitsOfAPropertyManager />,
+        },
         // { path: '/testimonials', element: <Testimonials /> },
       ],
     },

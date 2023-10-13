@@ -166,13 +166,13 @@ const BlogDetail: React.FC = () => (
         <div className="md:hidden">
           <div className="xl:flex justify-between font-Arial">
             {Recent?.map(res => (
-              <div key={res.id} className="pt-[20px]">
+              <div key={res.id} className="pt-[20px] mr-4">
                 <img
                   src={res?.pictures}
                   alt={`${res?.id}`}
                   className="w-[100%]"
                 />
-                <div className="xl:w-[270px] border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial text-start pl-[10px]">
+                <div className="xl:w-[270px] border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial pl-[10px]">
                   <div className="text-[14px] font-bold">
                     Unlocking the Secrets of Mastering Time Management
                   </div>
@@ -203,7 +203,7 @@ const BlogDetail: React.FC = () => (
                 className="2xl:max-w-[250px] xl:max-w-[200px] lg:max-w-[200px] md:max-w-[230px]"
               >
                 <img src={res?.pictures} alt={`${res?.id}`} />
-                <div className="border-x-[1px] border-b-[1px] py-[20px] rounded-b-lg text-center font-Arial text-start pl-[10px]">
+                <div className="border-x-[1px] border-b-[1px] py-[20px] rounded-b-lg text-center font-Arial pl-[10px]">
                   <div className="text-[14px] font-bold">
                     Unlocking the Secrets of Mastering Time Management
                   </div>
@@ -234,7 +234,7 @@ const BlogDetail: React.FC = () => (
                   className="2xl:max-w-[250px] xl:max-w-[200px] lg:max-w-[200px] md:max-w-[230px]"
                 >
                   <img src={res?.pictures} alt={`${res?.id}`} />
-                  <div className="border-x-[1px] border-b-[1px] py-[20px] rounded-b-lg text-center font-Arial text-start pl-[10px]">
+                  <div className="border-x-[1px] border-b-[1px] py-[20px] rounded-b-lg text-center font-Arial pl-[10px]">
                     <div className="text-[14px] font-bold">
                       Unlocking the Secrets of Mastering Time Management
                     </div>
@@ -260,7 +260,7 @@ const BlogDetail: React.FC = () => (
                   alt={`${res?.id}`}
                   className="w-[100%]"
                 />
-                <div className="xl:w-[270px] border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial text-start pl-[10px]">
+                <div className="xl:w-[270px] border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial pl-[10px]">
                   <div className="text-[14px] font-bold">
                     Unlocking the Secrets of Mastering Time Management
                   </div>

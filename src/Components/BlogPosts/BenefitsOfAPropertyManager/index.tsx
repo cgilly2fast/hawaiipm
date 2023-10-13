@@ -5,7 +5,7 @@ import BlogPostDetail from './BlogPostDetail';
 const BlogPostPageDetail: React.FC = () => (
   <>
     <BlogPostDetail />
-    <BlogCommentsDetail />
+    {/* <BlogCommentsDetail /> */}
   </>
 );
 

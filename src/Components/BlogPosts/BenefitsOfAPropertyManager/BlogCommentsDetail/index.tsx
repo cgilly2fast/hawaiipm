@@ -1,11 +1,15 @@
 import React from 'react';
-import User from '../../../Assets/Images/User.png';
-import HeartIcon from '../../../Assets/Images/HeartIcon.svg';
-import CommentIcon from '../../../Assets/Images/CommentIcon.svg';
-import UplodIcon from '../../../Assets/Images/UplodIcon.svg';
+import User from '../../../../Assets/Images/User.png';
+import HeartIcon from '../../../../Assets/Images/HeartIcon.svg';
+import CommentIcon from '../../../../Assets/Images/CommentIcon.svg';
+import UplodIcon from '../../../../Assets/Images/UplodIcon.svg';
+import DividerIcon from '../../../../Assets/Images/DividerIcon.svg';
 
 const BlogCommentsDetail: React.FC = () => (
   <div className="pb-[50px]">
+    <div className="pt-[50px] flex justify-center">
+      <img src={DividerIcon} alt="Divider" />
+    </div>
     <div className="2xl:px-80 xl:px-72 lg:px-48 pl-[20px] pr-[20px]">
       <div className="font-Arial text-[24px] font-bold">Comments</div>
       <div className="pt-[50px] font-Arial">
@@ -111,7 +115,7 @@ const BlogCommentsDetail: React.FC = () => (
                   htmlFor="uploadlogo"
                   className="flex bg-Neutral000 lg:h-[30px] rounded p-1 cursor-pointer"
                 >
-                  <img src={UplodIcon} alt="UplodIcon"/>
+                  <img src={UplodIcon} alt="UplodIcon" />
                   <div className="pl-[3px] w-[120px]">Upload Image</div>
                 </label>
                 <div className="text-[12px] pl-[10px] text-Black400">

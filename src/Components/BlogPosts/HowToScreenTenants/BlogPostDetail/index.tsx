@@ -1,20 +1,18 @@
 import React from 'react';
-import Blog2 from '../../../Assets/Images/Blog2.png';
+import Blog2 from '../../../../Assets/Images/Blog2.png';
 import InstagramIcon from '../../../Assets/Images/InstagramIcon.svg';
-import YoutubeIcon from '../../../Assets/Images/YoutubeIcon.svg';
-import FacebookIcon from '../../../Assets/Images/FacebookIcon.svg';
-import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
-import Recent1 from '../../../Assets/Images/Recent1.png';
-import Recent2 from '../../../Assets/Images/Recent2.png';
-import Recent3 from '../../../Assets/Images/Recent3.png';
-import Recent4 from '../../../Assets/Images/Recent4.png';
+import YoutubeIcon from '../../../../Assets/Images/YoutubeIcon.svg';
+import FacebookIcon from '../../../../Assets/Images/FacebookIcon.svg';
+import DividerIcon from '../../../../Assets/Images/DividerIcon.svg';
+import Recent1 from '../../../../Assets/Images/Recent1.png';
+import Recent2 from '../../../../Assets/Images/Recent2.png';
+import Recent3 from '../../../../Assets/Images/Recent3.png';
+import Recent4 from '../../../../Assets/Images/Recent4.png';
 
 const Button = [
-  { id: 1, text: 'Vacation' },
-  { id: 2, text: 'Tenants' },
-  { id: 3, text: 'Property' },
-  { id: 4, text: 'Management' },
-  { id: 5, text: 'Property Management' },
+  { id: 1, text: 'Tenant Screening Hawaii' },
+  { id: 2, text: 'Income Verification' },
+  { id: 3, text: 'Tenant Screening Techniques' },
 ];
 
 const Plan = [
@@ -30,16 +28,17 @@ const BlogPostDetail: React.FC = () => (
       <img src={Blog2} alt="Blog2" className="w-[100%] h-[400px]" />
       <div className="rext-center md:flex justify-between pt-[20px] xl:pl-[80px] lg:px-[30px]">
         <div className="lg:w-[600px] font-Leitura text-[24px] xl:text-[36px]">
-          Screening tenants is an important step in property management.
+          Comprehensive Tenant Screening in Hawaii: Finding the Perfect Fit for
+          Your Property
         </div>
-        <div className="w-[112px] flex flex-row items-start gap-[20px] sm:w-[25%] pt-[10px]">
+        {/* <div className="w-[112px] flex flex-row items-start gap-[20px] sm:w-[25%] pt-[10px]">
           <img src={FacebookIcon} alt="facebook" />
           <img src={InstagramIcon} alt="instagram" />
           <img src={YoutubeIcon} alt="youtube" />
-        </div>
+        </div> */}
       </div>
       <div className="font-Arial text-Black400 text-[14px] xl:pl-[80px] lg:pl-[30px] pt-[20px]">
-        By Colby Gilbert on November 2nd, 2019
+        By Colby Gilbert on October 3rd, 2023
       </div>
       <div className="font-Arial text-Black100 text-[16px] xl:pl-[80px] lg:pl-[30px] xl:pr-[150px] lg:pr-[100px]">
         <div className="lg:border-r-2 mt-[30px] border-b-2"></div>
@@ -50,12 +49,17 @@ const BlogPostDetail: React.FC = () => (
           character.
         </div>
         <div className="pt-[20px]">
+          {/* <span className="font-bold">Time-saving</span> <br /> */}
           The goal is to identify kind laid-back tenants for your property and
           to minimize the risk of financial loss and property damage. In this
           blog post, we will discuss some effective techniques for screening
           tenants in Hawaii.
         </div>
         <div className="pt-[20px]">
+          {/* <span className="font-bold">
+            Expertise in the Local Rental Market
+          </span>
+          <br /> */}
           When it comes to evaluating potential tenants, a credit check is
           crucial. It gives you an idea of their financial responsibility and
           whether they have a history of late payments or outstanding debts.
@@ -63,6 +67,8 @@ const BlogPostDetail: React.FC = () => (
           their rent on time.
         </div>
         <div className="pt-[20px]">
+          {/* <span className="font-bold">Tenant Screening</span>
+          <br /> */}
           Another important aspect of tenant screening is verifying a potential
           tenant's income. This will help you determine if they can afford the
           rent and if they have a stable source of income. You can ask for pay
@@ -70,25 +76,30 @@ const BlogPostDetail: React.FC = () => (
           income.
         </div>
         <div className="pt-[20px]">
+          {/* <span className="font-bold">Property Maintenance & Repairs</span>
+          <br /> */}
           It's also important to check a potential tenant's rental history to
           see where they have lived before and how long they stayed. Contact
           their previous landlords to ask about their rental history, including
           whether they paid their rent on time and took care of the property.
         </div>
         <div className="pt-[20px]">
+          {/* <span className="font-bold">
+            Efficient Rent Collection & Reporting
+          </span>
+          <br /> */}
           Conducting a background check can reveal any criminal history or
           outstanding warrants. This can help you ensure the safety of other
-          tenants and the property.
-        </div>
-        <div className="pt-[20px]">
-          It's important to verify a potential tenant's identity to ensure that
-          they are who they say they are. Ask for a government-issued ID such as
-          a driver's license or passport to confirm their identity.
+          tenants and the property. It's important to verify a potential
+          tenant's identity to ensure that they are who they say they are. Ask
+          for a government-issued ID such as a driver's license or passport to
+          confirm their identity.
         </div>
         <div className="pt-[20px]">
           If a potential tenant is employed, ask for a letter from their
           employer or a recent pay stub to verify their employment status.
         </div>
+
         <div className="pt-[20px]">
           Finally, ask the potential tenant for references, such as previous
           landlords or colleagues. Contact these references to learn more about
@@ -101,9 +112,7 @@ const BlogPostDetail: React.FC = () => (
           cause conflicts or disturbances and are more likely to be easy-going
           and flexible.
         </div>
-        <div className="pt-[20px]">
-          As a property manager you want people who are easy to work with!
-        </div>
+
         <div className="pt-[20px]">
           By looking for these characteristics in addition to the traditional
           screening techniques, you can make informed decisions when it comes to
@@ -111,17 +120,21 @@ const BlogPostDetail: React.FC = () => (
           finding tenants who will not only take care of your rental property,
           but also contribute positively to the community.
         </div>
+
         <div className="pt-[20px]">
-          <div>Here is an exact checklist to follow:</div>
-          <div className="pt-[30px] pl-[10px]">
-            <li>Credit Checks</li>
-            <li>Income Verification</li>
-            <li>Rental History</li>
-            <li>Background checks</li>
-            <li>Identity verification</li>
-            <li>Employment Verification</li>
-            <li>Kind and laid back</li>
-          </div>
+          Here is an exact checklist to follow:
+          <br />
+          <br />
+          <ul>
+            <li>- Credit check</li>
+            <li>- Income Verification</li>
+            <li>- Rental history</li>
+            <li>- Background check</li>
+            <li>- Identity verifcation</li>
+            <li>
+              <span className="font-bold">- Kind and laid back</span>
+            </li>
+          </ul>
         </div>
         <div className="flex flex-wrap">
           {Button.map(res => (
@@ -144,7 +157,7 @@ const BlogPostDetail: React.FC = () => (
       <div className="pt-[50px] flex justify-center">
         <img src={DividerIcon} alt="Divider" />
       </div>
-      <div className="font-Arial pt-[50px]">
+      {/* <div className="font-Arial pt-[50px]">
         <div className="text-[24px] font-bold">Related Blog Posts</div>
         <div>
           <div className="md:flex flex-wrap justify-between pt-[30px] font-Arial">
@@ -174,10 +187,7 @@ const BlogPostDetail: React.FC = () => (
             ))}
           </div>
         </div>
-      </div>
-      <div className="pt-[50px] flex justify-center">
-        <img src={DividerIcon} alt="Divider" />
-      </div>
+      </div> */}
     </div>
   </div>
 );
