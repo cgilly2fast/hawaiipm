@@ -1,4 +1,5 @@
 import { Navigate, Outlet, useLocation, useRoutes } from 'react-router-dom';
+import ScrollToTop from './Components/ScrollToTop';
 import Admin from './Layouts/Admin';
 import AboutUs from './Pages/AboutUs';
 import AgentReferral from './Pages/AgentReferral';
@@ -40,64 +41,69 @@ export default function Router() {
     return children ? children : <Outlet />;
   };
 
-  return useRoutes([
-    {
-      path: '/',
-      element: (
-        <PrivateWrapper>
-          <Admin />
-        </PrivateWrapper>
-      ),
-      children: [
-        { path: '/', element: <Landing /> },
-        { path: '/guarantee', element: <Guarantee /> },
-        { path: '/quote', element: <Quote /> },
-        { path: '/aboutus', element: <AboutUs /> },
-        { path: '/available', element: <AvailableRentals /> },
-        { path: '/owner', element: <OwnerLogin /> },
-        { path: '/whyus', element: <WhyUs /> },
-        { path: '/services', element: <OurServices /> },
-        { path: '/apply', element: <Apply /> },
-        { path: '/tenants', element: <TenantsLogin /> },
-        { path: '/maintenance', element: <Maintenance /> },
-        { path: '/login', element: <Login /> },
-        // { path: '/agentReferral', element: <AgentReferral /> },
-        { path: '/contact', element: <Contact /> },
-        { path: '/help', element: <Help /> },
-        // { path: '/application', element: <Application /> },
-        // { path: '/generallease', element: <GeneralLease /> },
-        { path: '/blog', element: <Blog /> },
+  return (
+    <div>
+      <ScrollToTop />
+      {useRoutes([
         {
-          path: '/blog/how-to-screen-tenants',
-          element: <HowToScreenTenants />,
+          path: '/',
+          element: (
+            <PrivateWrapper>
+              <Admin />
+            </PrivateWrapper>
+          ),
+          children: [
+            { path: '/', element: <Landing /> },
+            { path: '/guarantee', element: <Guarantee /> },
+            { path: '/quote', element: <Quote /> },
+            { path: '/aboutus', element: <AboutUs /> },
+            { path: '/available', element: <AvailableRentals /> },
+            { path: '/owners', element: <OwnerLogin /> },
+            { path: '/whyus', element: <WhyUs /> },
+            { path: '/services', element: <OurServices /> },
+            { path: '/apply', element: <Apply /> },
+            { path: '/tenants', element: <TenantsLogin /> },
+            { path: '/maintenance', element: <Maintenance /> },
+            { path: '/login', element: <Login /> },
+            // { path: '/agentReferral', element: <AgentReferral /> },
+            { path: '/contact', element: <Contact /> },
+            { path: '/help', element: <Help /> },
+            // { path: '/application', element: <Application /> },
+            // { path: '/generallease', element: <GeneralLease /> },
+            { path: '/blog', element: <Blog /> },
+            {
+              path: '/blog/how-to-screen-tenants',
+              element: <HowToScreenTenants />,
+            },
+            {
+              path: '/blog/home-owner-story-kathleen',
+              element: <KathleenHurley />,
+            },
+            {
+              path: '/blog/home-owner-story-lisa',
+              element: <LisaLevin />,
+            },
+            {
+              path: '/blog/home-owner-story-steve',
+              element: <SteveONeal />,
+            },
+            {
+              path: '/blog/why-use-a-property-manager',
+              element: <BenefitsOfAPropertyManager />,
+            },
+            // { path: '/testimonials', element: <Testimonials /> },
+          ],
         },
-        {
-          path: '/blog/home-owner-story-kathleen',
-          element: <KathleenHurley />,
-        },
-        {
-          path: '/blog/home-owner-story-lisa',
-          element: <LisaLevin />,
-        },
-        {
-          path: '/blog/home-owner-story-steve',
-          element: <SteveONeal />,
-        },
-        {
-          path: '/blog/why-use-a-property-manager',
-          element: <BenefitsOfAPropertyManager />,
-        },
-        // { path: '/testimonials', element: <Testimonials /> },
-      ],
-    },
 
-    // {
-    //   path: "/login",
-    //   element: token ? (
-    //     <Navigate to="/" replace />
-    //   ) : (
-    //     <Login />
-    //   ),
-    // },
-  ]);
+        // {
+        //   path: "/login",
+        //   element: token ? (
+        //     <Navigate to="/" replace />
+        //   ) : (
+        //     <Login />
+        //   ),
+        // },
+      ])}
+    </div>
+  );
 }

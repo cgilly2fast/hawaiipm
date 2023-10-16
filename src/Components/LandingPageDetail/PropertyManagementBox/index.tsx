@@ -79,17 +79,17 @@ const PropertyManagementBox: React.FC<PropertyDetailProps> = ({
             </div>
           </div>
           <div className="pt-[20px]">
-            <button
-              className="w-[100%] md:w-[400px] lg:w-[510px] h-[44px] bg-Green100 text-Neutral000 rounded-lg focus-visible:outline-none focus:outline"
-              onClick={() => {
-                // setOpen(open + 1);
-              }}
-            >
-              <Link to="/quote">
+            <Link to="/quote">
+              <button
+                className="w-[100%] md:w-[400px] lg:w-[510px] h-[44px] bg-Green100 text-Neutral000 rounded-lg focus-visible:outline-none focus:outline"
+                onClick={() => {
+                  // setOpen(open + 1);
+                }}
+              >
                 Continue
                 {/* <span className="underline">Start</span> Maximizing Your Income */}
-              </Link>
-            </button>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

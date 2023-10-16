@@ -85,6 +85,9 @@ const MobileMenu: React.FC = () => {
               <li className="pt-[10px] mr-7">
                 <Link to="/available">Available Rentals</Link>
               </li>
+              <li className="pt-[10px] mr-7">
+                <Link to="/pricing">Pricing</Link>
+              </li>
               <li className="pt-[10px]">
                 <button onClick={toggleCompany}>
                   Our Company
@@ -93,6 +96,12 @@ const MobileMenu: React.FC = () => {
               </li>
               {expandCompany && (
                 <ul className="bg-Neutral100 text-gray-700 pt-[10px] pb-[10px]">
+                  <li className="mr-7">
+                    <Link to="/services">Services</Link>
+                  </li>
+                  <li className="mr-7">
+                    <Link to="/quote">Free Online Rent Analysis</Link>
+                  </li>
                   <li className="mr-7">
                     <Link to="/aboutus">About Us</Link>
                   </li>
@@ -109,13 +118,10 @@ const MobileMenu: React.FC = () => {
               {expandOwners && (
                 <ul className="bg-Neutral100 text-gray-700 pt-[10px] pb-[10px]">
                   <li className="mr-7">
-                    <Link to="/quote">Free Online Rent Analysis</Link>
+                    <Link to="/owners">Owner Login</Link>
                   </li>
                   <li className="mr-7">
-                    <Link to="/services">Services</Link>
-                  </li>
-                  <li className="mr-7">
-                    <Link to="/whyus">Why Us</Link>
+                    <Link to="/contact">Landlord FAQ</Link>
                   </li>
                 </ul>
               )}
@@ -127,17 +133,16 @@ const MobileMenu: React.FC = () => {
                 {expandTenants && (
                   <ul className="bg-Neutral100 text-gray-700 pt-[10px] pb-[10px]">
                     <li className="mr-7">
+                      <Link to="/tenants">Tenant Login</Link>
+                    </li>
+                    <li className="mr-7">
                       <Link to="apply">Apply for rental</Link>
                     </li>
-                    {/* <li className="mr-7">Tenant Login</li> */}
                     <li className="mr-7">
                       <Link to="/maintenance">Maintenance</Link>
                     </li>
                   </ul>
                 )}
-              </li>
-              <li className="pt-[10px] mr-7">
-                <Link to="/help">Help</Link>
               </li>
             </ul>
           </div>

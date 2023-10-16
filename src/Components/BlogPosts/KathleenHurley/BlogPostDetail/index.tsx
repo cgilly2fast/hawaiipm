@@ -1,5 +1,5 @@
 import React from 'react';
-import Blog2 from '../../../../Assets/Images/Blog2.png';
+import Kathleen from '../../../../Assets/Images/MaskGroup.png';
 import InstagramIcon from '../../../Assets/Images/InstagramIcon.svg';
 import YoutubeIcon from '../../../../Assets/Images/YoutubeIcon.svg';
 import FacebookIcon from '../../../../Assets/Images/FacebookIcon.svg';
@@ -26,7 +26,11 @@ const Plan = [
 const BlogPostDetail: React.FC = () => (
   <div className="pb-[50px]">
     <div className="2xl:px-96 xl:px-72 lg:px-48 xl:pt-[70px] pt-[50px] pl-[20px] pr-[20px]">
-      <img src={Blog2} alt="Blog2" className="w-[100%] h-[400px]" />
+      <img
+        src={Kathleen}
+        alt="Kathleen"
+        className="mx-auto max-w-[550px] max-h-[550px]"
+      />
       <div className="rext-center md:flex justify-between pt-[20px] xl:pl-[80px] lg:px-[30px]">
         <div className="lg:w-[600px] font-Leitura text-[24px] xl:text-[36px]">
           Home Owner Story: Kathleen Hurley

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
 import ShieldLockIcon from '../../../Assets/Images/ShieldLockIcon.svg';
 import VerifiedIcon from '../../../Assets/Images/VerifiedIcon.svg';
@@ -108,7 +109,7 @@ const PlanDetail: React.FC = () => (
       </div>
       <div className="xl:pt-[40px] pt-[30px] 2xl:pl-[0px] md:pl-[40px]">
         <img src={PathIcon} alt="Owner" />
-        <div className="md:max-w-[450px] font-Leitura pt-[20px] md:text-[24px] text-[20px] text-Black400">
+        <div className="md:max-w-[450px] font-Leitura pt-[20px] md:text-[24px] text-[20px] text-Black100">
           When we had a glitch or trouble, Colby was quick to step up with
           solutions and to improve/rectify the issue.
         </div>
@@ -117,7 +118,7 @@ const PlanDetail: React.FC = () => (
         </div>
         <div className="pt-[30px] font-Arial">
           <button className="w-[100%] text-[16px] md:w-[200px] lg:w-[250px] h-[44px] text-Green100 border-2 border-Green100 rounded-lg outline-none">
-            Learn their story
+            <Link to="/blog/home-owner-story-kathleen">Learn their story</Link>
           </button>
         </div>
       </div>

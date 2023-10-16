@@ -45,6 +45,11 @@ const DesktopMenu: React.FC = () => (
             Available Rentals
           </Link>
         </div>
+        <div>
+          <Link to="/pricing" className="outline-none">
+            Pricing
+          </Link>
+        </div>
         <Menu as="div" className="relative inline-block text-left">
           <div>
             <Menu.Button className="inline-flex w-full justify-center gap-[5px] items-center hover:bg-gray-50 outline-none">
@@ -234,7 +239,7 @@ const DesktopMenu: React.FC = () => (
                 <Menu.Item>
                   {({ active }) => (
                     <Link
-                      to="/ownerlogin"
+                      to="/owners"
                       className={`${
                         active ? 'bg-Green500 text-Green100' : 'text-gray-500'
                       }
@@ -266,11 +271,6 @@ const DesktopMenu: React.FC = () => (
             Agent referral program
           </Link>
         </div> */}
-        <div>
-          <Link to="/maintenance" className="outline-none">
-            Help
-          </Link>
-        </div>
       </div>
     </div>
   </div>

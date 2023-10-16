@@ -1,5 +1,5 @@
 import React from 'react';
-import Blog2 from '../../../../Assets/Images/Blog2.png';
+import Blog2 from '../../../../Assets/Images/ScreenTenants.png';
 import InstagramIcon from '../../../Assets/Images/InstagramIcon.svg';
 import YoutubeIcon from '../../../../Assets/Images/YoutubeIcon.svg';
 import FacebookIcon from '../../../../Assets/Images/FacebookIcon.svg';

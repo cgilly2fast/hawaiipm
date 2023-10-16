@@ -28,8 +28,15 @@ const Footer: React.FC = () => (
                   <Link to="/aboutus">Our Story</Link>
                 </div>
                 {/* <div>Careers</div> */}
-                <div>Blog</div>
-                <div>Help</div>
+                <div>
+                  <Link to="/blog">Blog</Link>
+                </div>
+                <div>
+                  <Link to="/contact">Contact</Link>
+                </div>
+                <div>
+                  <Link to="/maintenance">Help</Link>
+                </div>
               </div>
             </div>
             <div className="text-[14px] w-[50%] sm:w-[25%] pt-[20px] sm:pt-[0px]">
@@ -37,19 +44,36 @@ const Footer: React.FC = () => (
                 Homeowner
               </div>
               <div className="text-Black400 pt-[20px]">
-                <div>Why Use a Manager</div>
-                <div>Refer Homeowners</div>
-                <div>Revenue Guarantee</div>
-                <div>Hospitality Standards</div>
+                <div>
+                  <Link to="/blog/why-use-a-property-manager">
+                    Why Use a Manager
+                  </Link>
+                </div>
+                <div>
+                  <Link to="/guarantee">Revenue Guarantee</Link>
+                </div>
+                {/* <div>
+                  <Link to="/">Landlord FAQ</Link>
+                </div> */}
+                <div>
+                  <Link to="owners">Owner Login</Link>
+                </div>
               </div>
             </div>
             <div className="text-[14px] w-[50%] sm:w-[25%] pt-[20px] sm:pt-[0px]">
               <div className="text-Black100 font-bold tracking-[4px]">
-                Guest
+                Tenants
               </div>
               <div className="text-Black400 pt-[20px]">
-                <div>Invite Friends</div>
-                <div>Trust & Safety</div>
+                <div>
+                  <Link to="/apply">Apply for Rental</Link>
+                </div>
+                <div>
+                  <Link to="/maintenance">Maintenance</Link>
+                </div>
+                <div>
+                  <Link to="/tenants">Tenant Login</Link>
+                </div>
               </div>
             </div>
             {/* <div className="w-[112px] flex flex-row items-start gap-[20px] sm:w-[25%] pt-[80px] sm:pt-[0px]">
@@ -70,9 +94,15 @@ const Footer: React.FC = () => (
               </div>
             </div>
             <div className="flex text-Black400 text-[14px] gap-[20px] pt-[10px] sm:pt-[0px]">
-              <div>Terms</div>
-              <div>Privacy</div>
-              <div>Site map</div>
+              <div>
+                <Link to="/service">Terms of Service</Link>
+              </div>
+              <div>
+                <Link to="/disclaimers">Legal Disclaimers</Link>
+              </div>
+              {/* <div>
+                <Link to="/privacy">Privacy Policy</Link>
+              </div> */}
             </div>
           </div>
         </div>
