@@ -1,10 +1,11 @@
 import React from 'react';
 import DividerIcon from '../../../Assets/Images/DividerIcon.svg';
 import Blog from '../../../Assets/Images/Blog.png';
-import Recent1 from '../../../Assets/Images/Recent1.png';
-import Recent2 from '../../../Assets/Images/Recent2.png';
-import Recent3 from '../../../Assets/Images/Recent3.png';
-import Recent4 from '../../../Assets/Images/Recent4.png';
+import Kathleen from '../../../Assets/Images/MaskGroup.png';
+import Lisa from '../../../Assets/Images/LisaL.jpeg';
+import WhyManager from '../../../Assets/Images/Blog2.png';
+import ScreenTenants from '../../../Assets/Images/ScreenTenants.png';
+import Steve from '../../../Assets/Images/Recent2.png';
 import Popular1 from '../../../Assets/Images/Popular1.png';
 import Popular2 from '../../../Assets/Images/Popular2.png';
 import Popular3 from '../../../Assets/Images/Popular3.png';
@@ -13,37 +14,72 @@ import SliderPrevIcon from '../../../Assets/Images/SliderPrevIcon.svg';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Link } from 'react-router-dom';
 
 const Recent = [
-  { id: 1, pictures: Recent1 },
-  { id: 2, pictures: Recent2 },
-  { id: 3, pictures: Recent3 },
-  { id: 4, pictures: Recent4 },
-  { id: 5, pictures: Recent1 },
-  { id: 6, pictures: Recent2 },
-  { id: 7, pictures: Recent3 },
-  { id: 8, pictures: Recent4 },
+  {
+    id: 0,
+    pictures: Lisa,
+    title: 'Home Owner Story: Lisa Levin',
+    preview:
+      'Meet Lisa Levin, a homeowner who, like many others, was initially hesitant about entrusting her rental property...',
+    route: '/blog/home-owner-story-lisa',
+  },
+  {
+    id: 1,
+    pictures: Steve,
+    title: "Home Owner Story: Steve O'Neal",
+    preview:
+      "We're back with another captivating homeowner story, and this time, we dive into the real estate world of...",
+    route: '/blog/home-owner-story-steve',
+  },
+  {
+    id: 2,
+    pictures: ScreenTenants,
+    title:
+      'Comprehensive Tenant Screening in Hawaii: Finding the Perfect Fit for Your Property',
+    preview:
+      "Screening tenants is an important step in property management. When screening tenants in Hawaii, it's important to not only consider...",
+    route: '/blog/how-to-screen-tenants',
+  },
+  {
+    id: 3,
+    pictures: Kathleen,
+    title: 'Home Owner Story: Kathleen Hurley',
+    preview:
+      'Welcome to another inspiring homeowner story, where we shine a spotlight on Kathleen Hurley and her journey...',
+    route: '/blog/home-owner-story-kathleen',
+  },
+  {
+    id: 4,
+    pictures: WhyManager,
+    title:
+      'The Benefits of Hiring a Property Manager: Elevate Your Real Estate Investment',
+    preview:
+      'Owning and managing real estate can be a lucrative investment, but it comes with its fair share of responsibilities and challenges...',
+    route: '/blog/why-use-a-property-manager',
+  },
 ];
 
-const Popular = [
-  { id: 1, pictures: Popular1 },
-  { id: 2, pictures: Popular2 },
-  { id: 3, pictures: Popular3 },
-  { id: 4, pictures: Popular4 },
-  { id: 5, pictures: Popular1 },
-  { id: 6, pictures: Popular2 },
-  { id: 7, pictures: Popular3 },
-  { id: 8, pictures: Popular4 },
-];
+// const Popular = [
+//   { id: 1, pictures: Popular1 },
+//   { id: 2, pictures: Popular2 },
+//   { id: 3, pictures: Popular3 },
+//   { id: 4, pictures: Popular4 },
+//   { id: 5, pictures: Popular1 },
+//   { id: 6, pictures: Popular2 },
+//   { id: 7, pictures: Popular3 },
+//   { id: 8, pictures: Popular4 },
+// ];
 
 const NextArrow = ({ className, onClick }: any) => (
   <div
     role="button"
     className={className}
-    style={{ display: 'flex', alignItems: 'center', marginRight: '10px' }}
+    style={{ display: 'flex', alignItems: 'center' }}
     onClick={onClick}
     onKeyDown={() => {}}
-    tabIndex={0}
+    tabIndex={1}
   >
     <img src={SliderPrevIcon} alt="prev-icon" />
   </div>
@@ -53,10 +89,13 @@ const PrevArrow = ({ className, onClick }: any) => (
   <div
     role="button"
     className={className}
-    style={{ display: 'flex', alignItems: 'center', marginLeft: '5px' }}
+    style={{
+      display: 'flex',
+      alignItems: 'center',
+    }}
     onClick={onClick}
     onKeyDown={() => {}}
-    tabIndex={-1}
+    tabIndex={2}
   >
     <img src={SliderPrevIcon} alt="prev-icon" />
   </div>
@@ -166,25 +205,24 @@ const BlogDetail: React.FC = () => (
         <div className="md:hidden">
           <div className="xl:flex justify-between font-Arial">
             {Recent?.map(res => (
-              <div key={res.id} className="pt-[20px] mr-4">
-                <img
-                  src={res?.pictures}
-                  alt={`${res?.id}`}
-                  className="w-[100%]"
-                />
-                <div className="xl:w-[270px] border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial pl-[10px]">
-                  <div className="text-[14px] font-bold">
-                    Unlocking the Secrets of Mastering Time Management
+              <Link key={res.id} to={res.route}>
+                <div className="pt-[20px] mr-4">
+                  <img
+                    src={res?.pictures}
+                    alt={`${res?.id}`}
+                    className="w-[100%]"
+                  />
+                  <div className="xl:w-[270px] border-x-2 border-b-2 py-[20px] rounded-b-lg text-center font-Arial pl-[10px]">
+                    <div className="text-[14px] font-bold">res.title</div>
+                    <div className="pt-[10px] text-[14px] text-Black400">
+                      {res.preview}
+                    </div>
+                    <button className="pt-[10px] text-[14px] text-Green100 outline-none">
+                      Read more
+                    </button>
                   </div>
-                  <div className="pt-[10px] text-[14px] text-Black400">
-                    Unlocking the Secrets of Mastering Time Management: A
-                    Beginner's Guide" is an in-depth look at the...
-                  </div>
-                  <button className="pt-[10px] text-[14px] text-Green100 outline-none">
-                    Read more
-                  </button>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           <div className="pt-[50px] font-Arial text-center">
@@ -198,29 +236,25 @@ const BlogDetail: React.FC = () => (
         <div>
           <Slider {...settings}>
             {Recent?.map(res => (
-              <div
-                key={res.id}
-                className="2xl:max-w-[250px] xl:max-w-[200px] lg:max-w-[200px] md:max-w-[230px]"
-              >
-                <img src={res?.pictures} alt={`${res?.id}`} />
-                <div className="border-x-[1px] border-b-[1px] py-[20px] rounded-b-lg text-center font-Arial pl-[10px]">
-                  <div className="text-[14px] font-bold">
-                    Unlocking the Secrets of Mastering Time Management
+              <Link key={res.id} to={res.route}>
+                <div className="2xl:max-w-[250px] xl:max-w-[200px] lg:max-w-[200px] md:max-w-[230px]">
+                  <img src={res?.pictures} alt={`${res?.id}`} />
+                  <div className="border-x-[1px] border-b-[1px] py-[20px] rounded-b-lg text-center font-Arial pl-[10px]">
+                    <div className="text-[14px] font-bold">{res.title}</div>
+                    <div className="pt-[10px] text-[14px] text-Black400">
+                      {res.preview}
+                    </div>
+                    <button className="pt-[10px] text-[14px] text-Green100 outline-none">
+                      Read more
+                    </button>
                   </div>
-                  <div className="pt-[10px] text-[14px] text-Black400">
-                    Unlocking the Secrets of Mastering Time Management: A
-                    Beginner's Guide" is an in-depth look at the...
-                  </div>
-                  <button className="pt-[10px] text-[14px] text-Green100 outline-none">
-                    Read more
-                  </button>
                 </div>
-              </div>
+              </Link>
             ))}
           </Slider>
         </div>
       </div>
-      <div className="pt-[50px] flex justify-center">
+      {/* <div className="pt-[50px] flex justify-center">
         <img src={DividerIcon} alt="Divider" />
       </div>
       <div className="font-Arial pt-[50px]">
@@ -281,7 +315,7 @@ const BlogDetail: React.FC = () => (
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   </div>
 );
