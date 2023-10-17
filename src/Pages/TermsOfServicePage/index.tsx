@@ -1,6 +1,6 @@
 import React from 'react';
-import DisclaimersPageDetail from '../../Components/DisclaimersPageDetail';
+import TermsOfServicePageDetail from '../../Components/TermsOfServicePageDetail';
 
-const Disclaimers: React.FC = () => <DisclaimersPageDetail />;
+const TermsOfService: React.FC = () => <TermsOfServicePageDetail />;
 
-export default Disclaimers;
+export default TermsOfService;

@@ -26,6 +26,7 @@ import TenantsLogin from './Pages/TenantsLogin';
 import Testimonials from './Pages/Testimonials';
 import WhyUs from './Pages/WhyUs';
 import Disclaimers from './Pages/DisclaimersPage';
+import TermsOfService from './Pages/TermsOfServicePage';
 
 export default function Router() {
   const location = useLocation();
@@ -70,7 +71,7 @@ export default function Router() {
             { path: '/contact', element: <Contact /> },
             { path: '/help', element: <Help /> },
             { path: '/disclaimers', element: <Disclaimers /> },
-            // { path: '/terms', element: <TermsOfService/> },
+            { path: '/terms', element: <TermsOfService /> },
             // { path: '/application', element: <Application /> },
             // { path: '/generallease', element: <GeneralLease /> },
             { path: '/blog', element: <Blog /> },
