@@ -47,9 +47,14 @@ const AgentReferralDetail: React.FC = () => (
         </div>
         <div className="md:pt-[70px] pt-[30px] text-Black100 text-[20px]">
           Please contact{' '}
-          <Link to="" className="text-Green100 font-bold outline-none">colbygbemail@email.com</Link> or{' '}
-          <Link to="" className="text-Green100 font-bold outline-none">000-000-0000</Link> to learn more
-          about our agent referral program.
+          <Link to="" className="text-Green100 font-bold outline-none">
+            colbygbemail@email.com
+          </Link>{' '}
+          or{' '}
+          <Link to="" className="text-Green100 font-bold outline-none">
+            000-000-0000
+          </Link>{' '}
+          to learn more about our agent referral program.
         </div>
       </div>
     </div>

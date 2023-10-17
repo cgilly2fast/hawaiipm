@@ -17,6 +17,10 @@ const Footer: React.FC = () => (
               alt="logo"
               className="w-[150px] sm:w-[100%]"
             />
+            <p className="text-Black400 font-Arial pt-[20px] text-center">
+              RB-XXXXX
+            </p>
+            {/* <p className="text-Black400 pt-[5px] text-center">415-209-5847</p> */}
           </div>
           <div className="sm:max-w-[700px] w-full flex font-Arial flex-wrap xl:justify-start md:justify-end">
             <div className="text-[14px] w-[50%] sm:w-[25%] pt-[20px] sm:pt-[0px] md:w-[20%]">
@@ -95,7 +99,7 @@ const Footer: React.FC = () => (
             </div>
             <div className="flex text-Black400 text-[14px] gap-[20px] pt-[10px] sm:pt-[0px]">
               <div>
-                <Link to="/service">Terms of Service</Link>
+                <Link to="/terms">Terms of Service</Link>
               </div>
               <div>
                 <Link to="/disclaimers">Legal Disclaimers</Link>
