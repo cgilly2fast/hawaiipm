@@ -1,10 +1,10 @@
 import React from 'react';
-import Background2 from '../../../Assets/Images/Background2.png';
+import Background2 from '../../../Assets/Images/Homes2.png';
 
 const RevenueDetail: React.FC = () => (
   <div>
     <div
-      className="relative w-full h-[432px] xl:h-[570px] lg:h-[590px] md:h-[560px] "
+      className="mx-auto relative w-full h-[432px] xl:h-[400px] lg:h-[400px] md:h-[560px]  max-w-[1170px]"
       style={{ backgroundImage: `url(${Background2})` }}
     >
       <div className="w-auto top-[30px] left-[13px] right-[13px] flex flex-col text-center absolute 2xl:flex 2xl:top-[40px] 2xl:left-[1040px] items-center rounded-lg xl:flex xl:left-[730px] xl:top-[35px] lg:w-[470px] md:w-[370px] lg:flex bg-Neutral000 lg:top-[45px] lg:left-[400px] md:flex md:left-[340px] md:top-[30px]">

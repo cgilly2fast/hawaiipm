@@ -46,6 +46,8 @@ const RevenueGuaranteeDetail: React.FC = () => (
           <div className="pt-[30px] font-Arial text-Black400 text-[14px]">
             <div>*Hawaii PM Guarantee terms and conditions:</div>
             <div className="pt-[20px]">
+              Short Term
+              <br />
               We guarantee up to our management commission earned and the Hawaii
               PM Guarantee is not intended to solicit the breach of an existing
               vacation rental management agreement.
@@ -60,6 +62,13 @@ const RevenueGuaranteeDetail: React.FC = () => (
               The $5,000 guarantee is based on net revenue. The guarantee for
               owners managing their own property is also based on net rental
               revenue.
+            </div>
+            <div className="pt-[20px]">
+              Long Term
+              <br />
+              We reimburse per day of rent over 30 days once unit is leased. Per
+              day rate = (1 month rent / 30). 30 days starts once unit is
+              advertised.
             </div>
           </div>
         </div>

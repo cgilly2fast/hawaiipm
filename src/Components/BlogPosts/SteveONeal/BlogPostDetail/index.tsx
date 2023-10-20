@@ -103,7 +103,7 @@ const BlogPostDetail: React.FC = () => (
           a trusted partnership in real estate management.
         </div>
         <div className="pt-[20px]">
-          If you're a homeowner like Lisa, seeking a trusted partner to manage
+          If you're a homeowner like Steve, seeking a trusted partner to manage
           your property, Hawaii PM may be the key to your success.
         </div>
         <div className="flex flex-wrap">
