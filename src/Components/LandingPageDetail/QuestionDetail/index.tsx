@@ -105,7 +105,7 @@ const QuestionDetail: React.FC = () => (
     </div>
     <div className="pt-[50px] pb-[50px] text-center">
       <div
-        className="mx-auto block relative w-full max-w-[1170px] h-[336px] xl:h-[336px] lg:h-[400px]"
+        className="mx-auto block relative w-full max-w-[1170px] h-[336px] xl:h-[336px] lg:h-[400px] rounded-lg"
         style={{ backgroundImage: `url(${Room})` }}
       >
         <div className="absolute inset-0 flex flex-col items-center justify-center">

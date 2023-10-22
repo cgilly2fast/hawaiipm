@@ -47,7 +47,7 @@ const rows = [
       picture: ScreenTenants,
       title: 'Finding the Perfect Tenant for Your Property',
       preview:
-        "Screening tenants is an important step in property management. When screening tenants in Hawaii, it's important to...",
+        "Screening tenants is an important step in property management. When screening tenants in Hawaii, it's important...",
       route: '/blog/how-to-screen-tenants',
     },
   ],
@@ -58,7 +58,7 @@ const rows = [
       title:
         'The Benefits of Hiring a Property Manager: Elevate Your Real Estate Investment',
       preview:
-        'Owning and managing real estate can be a lucrative investment, but it comes with its fair share of responsibilities and challenges...',
+        'Owning and managing real estate can be a lucrative investment, but it comes with its fair share of responsibilities...',
       route: '/blog/why-use-a-property-manager',
     },
   ],
@@ -100,7 +100,7 @@ const BlogDetail: React.FC = () => (
         <img
           src={ScreenTenants}
           alt="Blog"
-          className="w-[100%] lg:w-[50%] h-[400px]"
+          className="max-h-[400px] rounded-lg"
         />
         <div className="text-Black400 font-Arial w-auto xl:pl-[50px] lg:pl-[50px] pt-[20px] xl:pt-[30px]">
           <div className="font-Leitura text-Black100 text-[24px]">
@@ -161,10 +161,10 @@ const BlogDetail: React.FC = () => (
           <div className="flex mb-[30px]">
             {posts?.map(post => (
               <Link key={post.id} to={post.route}>
-                <div className="2xl:max-w-[250px] xl:max-w-[200px] lg:max-w-[200px] md:max-w-[230px] mx-[5px]">
+                <div className="2xl:max-w-[250px] xl:max-w-[200px] lg:max-w-[200px] md:max-w-[230px] mx-[5px] ">
                   <div className="h-[200px] overflow-hidden">
                     <img
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover rounded-t-lg"
                       src={post?.picture}
                       alt={`${post?.id}`}
                     />
