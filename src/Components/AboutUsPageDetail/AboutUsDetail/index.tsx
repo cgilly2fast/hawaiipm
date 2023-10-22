@@ -9,42 +9,69 @@ const AboutUsDetail: React.FC = () => (
     </div>
     <div className="2xl:px-80 xl:px-60 lg:px-44 lg:pt-[50px] pt-[20px] pl-[20px] pr-[20px]">
       <div className="font-Leitura text-[24px] md:text-[36px] md:w-auto w-[300px]">
-        Quality-Integrity-Experience
+        A Letter From The Owner
       </div>
       <div className="font-Arial lg:pt-[50px] pt-[20px] w-auto text-Black400 text-[16px]">
-        <div>
-          Hawaii PM is a locally owned full-service property management and real
-          estate company based in Honolulu. A company with combined 50 years of
-          experience.
+        <div className="italic">
+          To Our Valued Clients and Prospective Team Members,
         </div>
         <div className="pt-[30px]">
-          We specialize in managing single family homes, condos, townhomes and
-          apartment buildings. We care for over 700 properties throughout Oahu.
-          We have grown exponentially by referral of satisfied clients,
-          realtors, vendors and tenants. Our success comes from following our
-          guiding principles: Quality, Integrity and Experience.
+          When I embarked on my journey as a property manager in Stinson Beach,
+          California, I noticed a critical void in the market. Many property
+          management companies had grown complacent, neglecting their commitment
+          to delivering exceptional results to their clients.
         </div>
         <div className="pt-[30px]">
-          <span className="text-Black100 font-bold">Quality...</span>We are
-          committed to providing quality customer service that meet the highest
-          standards of excellence to each and every client.
+          Stinson Beach, though a small and secluded haven with a population of
+          under 500 residents, is a treasure trove of vacation rentals. I
+          founded a property management company there to address this disparity,
+          and the results were truly remarkable. Our clients witnessed their
+          annual revenues surge by 2-4 times, thanks to our unwavering
+          dedication to proper care and strategic marketing.
         </div>
         <div className="pt-[30px]">
-          <span className="text-Black100 font-bold">Integrity...</span>We take
-          pride in working with the highest standards, following strong moral
-          principles and strictly adhering to all Fair Housing and Hawaii's
-          Landlord-Tenant Code.
+          While Stinson Beach served as an excellent launchpad, my journey
+          didn't end there. The events during COVID led me to the enchanting
+          shores of Hawaii, a place I now call home. I plan to stay here for
+          many years to come, nurturing the growth of Hawaii PM.
         </div>
         <div className="pt-[30px]">
-          <span className="text-Black100 font-bold">Experience...</span>Founded
-          by professional experienced real estate investor, resulting in
-          superior understanding of maximizing the return on owner's investment
-          while maintaining good tenant relations.
+          As we evolve and expand, the mission I set for the company is alway
+          the same and quite simple:
         </div>
+        <div className="pt-[30px] font-bold text-Black100">
+          Deliver amazing results to our clients.
+        </div>
+        <div className="pt-[30px]">
+          This commitment means going above and beyond, ensuring swift
+          communication with contractors, proactively addressing issues before
+          they surface, and doing whatever it takes to uphold our promise:
+          <span className="italic underline">
+            safeguarding your property, elevating your rental income, and giving
+            you the gift of time.
+          </span>
+        </div>
+        <div className="pt-[30px]">
+          This is what sets us apart. If this business ethos resonates with you,
+          I encourage you to reach out. Whether or not you opt for our services,
+          I'm here as a resource.
+        </div>
+        <div className="pt-[30px]">Mahalo,</div>
+        <div className="pt-[30px]">
+          <br />
+          <br />
+          Colby Gilbert
+          <br />
+          Phone: 415-209-4835 <br />
+          Email: Colby@HawaiiPM.com <br />
+          Website: www.HawaiiPM.com
+        </div>
+        {/* <div className="pt-[30px]">Phone: 415-209-4835</div>
+
         <div className="pt-[30px]">
           We would welcome the opportunity to earn your trust and deliver you
           the best service in the industry.
-        </div>
+        </div> */}
       </div>
     </div>
   </div>

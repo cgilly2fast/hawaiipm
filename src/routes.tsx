@@ -27,6 +27,7 @@ import Testimonials from './Pages/Testimonials';
 import WhyUs from './Pages/WhyUs';
 import Disclaimers from './Pages/DisclaimersPage';
 import TermsOfService from './Pages/TermsOfServicePage';
+import Pricing from './Pages/Pricing';
 
 export default function Router() {
   const location = useLocation();
@@ -72,6 +73,7 @@ export default function Router() {
             { path: '/help', element: <Help /> },
             { path: '/disclaimers', element: <Disclaimers /> },
             { path: '/terms', element: <TermsOfService /> },
+            { path: '/pricing', element: <Pricing /> },
             // { path: '/application', element: <Application /> },
             // { path: '/generallease', element: <GeneralLease /> },
             { path: '/blog', element: <Blog /> },
