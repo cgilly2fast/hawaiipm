@@ -2,8 +2,6 @@ import { Navigate, Outlet, useLocation, useRoutes } from 'react-router-dom';
 import ScrollToTop from './Components/ScrollToTop';
 import Admin from './Layouts/Admin';
 import AboutUs from './Pages/AboutUs';
-import AgentReferral from './Pages/AgentReferral';
-import Application from './Pages/Application';
 import AvailableRentals from './Pages/AvailableRentals';
 import Blog from './Pages/Blog';
 import HowToScreenTenants from './Components/BlogPosts/HowToScreenTenants';
@@ -100,15 +98,6 @@ export default function Router() {
             // { path: '/testimonials', element: <Testimonials /> },
           ],
         },
-
-        // {
-        //   path: "/login",
-        //   element: token ? (
-        //     <Navigate to="/" replace />
-        //   ) : (
-        //     <Login />
-        //   ),
-        // },
       ])}
     </div>
   );

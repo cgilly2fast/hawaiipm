@@ -11,9 +11,6 @@ import Popular2 from '../../../Assets/Images/Popular2.png';
 import Popular3 from '../../../Assets/Images/Popular3.png';
 import Popular4 from '../../../Assets/Images/Popular4.png';
 import SliderPrevIcon from '../../../Assets/Images/SliderPrevIcon.svg';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import { Link } from 'react-router-dom';
 
 const rows = [

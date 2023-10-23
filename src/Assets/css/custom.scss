@@ -111,9 +111,7 @@ input[type='checkbox']:checked {
   top: 0px;
   height: 100%;
 }
-.rheostat__vertical {
-  height: 100%;
-}
+
 .handleContainer {
   height: 15px;
   top: -2px;
@@ -121,23 +119,6 @@ input[type='checkbox']:checked {
   bottom: 4px;
   width: 100%;
   position: absolute;
-}
-.rheostat_background {
-  background-color: #fcfcfc;
-  border: 1px solid #d8d8d8;
-  position: relative;
-}
-.rheostat_background__horizontal {
-  height: 15px;
-  top: -2px;
-  left: -2px;
-  bottom: 4px;
-  width: 100%;
-}
-.rheostat_background__vertical {
-  width: 15px;
-  top: 0px;
-  height: 100%;
 }
 
 .dropdown-button-price {
