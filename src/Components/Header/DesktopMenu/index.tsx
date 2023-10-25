@@ -278,8 +278,7 @@ const DesktopMenu: React.FC = () => (
 
 export default DesktopMenu;
 
-{
-  /* <div>
+/* <div>
         <div>
           <div className="sm:h-[56px] bg-Green100 p-[16px] flex justify-between sm:hidden md:flex lg:hidden">
             <Link to="/">
@@ -371,4 +370,3 @@ export default DesktopMenu;
           </div>
         </div>
       </div> */
-}
